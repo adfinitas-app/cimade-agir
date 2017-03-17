@@ -1,0 +1,57 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Inscription lettre d'information</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css" />
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700' rel='stylesheet' type='text/css' />
+	<link rel='stylesheet' href='../assets/css/app.css' type='text/css'/>
+	<link rel='stylesheet' href='../assets/css/intlTelInput.css' type='text/css'/>
+</head>
+<body id="presse">
+	<section>
+		<div class="row">
+			<img id="logo" src="../assets/img/logo.svg">
+		</div>
+	</section>
+	<section>
+		<div class="expanded row notification">
+			<p>Votre inscription a été prise en compte</p>
+			<a href="http://www.lacimade.org/"><button>Retour au site La Cimade</button></a>
+		</div>
+	</section>
+	<section>
+		<div class="expanded row header-text">
+			<h1>Abonnement presse</h1>
+			<p>Pour recevoir nos communiqués de presse, merci de renseigner le formulaire ci-dessous :</p>
+		</div>
+	</section>
+	<section>
+		<div class="row">
+			<div class="small-centered small-12 large-10 columns form-container">
+				<div class="feedback error_mail">
+					Le format de l'email est incorrect
+				</div>
+				<div class="feedback g_error">
+					Les champs marqués en rouge sont obligatoires
+				</div>
+				<form>
+					<input type="text" placeholder="Nom" name="lastname">
+					<input type="text" placeholder="Prénom" name="firstname">
+					<input type="email" placeholder="Mail" name="email">
+					<input type="text" placeholder="Média" name="media">
+					<input type="tel" id="f_tel" placeholder="Téléphone" name="phone">
+					<input type="hidden" name="language" value="fr_FR">
+					<input type="button" id="f_summit" onclick="validateForm()" value="soumettre" name="soumettre">
+				</form>
+			</div>
+		</div>
+	</section>
+	<script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
+	<script src="../assets/js/intlTelInput.min.js" type="text/javascript"></script>
+	<script src="../assets/js/app.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.js" type="text/javascript"></script>
+</body>
+</html>

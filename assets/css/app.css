@@ -1,0 +1,155 @@
+#logo {
+	width: 400px;
+	max-width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.header-text {
+	padding: 10px;
+	padding-top: 40px;
+	padding-left: 40px;
+	background-color: #E6E6E6;
+}
+.header-text h1,
+.header-text p {
+	font-family: 'Open Sans';
+	color: black;
+	font-size: 22px;
+	text-align: center;
+}
+.header-text h1  {
+	font-size: 42px;
+	margin-bottom: 30px;
+}
+.notification {
+	display: none;
+	padding: 30px;
+	background-color: #C0E7C3;
+	font-family: 'Open Sans';
+	font-size: 24px;
+	color: black;
+	text-align: center;
+}
+.notification button {
+	color: black;
+	background-color: #DDDDDD;
+	padding: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border: 1px solid black;
+	border-radius: 1px;
+}
+.form-container {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+#f_summit {
+	width: 100%;
+	padding: 8px;
+	background-color: #EE3124;
+	font-family: 'Open Sans';
+	color: white;
+	font-size: 15px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+#f_tel {
+	display: inline-block;
+}
+.intl-tel-input {
+	margin-left: 80px;
+	margin-bottom: 18px;
+}
+#presse .intl-tel-input {
+	margin-left: 0px;
+	width: 100%;
+}
+#lettre .intl-tel-input {
+	float: right;
+	width: 50%;
+}
+.feedback {
+	margin-bottom: 10px;
+	display: none;
+	color: red;
+	font-size: 12px;
+	font-family: 'Open Sans';
+	font-weight: 400;
+}
+
+form {
+	font-family: 'Open Sans';
+	color: black;
+	font-size: 16px;
+	border: 0px solid white;
+}
+form div,
+form div p {
+	display: inline-block;
+}
+form div p {
+	padding-left: 3px;
+	margin-right: 5px;
+	margin: 0;
+	margin-top: 5px;
+}
+
+form div label {
+	font-family: 'Open Sans';
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 25px;
+	margin-right: 15px;
+}
+
+input[type=radio] {
+	display: none;
+}
+
+form div label:before {
+	content: "";
+	display: inline-block;
+
+	width: 16px;
+	height: 16px;
+
+	margin-right: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	background-color: #E6E6E6;
+	box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+}
+.radio label:before {
+	border-radius: 8px;
+	margin-bottom: 3px;
+}
+input[type=radio]:checked + label:before {
+	content: "\2022";
+	color: #EE3124;
+	font-size: 30px;
+	text-align: center;
+	line-height: 16px;
+}
+
+
+.iti-flag {background-image: url("flags.png");}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) { background-image: url("flags@2x.png");
+}
+
+@media screen and (max-width: 640px) {
+	.header-text {
+		padding-left: 0px;
+	}
+}
+@media screen and (max-width: 730px) {
+	#lettre .intl-tel-input {
+		margin-top: 10px;
+		width: 100%;
+	}
+}
