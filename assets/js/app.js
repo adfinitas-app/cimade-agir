@@ -232,7 +232,6 @@ function makeCorsRequest(data) {
         "addLists": ["mjlist_journalistes"],
         "delLists": ["mjlist_prospect"]
     },
-    "grecaptcha_response": grecaptcha.getResponse()
 }
 }
 else  // LETTRE D'INFORMATION
@@ -306,7 +305,6 @@ else  // LETTRE D'INFORMATION
     "addLists": [],
     "delLists": []
 },
-"grecaptcha_response": grecaptcha.getResponse()
 }
 }
 makeCorsRequest(data);
