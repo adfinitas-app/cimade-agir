@@ -61,7 +61,7 @@
         	woopra.track("inscription", {
 		        url: document.location.href,
 		        title: document.title,
-		        optin: '',
+		        optin: 'non',
 		        origine: "SI",
 		        type: 'journaliste'
     	});
@@ -71,7 +71,7 @@
             woopra.track("inscription", {
 		        url: document.location.href,
 		        title: document.title,
-		        optin: '',
+		        optin: 'oui',
 		        origine: "SI",
 		        type: 'newsletter'
     	    });
@@ -247,15 +247,15 @@ else  // LETTRE D'INFORMATION
             "civility": pureField($("input[name='civility']:checked").val()),
             "civility_dear": getCivilityDear(),
             "civility_long": getCivilityLong(),
-            "personnalisation": getCivilityDear() + ' ' + pureField($("input[name='civility']:checked").val()).toUpperCase() + ' ' +
-            pureField($("input[name='lastname']").val()).toUpperCase(),
-            "personnalisation_courte": pureField($("input[name='civility']:checked").val()).toUpperCase() + ' ' +
-            pureField($("input[name='lastname']").val()).toUpperCase(),
+            "personnalisation": getCivilityDear() + ' ' + pureField($("input[name='civility']:checked").val()).toUpperCase() + ' ' + pureField($("input[name='lastname']").val()).toUpperCase(),
+            "personnalisation_courte": pureField($("input[name='civility']:checked").val()).toUpperCase() + ' ' + pureField($("input[name='lastname']").val()).toUpperCase(),
             "firstname": pureField($("input[name='firstname']").val()),
             "lastname": pureField($("input[name='lastname']").val()),
-            "name": pureField($("input[name='firstname']").val()) + ' ' +
-            pureField($("input[name='lastname']").val()),
-            "partenaires_optin": $("input[name='optin']:checked").size() != 0,
+            "address": pureField($("input[name='adresse']").val()),
+            "zipcode": pureField($("input[name='zipcode']").val()),
+            "city": pureField($("input[name='ville']").val()),
+            "country": pureField($("input[name='pays']").val()),
+            "name": pureField($("input[name='firstname']").val()) + ' ' + pureField($("input[name='lastname']").val()),
             "language": "fr_FR"
         }
     },
@@ -279,6 +279,10 @@ else  // LETTRE D'INFORMATION
      "ce_lastname": pureField($("input[name='lastname']").val()),
      "ce_name": pureField($("input[name='firstname']").val()) + ' ' +
      pureField($("input[name='lastname']").val()),
+     "ce_address": pureField($("input[name='adresse']").val()),
+     "ce_zipcode": pureField($("input[name='zipcode']").val()),
+     "ce_city": pureField($("input[name='ville']").val()),
+     "ce_country": pureField($("input[name='pays']").val()),
      "ce_language": "fr_FR"
  },
  "mailjet": {
