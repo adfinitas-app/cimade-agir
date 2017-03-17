@@ -58,23 +58,11 @@
         $('.notification').slideDown("slow", function() {
         });
         if (mode == 0) { // PRESSE 
-        	woopra.track("inscription", {
-		        url: document.location.href,
-		        title: document.title,
-		        optin: 'non',
-		        origine: "SI",
-		        type: 'journaliste'
-    	});
+        
             submitForm(0);
         }
         else    {       // LETTRE D'INFORMATION
-            woopra.track("inscription", {
-		        url: document.location.href,
-		        title: document.title,
-		        optin: 'oui',
-		        origine: "SI",
-		        type: 'newsletter'
-    	    });
+
             submitForm(1);
         }
     }
@@ -282,6 +270,7 @@ else  // LETTRE D'INFORMATION
      "ce_zipcode": pureField($("input[name='zipcode']").val()),
      "ce_city": pureField($("input[name='ville']").val()),
      "ce_country": pureField($("input[name='pays']").val()),
+     "ce_origin": "SI",
      "ce_language": "fr_FR"
  },
  "mailjet": {
