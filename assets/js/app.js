@@ -57,10 +57,26 @@
         scrollTo($("#logo"));
         $('.notification').slideDown("slow", function() {
         });
-        if (mode == 0) // PRESSE
+        if (mode == 0) { // PRESSE 
+        	woopra.track("inscription", {
+		        url: document.location.href,
+		        title: document.title,
+		        optin: '',
+		        origine: "SI",
+		        type: 'journaliste'
+    	});
             submitForm(0);
-        else           // LETTRE D'INFORMATION
+        }
+        else    {       // LETTRE D'INFORMATION
+            woopra.track("inscription", {
+		        url: document.location.href,
+		        title: document.title,
+		        optin: '',
+		        origine: "SI",
+		        type: 'newsletter'
+    	    });
             submitForm(1);
+        }
     }
 
 
