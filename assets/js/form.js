@@ -184,9 +184,9 @@ function makeCorsRequest(data) {
              "db": {
                 "email": pureField($("input[name='email']").val()),
                 "phone": pureField($("input[name='phone']").val()),
-                "firstname": pureField($("input[name='firstname']").val()),
-                "lastname": pureField($("input[name='lastname']").val()),
-                "name": pureField($("input[name='firstname']").val()) + ' ' + pureField($("input[name='lastname']").val()),
+                "firstname": pureField($("input[name='prenom']").val()),
+                "lastname": pureField($("input[name='nom']").val()),
+                "name": pureField($("input[name='prenom']").val()) + ' ' + pureField($("input[name='nom']").val()),
                 "media": pureField($("input[name='media']").val()),
                 "language": $("input[name='language']")
             },
@@ -197,24 +197,24 @@ function makeCorsRequest(data) {
          "event": "inscription-presse",
          "cv_email": pureField($("input[name='email']").val()),
          "cv_phone": pureField($("input[name='phone']").val()),
-         "cv_firstname": pureField($("input[name='firstname']").val()),
-         "cv_lastname": pureField($("input[name='lastname']").val()),
-         "cv_name": pureField($("input[name='firstname']").val()) + ' ' + pureField($("input[name='lastname']").val()),
+         "cv_firstname": pureField($("input[name='prenom']").val()),
+         "cv_lastname": pureField($("input[name='nom']").val()),
+         "cv_name": pureField($("input[name='prenom']").val()) + ' ' + pureField($("input[name='nom']").val()),
          "ce_email": pureField($("input[name='email']").val()),
          "ce_phone": pureField($("input[name='phone']").val()),
-         "ce_firstname": pureField($("input[name='firstname']").val()),
-         "ce_lastname": pureField($("input[name='lastname']").val()),
-         "ce_name": pureField($("input[name='firstname']").val()) + ' ' + pureField($("input[name='lastname']").val()),
+         "ce_firstname": pureField($("input[name='prenom']").val()),
+         "ce_lastname": pureField($("input[name='nom']").val()),
+         "ce_name": pureField($("input[name='prenom']").val()) + ' ' + pureField($("input[name='nom']").val()),
          "ce_media": pureField($("input[name='media']").val()),
          "language": $("input[name='language']")
      },
      "mailjet": {
          "Email": pureField($("input[name='email']").val()),
          "Properties": {
-            "firstname": pureField($("input[name='firstname']").val()),
-            "lastname": pureField($("input[name='lastname']").val()),
-            "name": pureField($("input[name='firstname']").val()) + ' ' +
-            pureField($("input[name='lastname']").val()),
+            "firstname": pureField($("input[name='prenom']").val()),
+            "lastname": pureField($("input[name='nom']").val()),
+            "name": pureField($("input[name='prenom']").val()) + ' ' +
+            pureField($("input[name='nom']").val()),
             "language": $("input[name='language']")
         },
         "addLists": ["mjlist_journalistes"],
@@ -234,15 +234,17 @@ else  // LETTRE D'INFORMATION
             "civility": pureField($("input[name='civility']:checked").val()),
             "civility_dear": getCivilityDear(),
             "civility_long": getCivilityLong(),
-            "personnalisation": getCivilityDear() + ' ' + pureField($("input[name='civility']:checked").val()).toUpperCase() + ' ' + pureField($("input[name='lastname']").val()).toUpperCase(),
-            "personnalisation_courte": pureField($("input[name='civility']:checked").val()).toUpperCase() + ' ' + pureField($("input[name='lastname']").val()).toUpperCase(),
-            "firstname": pureField($("input[name='firstname']").val()),
-            "lastname": pureField($("input[name='lastname']").val()),
+            "personnalisation": getCivilityDear() + ' ' + 
+            pureField($("input[name='civility']:checked").val()).toUpperCase() + ' ' + 
+            pureField($("input[name='nom']").val()).toUpperCase(),
+            "personnalisation_courte": pureField($("input[name='civility']:checked").val()).toUpperCase() + ' ' + pureField($("input[name='nom']").val()).toUpperCase(),
+            "firstname": pureField($("input[name='prenom']").val()),
+            "lastname": pureField($("input[name='nom']").val()),
             "address": pureField($("input[name='adresse']").val()),
             "zipcode": pureField($("input[name='zipcode']").val()),
             "city": pureField($("input[name='ville']").val()),
             "country": pureField($("input[name='pays']").val()),
-            "name": pureField($("input[name='firstname']").val()) + ' ' + pureField($("input[name='lastname']").val()),
+            "name": pureField($("input[name='prenom']").val()) + ' ' + pureField($("input[name='nom']").val()),
             "language": "fr_FR"
         }
     },
@@ -254,18 +256,18 @@ else  // LETTRE D'INFORMATION
      "cv_phone": pureField($("input[name='phone']").val()),
      "cv_sexe": getSexe(),
      "cv_civility": pureField($("input[name='civility']:checked").val()),
-     "cv_firstname": pureField($("input[name='firstname']").val()),
-     "cv_lastname": pureField($("input[name='lastname']").val()),
-     "cv_name": pureField($("input[name='firstname']").val()) + ' ' +
-     pureField($("input[name='lastname']").val()),
+     "cv_firstname": pureField($("input[name='prenom']").val()),
+     "cv_lastname": pureField($("input[name='nom']").val()),
+     "cv_name": pureField($("input[name='prenom']").val()) + ' ' +
+     pureField($("input[name='nom']").val()),
      "ce_email": pureField($("input[name='email']").val()),
      "ce_phone": pureField($("input[name='phone']").val()),
      "ce_sexe": getSexe(),
      "ce_civility": pureField($("input[name='civility']:checked").val()),
-     "ce_firstname": pureField($("input[name='firstname']").val()),
-     "ce_lastname": pureField($("input[name='lastname']").val()),
-     "ce_name": pureField($("input[name='firstname']").val()) + ' ' +
-     pureField($("input[name='lastname']").val()),
+     "ce_firstname": pureField($("input[name='prenom']").val()),
+     "ce_lastname": pureField($("input[name='nom']").val()),
+     "ce_name": pureField($("input[name='prenom']").val()) + ' ' +
+     pureField($("input[name='nom']").val()),
      "ce_address": pureField($("input[name='adresse']").val()),
      "ce_zipcode": pureField($("input[name='zipcode']").val()),
      "ce_city": pureField($("input[name='ville']").val()),
@@ -281,13 +283,13 @@ else  // LETTRE D'INFORMATION
         "civility_dear": getCivilityDear(),
         "civility_long": getCivilityLong(),
         "personnalisation": getCivilityDear() + ' ' + pureField($("input[name='civility']:checked").val()).toUpperCase() + ' ' +
-        pureField($("input[name='lastname']").val()).toUpperCase(),
+        pureField($("input[name='nom']").val()).toUpperCase(),
         "personnalisation_courte": pureField($("input[name='civility']:checked").val()).toUpperCase() + ' ' +
-        pureField($("input[name='lastname']").val()).toUpperCase(),
-        "firstname": pureField($("input[name='firstname']").val()),
-        "lastname": pureField($("input[name='lastname']").val()),
-        "name": pureField($("input[name='firstname']").val()) + ' ' +
-        pureField($("input[name='lastname']").val()),
+        pureField($("input[name='nom']").val()).toUpperCase(),
+        "firstname": pureField($("input[name='prenom']").val()),
+        "lastname": pureField($("input[name='nom']").val()),
+        "name": pureField($("input[name='prenom']").val()) + ' ' +
+        pureField($("input[name='nom']").val()),
         "partenaires_optin": $("input[name='optin']:checked").size() != 0,
         "language": "fr_FR"
     },
