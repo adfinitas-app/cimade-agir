@@ -196,18 +196,10 @@ function makeCorsRequest(data) {
              "db": {
                 "email": pureField($("input[name='email']").val()),
                 "phone": pureField($("input[name='phone']").val()),
-                "sexe": getSexe(),
-                "civility": pureField($("input[name='civility']:checked").val()),
-                "civility_dear": getCivilityDear(),
-                "civility_long": getCivilityLong(),
-                "personnalisation": getCivilityDear() + ' ' + pureField($("input[name='civility']:checked").val()).toUpperCase() + ' ' +
-                pureField($("input[name='lastname']").val()).toUpperCase(),
-                "personnalisation_courte": pureField($("input[name='civility']:checked").val()).toUpperCase() + ' ' +
-                pureField($("input[name='lastname']").val()).toUpperCase(),
                 "firstname": pureField($("input[name='firstname']").val()),
                 "lastname": pureField($("input[name='lastname']").val()),
-                "name": pureField($("input[name='firstname']").val()) + ' ' +
-                pureField($("input[name='lastname']").val()),
+                "name": pureField($("input[name='firstname']").val()) + ' ' + pureField($("input[name='lastname']").val()),
+                "media": pureField($("input[name='media']").val()),
                 "language": $("input[name='language']")
             },
         },
@@ -217,32 +209,20 @@ function makeCorsRequest(data) {
          "event": "inscription-presse",
          "cv_email": pureField($("input[name='email']").val()),
          "cv_phone": pureField($("input[name='phone']").val()),
-         "cv_sexe": getSexe(),
-         "cv_civility": pureField($("input[name='civility']:checked").val()),
          "cv_firstname": pureField($("input[name='firstname']").val()),
          "cv_lastname": pureField($("input[name='lastname']").val()),
          "cv_name": pureField($("input[name='firstname']").val()) + ' ' + pureField($("input[name='lastname']").val()),
          "ce_email": pureField($("input[name='email']").val()),
          "ce_phone": pureField($("input[name='phone']").val()),
-         "ce_sexe": getSexe(),
-         "ce_civility": pureField($("input[name='civility']:checked").val()),
          "ce_firstname": pureField($("input[name='firstname']").val()),
          "ce_lastname": pureField($("input[name='lastname']").val()),
-         "ce_name": pureField($("input[name='firstname']").val()) + ' ' +
-         pureField($("input[name='lastname']").val()),
+         "ce_name": pureField($("input[name='firstname']").val()) + ' ' + pureField($("input[name='lastname']").val()),
+         "ce_media": pureField($("input[name='media']").val()),
          "language": $("input[name='language']")
      },
      "mailjet": {
          "Email": pureField($("input[name='email']").val()),
          "Properties": {
-            "sexe": getSexe(),
-            "civility": pureField($("input[name='civility']:checked").val()),
-            "civility_dear": getCivilityDear(),
-            "civility_long": getCivilityLong(),
-            "personnalisation": getCivilityDear() + ' ' + pureField($("input[name='civility']:checked").val()).toUpperCase() + ' ' +
-            pureField($("input[name='lastname']").val()).toUpperCase(),
-            "personnalisation_courte": pureField($("input[name='civility']:checked").val()).toUpperCase() + ' ' +
-            pureField($("input[name='lastname']").val()).toUpperCase(),
             "firstname": pureField($("input[name='firstname']").val()),
             "lastname": pureField($("input[name='lastname']").val()),
             "name": pureField($("input[name='firstname']").val()) + ' ' +
