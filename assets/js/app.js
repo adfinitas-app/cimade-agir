@@ -12,7 +12,7 @@
 
 
 
-    function validateForm() {
+    function validateForm(mode) {
         var check = 0;
         var emailID = $("input[name='email']").val();
         atpos = emailID.indexOf("@");
@@ -57,6 +57,10 @@
         scrollTo($("#logo"));
         $('.notification').slideDown("slow", function() {
         });
+        if (mode == 0) // PRESSE
+            submitForm(0);
+        else           // LETTRE D'INFORMATION
+            submitForm(1);
     }
 
 
@@ -121,7 +125,7 @@ if (p['phone'] && p['phone'] != "undefined") {
 }
 return xhr;
 }
-function makeCorsRequest(data, successCallback, errorCallback) {
+function makeCorsRequest(data) {
 	var url = 'http://adfinitas-io.herokuapp.com/api/v1/organization/adc529c9-3414-4e80-8004-b2002885ee65/webhook/3a66a987-839b-4275-8149-109503eb09e1';
 	var body = JSON.stringify(data);
 	var xhr = createCORSRequest('POST', url);
@@ -130,10 +134,6 @@ function makeCorsRequest(data, successCallback, errorCallback) {
 		return;
 	}
 	xhr.setRequestHeader('Content-Type', 'application/json');
-  // Response handlers.
-  xhr.onload = successCallback;
-  // Error Handler
-  xhr.onerror = errorCallback;
   xhr.send(body);
 }
 
@@ -171,15 +171,8 @@ function makeCorsRequest(data, successCallback, errorCallback) {
  }
 
 
- var path = window.location.pathname;
- var page = path.split("/").pop();
-
-
- function submitForm(success, error) {
- 	var infos = {};
-
-
-     if (page == "inscription-presse.html") 
+ function submitForm(mode) {
+     if (mode == 0) // PRESSE
      {
        var data = {
           "db": {
@@ -246,7 +239,7 @@ function makeCorsRequest(data, successCallback, errorCallback) {
     "grecaptcha_response": grecaptcha.getResponse()
 }
 }
-else 
+else  // LETTRE D'INFORMATION
 {
    var data = {
       "db": {
@@ -316,7 +309,7 @@ else
 "grecaptcha_response": grecaptcha.getResponse()
 }
 }
-//makeCorsRequest(data, success, error);
+//makeCorsRequest(data);
 }
 
 function checkPhone() {
