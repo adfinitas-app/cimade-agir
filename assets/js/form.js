@@ -268,7 +268,7 @@ else  // LETTRE D'INFORMATION
      "ce_lastname": pureField($("input[name='nom']").val()),
      "ce_name": pureField($("input[name='prenom']").val()) + ' ' +
      pureField($("input[name='nom']").val()),
-     "ce_address": pureField($("input[name='adresse']").val()),
+     "ce_address": pureField($("input[name='address']").val()),
      "ce_zipcode": pureField($("input[name='zipcode']").val()),
      "ce_city": pureField($("input[name='ville']").val()),
      "ce_country": pureField($("input[name='pays']").val()),
