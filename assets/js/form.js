@@ -240,7 +240,7 @@ else  // LETTRE D'INFORMATION
             "personnalisation_courte": pureField($("input[name='civility']:checked").val()).toUpperCase() + ' ' + pureField($("input[name='nom']").val()).toUpperCase(),
             "firstname": pureField($("input[name='prenom']").val()),
             "lastname": pureField($("input[name='nom']").val()),
-            "address": pureField($("input[name='adresse']").val()),
+            "address": pureField($("input[name='address']").val()),
             "zipcode": pureField($("input[name='zipcode']").val()),
             "city": pureField($("input[name='ville']").val()),
             "country": pureField($("input[name='pays']").val()),
