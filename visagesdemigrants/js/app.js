@@ -74,7 +74,7 @@ $(document).ready(function(){
         $("<style type='text/css'> body .button{ padding: .5em 1.2em .4em; } </style>").appendTo("head");
     }
     
-    $('#facebook-nav-link').attr('href', 'https://www.facebook.com/sharer/sharer.php?u=http://visagesdemigrants.lacimade.org');
+    $('#facebook-nav-link').attr('href', 'https://www.facebook.com/sharer/sharer.php?u=http://lacimade.org');
     
     var isScrolling = false;
     var widthBreakpoint = 1100;

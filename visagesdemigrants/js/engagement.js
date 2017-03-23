@@ -15,7 +15,7 @@ $(document).ready(function(){
         return  bodyWidth < widthBreakpoint;
     };
     
-    $('#facebook-nav-link').attr('href', 'https://www.facebook.com/sharer/sharer.php?u=http://visagesdemigrants.lacimade.org');
+    $('#facebook-nav-link').attr('href', 'https://www.facebook.com/sharer/sharer.php?u=http://lacimade.org');
     
     $('#home-link').hover(function(){
         $('#main-sub-menu').addClass('visible');
