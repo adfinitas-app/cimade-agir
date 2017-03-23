@@ -1,0 +1,969 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<!-- Start of Woopra Code -->
+<script>
+function extractUrlParams(){    
+    var t = document.location.search.substring(1).split('&'); var f = [];
+    for (var i=0; i<t.length; i++){
+        var x = t[i].split('=');
+        f[x[0]]=decodeURIComponent(x[1]);
+    }
+    return f;
+};
+
+(function(){
+    var t,i,e,n=window,o=document,a=arguments,s="script",r=["config","track","identify","visit","push","call","trackForm","trackClick"],c=function(){var t,i=this;for(i._e=[],t=0;r.length>t;t++)(function(t){i[t]=function(){return i._e.push([t].concat(Array.prototype.slice.call(arguments,0))),i}})(r[t])};for(n._w=n._w||{},t=0;a.length>t;t++)n._w[a[t]]=n[a[t]]=n[a[t]]||new c;i=o.createElement(s),i.async=1,i.src="//static.woopra.com/js/w.js",e=o.getElementsByTagName(s)[0],e.parentNode.insertBefore(i,e)
+})("woopra");
+
+
+woopra.config({
+    domain: 'lacimade.org'
+});
+
+var p = extractUrlParams();
+
+if ('email' in p) {
+    if ('lastname' in p && 'firstname' in p) {
+        woopra.identify({
+            email: p['email'],
+            name: p['firstname'] + ' ' + p['lastname'],
+            id_donateur: p['id_donateur']
+        });
+    } else {woopra.identify({email: p['email'],id_donateur: p['id_donateur']})}
+}
+woopra.track();
+</script>
+<!-- End of Woopra Code -->
+<title>Valeur ajoutée</title>
+
+<link rel="stylesheet" href="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/my.css" />
+<link rel="stylesheet" href="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/basic.css" />
+<link rel="stylesheet" href="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/styles.css" />
+<link rel="stylesheet" href="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/testimony.css" />
+ <meta name="description" content="Le mot 'étranger' rime avec valeur ajoutée, et non avec menace ni danger. Mobilisez-vous avec La Cimade. Signez notre manifeste">
+        <meta property="og:image" content="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/Cimade_email_template%2Bimages.png">
+  <meta name="viewport" content="width=device-width">
+  <meta property="og:title" content="Valeur ajoutée, le manifeste de La Cimade" />
+<!--<link rel="stylesheet" href="/static/css/styles.css" />-->
+<link href='http://fonts.googleapis.com/css?family=Dosis:300,400,500,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Merriweather:300italic,300' rel='stylesheet' type='text/css'>
+
+
+
+<script src="/static/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "ur-5e725744-fc4c-9085-de52-b07a31cc32be", doNotHash: true, doNotCopy: true, shorten:false, hashAddressBar: false});</script>
+<!--[if lt IE 9]>
+ <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="//use.typekit.net/txp3nod.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+
+
+
+</head>
+<body>
+
+		<div id="header" class="content center">
+<p class="marge-h"></p>
+		<!--<header class="destok">
+			<img class="logo" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/logo-cimade-header.png" alt="logo-header">
+			<div class="liste">
+				<a href="http://www.valeurajoutee.lacimade.org/#encre-lire-manifeste" class="scroll"><p class="dosis bold">manifestez-vous!</p></a>
+				<a href="http://www.valeurajoutee.lacimade.org/#encre-commentaire" class="scroll temoin"><p class="dosis bold">ils témoignent</p></a>
+				<a href="http://www.valeurajoutee.lacimade.org/#encre-drop-commentaire" class="scroll none"><p class="dosis bold">partagez une histoire</p></a>
+				<a href="http://www.valeurajoutee.lacimade.org/#encre-soutien" class="scroll none"><p class="dosis bold">soutenez-nous !</p></a>
+				<a href="http://www.valeurajoutee.lacimade.org/#encre-lois" class="scroll none"><p class="dosis bold">projets de lois</p></a>
+				<div class="box-violet">
+					<p><a href="#"><img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/picto-fb.png" alt="fb"></a><a href="#"><img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/picto-twitter.png"></a><span class="dosis bold">Partagez </span> <br><span class=" dosis light">notre manifeste</span></p>
+				</div>
+			</div>
+		</header>
+
+		<!-- header MOBILE -->
+	<!--	<header class="mobile">
+	<div class="mobile header-mobile"><a class="scroll" href="#encre-accroche"><p class="left"><img class="menu-mobile" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/menu-mobile.png" alt="logo"></p></a> <p class="right"><a href="http://www.lacimade.org/?gclid=CPHunoj39cECFWoOwwodRSEA7A" id="deroule-menu"><img class="logo-cimade" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/logo-cimade-header.png" alt="menu mobile"></a>
+
+<div class="box-violet">
+					<p><a href="#"><img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/picto-fb.png" alt="fb"></a><a href="#"><img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/picto-twitter.png"></a></p>
+				</div>
+
+					<div class="pop-up-menu">
+				<div class="onglet-pop-up"><a class="scroll" href="#encre-lire-manifeste"><p>manifestez-vous</p></a></div>
+				<div class="onglet-pop-up"><a class="scroll" href="http://www.valeurajoutee.lacimade.org/#encre-commentaire"><p>ils témoignent</p></a></div>
+				<div class="onglet-pop-up none"><a class="scroll" href="http://www.valeurajoutee.lacimade.org/#encre-drop-commentaire"><p>partagez une histoire</p></a></div>
+				<div class="onglet-pop-up none"><a class="scroll" href="http://www.valeurajoutee.lacimade.org/#encre-soutien"><p>soutenez-nous !</p></a></div>
+				<div class="onglet-pop-up fini none"><a class="scroll" href="http://www.valeurajoutee.lacimade.org/#encre-lois"><p>projets de lois</p></a></div>
+			</div>
+
+
+			</div>
+	</p>
+		</header>-->
+
+
+
+
+<!-- <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="/">Cimade</a>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    
+                        
+                            <li><a href="/temoignages/">Tous les témoignages</a></li>
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+-->
+
+
+
+    
+
+        <!-- NOUVEAUX CSS -->
+ <style type="text/css">
+    .drop-temoignage {clear: both;}
+	.commentaire { position: relative; }
+	.commentaire > div { margin-left: 2%; width: 49%; }
+	.commentaire > div:nth-child(odd) { float: left; margin-left: 0; }
+	.commentaire > div:nth-child(even) { float: right; }
+	.commentaire .post-commentaire { width: 100%; }
+    .commentaire > div.bouton-rouge:nth-child(odd), .commentaire > div.bouton-rouge:nth-child(even) {
+  clear: both;
+  float: none;
+  margin: 0 auto 10px;
+}
+</style>
+		<!-- VALEUR AJOUTEE -->
+
+<header class="destok">
+			<img class="logo" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/logo-cimade-header.png" alt="logo-header">
+			<div class="liste">
+				<a href="#encre-lire-manifeste" class="scroll NAV"><p class="dosis bold">manifestez-vous!</p></a>
+				<a href="https://apps.agorapulse.com/go/52359/48774" class="NAV" target="_blank"><p class="dosis bold">Partagez votre photo</p></a>
+				<a href="#encre-commentaire" class="scroll temoin NAV"><p class="dosis bold">ils témoignent</p></a>
+				<a href="#encre-soutien" class="scroll NAV"><p class="dosis bold">soutenez-nous !</p></a>
+				<a href="#encre-lois" class="scroll NAV"><p class="dosis bold">projets de lois</p></a>
+				 <div class=" center bouton-rouge don-vert">
+                 <a href="#encre-soutien" class="scroll"><p>faites un don</p> </a>
+                </div>
+				<!--<div class="box-violet">
+					<p><span class="tweet-partage"><a href="http://twitter.com/share?text=Signez le manifeste de La Cimade. L’étranger n’est ni une menace ni un danger" target="_blank"> <img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/picto-twitter.png"></a></span><span class='share st_facebook_custom opacity-link' displayText='Facebook'>
+                    </span></p><p class="partag"><span class="dosis bold">Partagez </span> <br><span class=" dosis light">notre manifeste</span></p>
+				</div>-->
+			</div>
+		</header>
+
+		<!-- header MOBILE -->
+		<header class="mobile">
+	<div class="mobile header-mobile"><a class="scroll" href="#encre-accroche"><p class="left"><img class="menu-mobile" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/menu-mobile.png" alt="logo"></p></a> <p class="right"><a href="http://www.lacimade.org/?gclid=CPHunoj39cECFWoOwwodRSEA7A" id="deroule-menu"><img class="logo-cimade" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/logo-cimade-header.png" alt="menu mobile"></a>
+
+ <div class=" center bouton-rouge don-vert">
+                 <a href="#encre-soutien" class="scroll"><p>faites un don</p> </a>
+                </div>
+
+					<div class="pop-up-menu">
+				<div class="onglet-pop-up"><a class="scroll NAV" href="#encre-lire-manifeste"><p>manifestez-vous</p></a></div>
+				<div class="onglet-pop-up"><a class="NAV" href="https://apps.agorapulse.com/go/52359/48774" target="_blank"><p>Partagez votre photo</p></a></div>
+				<div class="onglet-pop-up"><a class="scroll NAV" href="#encre-commentaire"><p>ils témoignent</p></a></div>
+				<div class="onglet-pop-up"><a class="scroll NAV" href="#encre-soutien"><p>soutenez-nous !</p></a></div>
+				<div class="onglet-pop-up fini"><a class="scroll NAV" href="#encre-lois"><p>projets de lois</p></a></div>
+			</div>
+
+
+			</div>
+	</p>
+		</header>
+
+		<div class="valeur-ajoutee">
+			<img class="center vignette destok" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/vignette-tete.png" alt="vignette">
+			<img class="center vignette-mobile mobile" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/vignette-mobile.png" alt="vignette">
+			<img class="logo-valeur center" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/valeur-ajoutee.png" alt="valeur ajouté">
+			<div id="encre-lire-manifeste" class="inline-block encadree center cadre">
+				<p class="nova light">En France, l'étranger n'est ni&nbsp;un problème ni une menace. </p>
+			</div>
+
+			
+		    
+		    
+		
+		    
+		
+		    
+
+			<div class="box-vert dosis light center">
+				<p>Dans une société française fragmentée par les injustices et les inégalités, certains désignent aujourd’hui l’étranger comme un bouc émissaire. Et demain qui ? <br>
+				 Par ce manifeste, nous affirmons et revendiquons notre soutien et notre solidarité à cet autre nous-même : l’étranger. Nous ne voulons pas être complices de sa dénonciation comme un problème et une menace.</p>
+			</div>
+			<div class="box-rouge center">
+				<p class="dosis light"><span class="merry light">Parce que cet étranger,<br> c’est l’un de nous. <br> </span> Un homme ou une femme, avec ou sans papiers, avec ou sans emploi, avec ou sans logement, mais toujours avec un nom et une histoire propre, comme chacun d'entre nous.</p>
+			</div>
+
+			<div class="suite-manifeste center">
+				<a href="#" class="cta-content"><p class="dosis bold">lire la suite du manifeste</p></a>
+			</div>
+		<p class="mobile espace"></p>
+			<div class="pop-manifeste">
+				<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/valeur-manifeste.png" alt="valeur-manifeste">
+				<p class="dosis center">
+					<span class="red">Parce que cet étranger aspire à vivre dans la dignité et la sécurité.</span> Il n’est pas acceptable que sa vie en France soit synonyme d’humiliations, de soupçons, de précarité et d’exploitation, de destin brisé par l’enfermement et l’expulsion.<br>
+					<span class="red">Parce que cet étranger est là, depuis toujours, et appartient à notre histoire.</span> Passeur de connaissances, contributeur à notre richesse culturelle, il est aussi le bâtisseur et le défenseur d’une France nourrie du mélange des idées et de la diversité de ses habitants. <br>
+					<span class="red">La crise économique et sociale se moque des nationalités.</span> Citoyens du monde, nous sommes tous concernés par les désordres mondiaux qui peuvent conduire, un jour, un homme, une femme ou une famille à quitter son pays : déséquilibres macro-économiques, dérèglement climatique, conflits nationaux et internationaux.<br>
+					<span class="red">Ensemble et unis, nous pouvons construire  un avenir commun</span> où chacun aura sa place. Divisés et séparés, nous renions notre mémoire et notre humanité. <br>
+					<span class="red">Les enjeux vont au-delà de la solidarité avec les étrangers.</span> Il en va, plus profondément, de l’avenir de notre société qui ne sera véritablement en paix avec elle-même que lorsqu’elle saura assumer et valoriser sa pluralité.<br><br>
+				</p>
+				<p class="dosis center  cadre">
+					<span class="red merry">Aussi, nous appelons à un changement profond de perspective</span> pour sortir de cette mise en accusation permanente de l’étranger, convaincus que l’obsession sécuritaire dominante a fini par occulter toute alternative, toute possibilité différente de penser la mobilité des êtres humains. <br>
+					<span class="red merry">Sans angélisme ni naïveté, nous croyons qu’il est possible et urgent</span> de promouvoir d’autres relations et d’autres politiques. Par ce manifeste, nous voulons déjouer les peurs collectives qui nous paralysent, et inviter à une large mobilisation celles et ceux, français et étrangers, qui refusent de se résigner. 
+				</p>
+		</div>
+		</div>
+
+
+		<!-- SIGNATURE !!! -->
+		<div class="signature">
+			<p id="encre-manifeste"></p>
+			<a class="scroll" href="#encre-manifeste"><img class="fleche-bas" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/double-fleche-bas.png" alt="fleche-bas"></a>
+			<p class="accroche-signa merry light full">Ni un problème, ni une menace :<br><br> signez notre manifeste pour défendre les droits des personnes étrangères<br><br>
+			Objectif : 100 000 signatures avant le 31.12.2015</p>
+			<div class="inline-block encadree center">
+				<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/ouvert-rouge.png" alt="ouvert-rouge">
+				
+			        <p class="dosis light">déjà <span>44305</span> signatures</p>
+			    
+				<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/fermer-rouge.png" alt="fermer-rouge">
+			</div>
+		    
+
+<form  action="/" method="post" ><input type='hidden' name='csrfmiddlewaretoken' value='FqdEK9IlSlyLSU1oHQLOCyvwcQhYIjU4' /> <div id="div_id_title" class="control-group"><label for="id_title" class="control-label requiredField">
+				Civilité<span class="asteriskField">*</span></label><div class="controls"><select class="select" id="id_title" name="title" placeholder="Civilité" required="required"><option value="1" selected="selected">M.</option><option value="2">MME</option></select></div></div><div id="div_id_email" class="control-group"><label for="id_email" class="control-label requiredField">
+				Email<span class="asteriskField">*</span></label><div class="controls"><input class="emailinput" id="id_email" maxlength="75" name="email" placeholder="Votre email" required="required" type="email" /> </div></div><div id="div_id_surname" class="control-group"><label for="id_surname" class="control-label requiredField">
+				Prénom<span class="asteriskField">*</span></label><div class="controls"><input class="textinput textInput" id="id_surname" maxlength="255" name="surname" placeholder="Votre prénom" required="required" type="text" /> </div></div><div id="div_id_name" class="control-group"><label for="id_name" class="control-label requiredField">
+				Nom<span class="asteriskField">*</span></label><div class="controls"><input class="textinput textInput" id="id_name" maxlength="255" name="name" placeholder="Votre nom" required="required" type="text" /> </div></div><div id="div_id_accept_conditions" class="control-group"><div class="controls"><label for="id_accept_conditions" class="checkbox "><input checked="checked" class="dosis checkboxinput" id="id_accept_conditions" name="accept_conditions" type="checkbox" />
+                        En signant notre manifeste, vous recevrez les informations de la Cimade et vous resterez informé des actions menées en faveur des étrangers
+                        
+
+
+    
+
+
+
+
+    
+
+
+
+                    </label></div></div><input type="hidden"
+    name="petition_form"
+    value="1"
+    
+    
+    /> <div class="form-actions"><input type="submit"
+    name="save"
+    value="Signez notre manifeste"
+    
+        class="btn btn-primary bouton-rouge"
+        id="submit-id-save"
+    
+    
+    /> </div></form>
+
+
+		</div>
+
+		<!-- VIDEO !!!! -->
+		<div class="video">
+				<p id="encre-commentaire"></p>
+			<div class="inline-block encadree center">
+				<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/ouvert-rouge.png" alt="ouvert-rouge">
+				<p class="dosis light">L’ÉTRANGER, <br> cet autre moi-même</p>
+				<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/fermer-rouge.png" alt="fermer-rouge">
+			</div>
+			<p class="merry light center nourrir">Notre richesse culturelle est nourrie du mélange des idées</p>
+			<!--<iframe class src="https://www.youtube.com/embed/t71ibs2Z-_c"></iframe>-->
+			<iframe class="VIDEO" src="https://player.vimeo.com/video/123941102" width="500" height="375" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				<div class="suite-video center">
+				<a href="https://vimeo.com/user9299885" target="_blank" class="CTA-videos"><p class="dosis bold">voir toutes les vidéos</p></a>
+			</div>
+		</div>
+		
+		<!-- SELFIES !!!! -->
+		<div class="selfies">
+			<p id="encre-selfies"></p>
+			<div class="inline-block encadree center">
+				<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/ouvert-rouge.png" alt="ouvert-rouge" />
+				<p class="dosis light">Le pluralisme est une richesse !<br />Partagez vos plus belles photos témoins.</p>
+				<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/fermer-rouge.png" alt="fermer-rouge" />
+			</div>
+			<div class="selfies-bg"></div>
+			<div class="selfies-content">
+				<p class="selfies-title merry light">Participez à “ la Valeur Ajoutée, c'est la diversité ”</p>
+				<div class="selfies-text">
+					<table>
+						<tr>
+							<td><img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/selfies_1.gif" alt="1. " class="selfies-bullet" /></td>
+							<td class="selfies-legend">Postez votre plus beau selfie sur notre appli Facebook avant le 30 juillet 2015</td>
+						</tr>
+						<tr>
+							<td><img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/selfies_2.gif" alt="2. " class="selfies-bullet" /></td>
+							<td class="selfies-legend">Diffusez-le sur les réseaux sociaux avec le hashtag #ValeurAjoutée pour faire grandir ce mouvement de solidarité en faveur de la diversité</td>
+						</tr>
+				<!--		<tr>
+							<td><img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/selfies_3.gif" alt="3. " class="selfies-bullet" /></td>
+							<td class="selfies-legend">Participez à notre tirage au sort pour célébrer une Journée du Partage<br />et du Vivre Ensemble, le samedi 30 mai, dans notre centre d'accueil de Massy.</td>
+						</tr>  -->
+					</table>
+				</div>
+				<p class="selfies-subtitle">Mobilisons-nous ! Faisons entendre nos valeurs positives.</p>
+				<div class="selfies-btn center">
+					<a href="https://apps.agorapulse.com/go/52359/48774" target="_blank">
+						<p class="dosis bold">
+							Prendre un selfie
+						</p>
+					</a>
+				</div>
+				
+			<!--	<a href="javascript:void(0);" class="selfies-view center">Voir les selfies “ Valeur Ajoutée, c’est la diversité ”</a> -->
+			</div>
+		</div>
+
+		<!-- Commentaire -->
+		<div class="commentaire">
+			<p id="encre-drop-commentaire"></p>
+			<div class="inline-block encadree center">
+				<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/ouvert-rouge.png" alt="ouvert-rouge">
+				<p class="dosis light">partagez une histoire, <br> et devenez passeur de connaissance</p>
+				<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/fermer-rouge.png" alt="fermer-rouge">
+			</div>
+			
+			
+
+		    		
+			
+<div class="post-commentaire center">
+	<div class="texte-commentaire">
+		<p class="text-comment-real">
+			<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/guillet-ouvert.png" class="guillet" alt="guillet"> 
+			Fils de réfugier Espagnol, mon père c&#39;est évadé , il était prisonnier de FRANCO, il a traversé les Pyrénées en  suivant  de loin l&#39;artillerie Allemande, son père, mon grand père était gendarme et mon père  révolutionnaire contre FRANCO, arrivé en France il se joint au maquis, puis il s&#39;engage dans les gardes mobiles a ORANGE, il a fait des missions  dangereuse, et a obtenu les honneurs de la France très tardivement,  mais il était fier de cette reconnaissance, je n&#39;ai jamais connus mon grand pèr
+			<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/guillet-fermer.png" class="guillet" alt="guillet">
+		</p>
+		<!--<p class="red full nombre-like">13 
+			<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/like-fb.png" alt="like">
+		</p>-->
+	</div>
+	<p class="red prenom">
+		<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/fleche-bas.png" alt="fleche" class="fleche">JEAN CLAUDE, il y  a 727 jours
+	</p>
+</div>
+			
+<div class="post-commentaire center">
+	<div class="texte-commentaire">
+		<p class="text-comment-real">
+			<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/guillet-ouvert.png" class="guillet" alt="guillet"> 
+			J&#39;aime et j&#39;aimerai toujours PRÉVERT, et puis BORIS VIAN, HENRI SALVADOR, MOULOUDJI, REGGIANI, AZNAVOUR, COLUCHE, M.C SOLAAR, et ZEBDA ! (désolée pour ceux que je ne pense pas à citer ) c&#39;est à dire cet esprit &quot;français&quot;, alors que chacun vient d&#39;ailleurs. C&#39;est ce mélange des cultures qui est l&#39;esprit français, cette belle exception, cette intelligence qui vient du coeur. L&#39;intelligence rayonne et fuit l&#39;étroitesse&quot;patriotique&quot;. C&#39;est la seule chose qui peut vaincre les peurs.
+
+			<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/guillet-fermer.png" class="guillet" alt="guillet">
+		</p>
+		<!--<p class="red full nombre-like">13 
+			<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/like-fb.png" alt="like">
+		</p>-->
+	</div>
+	<p class="red prenom">
+		<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/fleche-bas.png" alt="fleche" class="fleche">Sophie, il y  a 730 jours
+	</p>
+</div>
+			
+<div class="post-commentaire center">
+	<div class="texte-commentaire">
+		<p class="text-comment-real">
+			<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/guillet-ouvert.png" class="guillet" alt="guillet"> 
+			J&#39;ai du sang qui vient de Pologne, de Hongrie, d&#39;Espagne, de Belgique... Je ne suis donc pas plus &quot;Française&quot; que mon voisin. Je suis aussi Française que lui. Mon grand père né en Pologne, a épousé une Française, lui a fait 13 enfants. Il a du faire deux services militaires, un sous le drapeau polonais, l&#39;autre sous le drapeau français. Puis il a laissé son corps et sa santé au fond de la mine. Ses amis, collègues et camarades, on fait comme lui. Ils étaient italiens, marocains, algériens...
+			<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/guillet-fermer.png" class="guillet" alt="guillet">
+		</p>
+		<!--<p class="red full nombre-like">13 
+			<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/like-fb.png" alt="like">
+		</p>-->
+	</div>
+	<p class="red prenom">
+		<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/fleche-bas.png" alt="fleche" class="fleche">emilie, il y  a 730 jours
+	</p>
+</div>
+
+<div style="clear: both;"></div>
+
+
+<div class="center bouton-rouge">
+    <a href="/temoignages/" class="btn btn-primary">Voir tous les témoignages</a>
+</div>
+
+
+</div>
+
+                <!-- DROP TÉMOIGNAGE-->
+
+		<div class="drop-temoignage">
+			<p id="depose-comment"></p>
+<div class="inline-block encadree center">
+				<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/ouvert-rouge.png" alt="ouvert-rouge">
+				<p class="dosis light">le pluralisme est une richesse</p>
+				<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/fermer-rouge.png" alt="fermer-rouge">
+			</div>
+			<p class="merry light raconter">Racontez-nous une belle histoire !</p>
+
+				
+
+<form  action="/" method="post" ><input type='hidden' name='csrfmiddlewaretoken' value='FqdEK9IlSlyLSU1oHQLOCyvwcQhYIjU4' /> <div id="div_id_email" class="control-group"><label for="id_email" class="control-label requiredField">
+				Email<span class="asteriskField">*</span></label><div class="controls"><input class="emailinput" id="id_email" maxlength="75" name="email" placeholder="Votre email" required="required" type="email" /> </div></div><div id="div_id_name" class="control-group"><label for="id_name" class="control-label requiredField">
+				Nom<span class="asteriskField">*</span></label><div class="controls"><input class="textinput textInput" id="id_name" maxlength="255" name="name" placeholder="Votre nom" required="required" type="text" /> </div></div><div id="div_id_surname" class="control-group"><label for="id_surname" class="control-label requiredField">
+				Prénom<span class="asteriskField">*</span></label><div class="controls"><input class="textinput textInput" id="id_surname" maxlength="255" name="surname" placeholder="Votre prénom" required="required" type="text" /> </div></div><div id="div_id_testimony" class="control-group"><label for="id_testimony" class="control-label requiredField">
+				Témoignage<span class="asteriskField">*</span></label><div class="controls"><textarea class="textarea" cols="40" id="id_testimony" maxlength="500" name="testimony" placeholder="Votre histoire" required="required" rows="10"></textarea></div></div><div id="div_id_accept_conditions" class="control-group"><div class="controls"><label for="id_accept_conditions" class="checkbox "><input checked="checked" class="checkboxinput" id="id_accept_conditions" name="accept_conditions" type="checkbox" />
+                        En témoignant, vous recevrez les informations de la Cimade et vous resterez informé des actions menées en faveur des étrangers
+                        
+
+
+    
+
+
+
+
+    
+
+
+
+                    </label></div></div><input type="hidden"
+    name="testimony_form"
+    value="1"
+    
+    
+    /> <div class="form-actions"><input type="submit"
+    name="save"
+    value="Témoignez"
+    
+        class="btn btn-primary bouton-rouge"
+        id="submit-id-save"
+    
+    
+    /> </div></form>
+
+				
+              
+                <p class="dosis limitation center">Limitation de 500 caractères maximum</p>
+			</div>
+
+			<!-- LA CIMADE E, BREF !!! -->
+			<div class="en-bref">
+				<div class="inline-block encadree center">
+				<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/ouvert-rouge.png" alt="ouvert-rouge">
+				<p class="dosis light white">ENSEMBLE ET UNIS, construisons <br>un avenir commun !</p>
+				<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/fermer-rouge.png" alt="fermer-rouge">
+			</div>
+			<P class="la-cimade white center merry light">La Cimade en bref</P>
+
+			<div class="data">
+				<p class="data-texte1"><span class="remont1">Militante depuis</span><br> <span class="chiffre violet">1939</span></p>
+			</div>
+
+			<div class="data2">
+				<p class="data-texte2"><span class="violet"><span class="chiffre"> 75% <br></span><span class="remont2">des ressources </span></span><span class="remont2"><br> affectées directement <br>à nos actions<br></span></p>
+			</div>
+
+			<div class="data">
+				<p class="data-texte3"><span class="chiffre3 violet">2000 <br></span><span class="remont3"> bénévoles</span></p>
+			</div>
+
+			<div class="data2">
+				<p class="data-texte4"><span class="violet"> <span class="chiffre4">100 000 <br></span><span class="remont4">personnes</span></span> <span class="remont4"><br> accompagnées, <br>écoutées ou hébergées <br> chaque année </span></p>
+			</div>
+
+			<div class="data">
+				<p class="data-texte5"><span class="chiffre5 violet">131</span><span class="remont5"><br> permanences</span></p>
+			</div>
+<p class="margin"></p>
+			</div>
+
+<!-- ZONE BLEUE !!!!! -->
+			<div class="partie-bleu">
+				<div class="bleu-clair">
+					<P class="rigueur white center merry light">Transparence et rigueur de gestion</P>
+					<p class="white center dosis charte">La Cimade est membre du Comité de la Charte, organisme qui contrôle sa transparence financière.</p>
+				</div>
+				<div class="bleu-foncer">
+					<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/don+confiance.png" alt="confiance">
+					<p class="white center merry light">Plateforme de paiement 100% sécurisée</p>
+				</div>
+		</div>
+
+
+			<!-- SOUTIEN !!!! -->
+			<div class="soutien">
+				<div class="inline-block encadree center">
+				<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/ouvert-rouge.png" alt="ouvert-rouge">
+				<p class="dosis light white">Grâce à votre soutien,</p>
+				<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/fermer-rouge.png" alt="fermer-rouge">
+				</div>
+			<p class="white merry light poursuivre">nous allons poursuivre nos actions en faveur de la défense des droits des personnes étrangères :</p>
+			<p class="bloc-soutient dosis light center padding1"><span class="red bold">Accompagner les migrants et défendre leurs droits</span><br> en les accueillant dans l’une de nos 131 permanences.</p>
+			<p class="bloc-soutient dosis light center padding2"><span class="red bold">Témoigner, informer et mobiliser</span> <br> en militant auprès du gouvernement pour défendre <br class="destok"> les droits fondamentaux des étrangers et leur dignité.</p>
+			<p class="bloc-soutient dosis light center padding2"><span class="red bold">Agir auprès des étrangers enfermés <br></span> en intervenant dans plus de 75 prisons françaises <br> et 15 centres de rétention.</p>
+			<p class="bloc-soutient dosis light center padding2"><span class="red bold">Construire des solidarités internationales <br></span> en apportant un soutien aux projets de défense <br class="destok"> des droits des migrants dans les pays de transit.</p>
+			</div>
+
+			<!-- EQUIVALENCE !!! -->
+			<div class="equivalence">
+<p id="encre-soutien"></p>
+			<div class="inline-block encadree center">
+				<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/ouvert-rouge.png" alt="ouvert-rouge">
+				<p class="dosis light">ni un danger, <br> ni une menace,</p>
+				<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/fermer-rouge.png" alt="fermer-rouge">
+			</div>
+				<p class=" defendre merry light">faites un don pour défendre les droits des étrangers ! </p>
+				<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/tampon-reduction.png" class="tampon" alt="tampon">
+			<a href="https://donner.lacimade.org/b?cid=12&amount=7500&frequency=once" class="CTA-equivalence75" target="_blank"><div class="prix-don center decale-gauche">
+				<p class="texte-prix-don">Votre don de <br> <span class="red grossir">75€</span><br> correspond à la production de <span class="bold">250 livrets</span> de lutte contre les préjugés sur <br class="destok"> les migrants </p>
+				<p class="text-defisc">après déduction fiscale,<br class="destok"> <span class="bold">votre don revient à 25€</span></p>
+			</div></a>
+
+			<a href="https://donner.lacimade.org/b?cid=12&amount=15000&frequency=once" class="CTA-equivalence150" target="_blank"><div class="prix-don center">
+				<p class="texte-prix-don bd">Votre don de <br> <span class="red grossir">150€</span><br > correspond à <br class="destok">une ligne d'urgence <br class="destok"><span class="bold">pour un an</span><br class="destok"> dans une permanence</p>
+				<p class="text-defisc">après déduction fiscale,<br class="destok"> <span class="bold">votre don revient à 50€</span></p>
+			</div></a>
+
+			<a href="https://donner.lacimade.org/b?cid=12&amount=35000&frequency=once" class="CTA-equivalence350" target="_blank"><div class="prix-don center decale-droite">
+				<p class="texte-prix-don">Votre don de <br> <span class="red grossir">350€</span><br> correspond à <span class="bold">5 jours</span> de formation juridique <br class="destok"> à une bénévole<br class="destok">de La Cimade </p>
+				<p class="text-defisc">après déduction fiscale,<br class="destok"> <span class="bold">votre don revient à 116€</span></p>
+			</div></a>
+
+			   <a href="https://donner.lacimade.org/a?cid=12" class="CTA-don" target="_blank"><div class=" center bouton-rouge">
+                	<p>JE FAIS UN DON</p>
+                </div></a>
+
+			</div>
+
+			<!-- PROJETS LOIS -->
+
+			<div class="projet-loi">
+
+				<p id="encre-lois"></p>
+
+				<div class="inline-block encadree center">
+					<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/ouvert-rouge.png" alt="ouvert-rouge">
+					<p class="dosis light white">projets de lois</p>
+					<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/fermer-rouge.png" alt="fermer-rouge">
+				</div>
+
+			<a class="CTA-asile" href="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/LaCimade_PJL_Asile_postAN.pdf" target="_blank">
+			    <div class=" center bouton-blanc decale-gauche">
+                	<p>PROPOSITION LOI ASILE</p>
+                </div></a>
+                <a class="CTA-immigration" href="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/LaCimade_PJL_Immigration.pdf" target="_blank"><div class=" center bouton-blanc">
+                	<p>PROPOSITION LOI IMMIGRATION</p>
+                </div></a>
+               <a class="CTA-dessin" href="http://lacimade.net/docs/scrolli/Oiseaux_Migrateurs.html" target="_blank" class="destok"><div class="destok center bouton-blanc image-plus decale-droite">
+                	<img class="dessin" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/petit-dessin.png"><p class="comprendre-dessin">Comprendre en dessin les enjeux</p>
+                </div></a>
+                <a href="http://lacimade.net/docs/scrolli/Oiseaux_Migrateurs.html" target="_blank" class="mobile"><div class="mobile center bouton-blanc image-plus decale-droite">
+                	<img class="dessin" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/petit-dessin.png"><p class="comprendre-dessin">Comprendre en dessin les enjeux</p>
+                </div>
+			</a>
+		</div>
+
+		<!-- FOOTER -->
+
+		<footer class="inline-block">
+			<p class="dosis copyright"><a href="http://www.lacimade.org/?gclid=CPHunoj39cECFWoOwwodRSEA7A" target="_blank">2014 © La Cimade.</a> Tous droits réservés. <a href="http://www.adfinitas.fr/" target="_blank">Réalisé par Adfinitas</a></p>
+
+			<div class=" center bouton-blanc">
+             <a href="http://www.valeurajoutee.lacimade.org/bannieres" target="_blank">   <p>Mobilisez votre entourage</p></a>
+            </div>
+			<div class="center bouton-blanc">
+               <a href="http://www.valeurajoutee.lacimade.org/bannieres/#bannersCode" target="_blank"> <p>Téléchargez les bannières</p></a>
+            </div>
+
+			<div class=" center bouton-blanc bouton-blanc2">
+               <a href="http://www.lacimade.org/meta/contacts" target="_blank"> <p>Contact</p> </a>
+            </div>
+
+            <div class="partage">
+            	<p class="dosis">Nous rejoindre :</p>
+            	<div class="fb"><a href="https://www.facebook.com/groups/32799707067/" target="_blank"><img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/picto-fb.png" alt="fb"></a></div>
+            	<div class="tweet"><a href="https://twitter.com/lacimade" target="_blank"><img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/picto-twitter.png"></a></div>
+            </div>
+
+<div class=" box-violet box-violet2">
+					<p><span class="tweet-partage"><a href="http://twitter.com/share?text=Signez le manifeste de La Cimade. L’étranger n’est ni une menace ni un danger" target="_blank"> <img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/picto-twitter.png"></a></span><span class='share st_facebook_custom opacity-link' displayText='Facebook'>
+                    </span></p><p class="partag"><span class="dosis bold">Partagez </span> <br><span class=" dosis light">notre manifeste</span></p>
+				</div>
+
+		</footer>
+
+		<!-- STICKER -->
+
+		<div class="sticky inline-block">
+			<div class="part1 destok">
+				<a href="http://www.lacimade.org/?gclid=CPHunoj39cECFWoOwwodRSEA7A" target="_blank"><img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/logo-cimade-sticker.png" alt="logo-cimade"></a>
+			</div>
+			<div class="part2">
+				<div class=" center bouton-rouge">
+                <a href="#encre-manifeste" class="scroll CTA-SIGNEZ-STICKY">	<p>signez notre manifeste</p> </a>
+                </div>
+
+                <div class="center bouton-rouge">
+                 <a href="https://apps.agorapulse.com/go/52359/48774" class="CTA-TEMOIGNEZ-STICKY" target="_blank">	<p>Partagez votre photo</p> </a>
+                </div>
+
+                <div class="don-vert center bouton-rouge">
+                 <a href="https://donner.lacimade.org/a?cid=12" class="CTA-DON-STICKY" target="_blank"><p>faites un don</p> </a>
+                </div>
+            </div>
+            <div class="part1  mobile">
+				<a href="http://www.lacimade.org/?gclid=CPHunoj39cECFWoOwwodRSEA7A" target="_blank"><img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/logo-cimade-sticker.png" alt="logo-cimade"></a>
+			</div>
+               <div class="part3">
+					<a href="#header" class="scroll"><img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/double-fleche-haut.png" alt="fleche-haut"></a>
+                </div>
+		</div>
+
+</div>
+
+        <!-- NOUVEAUX JS -->
+<script type="text/javascript" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/jqfloat.min.js"></script>
+<script type="text/javascript">
+$( document ).ready(function() {
+
+    $('.post-commentaire.center').jqFloat({
+        width: 20,
+        height: 20
+    });
+    $('.post-commentaire').each(function () {
+        $(this).parent().css('width', '49%');
+    });
+});
+</script>
+
+</div>
+<script type="text/javascript" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade+landing+valeur+ajoutee/jqfloat.min.js"></script>
+
+<script type="text/javascript">
+
+$( document ).ready(function() {
+
+var lastScrollTop = 0;
+var opt = 0;
+var activate = 0;
+var vor = -100;
+var vor2 = 0;
+
+ function sticky()
+ {
+   var st = $(this).scrollTop();
+
+ 					if (st < 200)
+ 				{
+ 					vor2 = 0;
+ 					vor = $('.sticky').height() * -1;
+          if (window.innerWidth > 806)
+          {
+          $("header").css("position", "fixed");
+        $(".marge-h").css("height", $('header').height());
+      };
+        $("header").css("top", "0");
+				 }
+				 	else
+				 {
+          $("header").css("position", "static");
+                $(".marge-h").css("height", "0");
+				 	vor = 0;
+				 	vor2 = $('header').height() * -1 - 5;
+				 };
+
+$('.sticky').animate({bottom: vor}, 500, 'linear');
+};
+
+setInterval(sticky, 500);
+setInterval(Scalestick, 50);
+$(window).bind('resize', Scalestick);
+
+function Scalestick()
+{
+	if (window.innerWidth < 805) 
+	{
+   		$("header").css("position", "static");
+   		$(".sticky").css("position", "static");
+   		   		$(".marge-h").css("height", "0");
+   		$("footer").css("padding-bottom", "10px");
+   	}
+   	else
+   	{
+   	//	$(".marge-h").css("height", $('header').height());
+   		$("footer").css("padding-bottom", $('.sticky').height());
+   		//$("header").css("position", "fixed");
+   		$(".sticky").css("position", "fixed");
+   	};
+
+    var element = $("#error_1_id_testimony");
+if(element.length){
+  $("#id_email").css("margin-right", "10");
+};
+
+};
+
+Scalestick();
+
+ $("a.scroll").click(function(evt){
+
+       // bloquer le comportement par défaut: on ne rechargera pas la page
+       evt.preventDefault(); 
+       // enregistre la valeur de l'attribut  href dans la variable target
+	var target = $(this).attr('href');
+       /* le sélecteur $(html, body) permet de corriger un bug sur chrome 
+       et safari (webkit) */
+	$('html, body')
+       // on arrête toutes les animations en cours 
+       .stop()
+       /* on fait maintenant l'animation vers le haut (scrollTop) vers 
+        notre ancre target */
+       .animate({scrollTop: $(target).offset().top}, 1000 );
+    });
+
+//$(".fleche-bas").click(function(evt2){
+
+       // bloquer le comportement par défaut: on ne rechargera pas la page
+  //     evt2.preventDefault(); 
+       // enregistre la valeur de l'attribut  href dans la variable target
+	//var target2 = $('#header').height() + $('.valeur-ajoutee').height();
+       /* le sélecteur $(html, body) permet de corriger un bug sur chrome 
+       et safari (webkit) */
+	//$('html, body')
+       // on arrête toutes les animations en cours 
+   //    .stop()
+       /* on fait maintenant l'animation vers le haut (scrollTop) vers 
+        notre ancre target */
+  //     .animate({scrollTop: target2}, 1000 );
+  //  });
+
+$(".suite-manifeste").click(function(tro){
+		
+		 tro.preventDefault();
+
+		$(".pop-manifeste").css("display", "block");
+		$(".valeur-ajoutee").css("height", "auto");
+		$(".valeur-ajoutee").css("margin-bottom", "0");
+
+$(".fleche-bas").css("display", "none");
+		
+		$(".suite-manifeste").css("display", "none");
+		//window).bind('resize', ScaleSlider);
+        });
+
+ $(".menu-mobile").click(function(){
+		
+		if (activate == 0) {
+			activate = 1;
+			$(".pop-up-menu").css("display", "block");
+		}
+		else
+		{
+			activate = 0;
+			$(".pop-up-menu").css("display", "none");
+		}
+        });
+
+ });
+</script>
+
+<script>
+// Exemple - Using jQuery Event API v1.3
+jQuery(document).ready(function ($) {
+
+
+$('.cta-content').on('click', function() {
+ woopra.track('interaction', {
+ category: 'CTA-content',
+ action: 'clic',
+ url: document.location.href,
+ title: document.title,})
+});
+
+$('.CTA-Manifeste').on('click', function() {
+ woopra.track('interaction', {
+ category: 'CTA-manifeste',
+ action: 'clic',
+ url: document.location.href,
+ title: document.title,})
+});
+
+
+$('.VIDEO').on('click', function() {
+ woopra.track('interaction', {
+ category: 'VIDEO',
+ action: 'view',
+ url: document.location.href,
+ title: document.title,})
+});
+
+$('.CTA-videos').on('click', function() {
+ woopra.track('interaction', {
+ category: 'CTA-videos',
+ action: 'clic',
+ url: document.location.href,
+ title: document.title,})
+});
+
+$('.CTA-temoin').on('click', function() {
+ woopra.track('interaction', {
+ category: 'CTA-temoin',
+ action: 'clic',
+ url: document.location.href,
+ title: document.title,})
+});
+
+$('.CTA-temoignez').on('click', function() {
+ woopra.track('interaction', {
+ category: 'CTA-temoignez',
+ action: 'clic',
+ url: document.location.href,
+ title: document.title,})
+});
+
+$('.CTA-equivalence75').on('click', function() {
+ woopra.track('interaction', {
+ category: 'CTA-equivalence',
+ action: 'clic',
+ value: '75',
+ url: document.location.href,
+ title: document.title,})
+});
+
+$('.CTA-equivalence150').on('click', function() {
+ woopra.track('interaction', {
+ category: 'CTA-equivalence',
+ action: 'clic',
+ value: '150',
+ url: document.location.href,
+ title: document.title,})
+});
+
+$('.CTA-equivalence350').on('click', function() {
+ woopra.track('interaction', {
+ category: 'CTA-equivalence',
+ action: 'clic',
+ value: '350',
+ url: document.location.href,
+ title: document.title,})
+});
+
+$('.CTA-don').on('click', function() {
+ woopra.track('interaction', {
+ category: 'CTA-don',
+ action: 'clic',
+ url: document.location.href,
+ title: document.title,})
+});
+
+$('.CTA-asile').on('click', function() {
+ woopra.track('interaction', {
+ category: 'CTA-asile',
+ action: 'clic',
+ url: document.location.href,
+ title: document.title,})
+});
+
+$('.CTA-immigration').on('click', function() {
+ woopra.track('interaction', {
+ category: 'CTA-immigration',
+ action: 'clic',
+ url: document.location.href,
+ title: document.title,})
+});
+
+$('.CTA-dessin').on('click', function() {
+ woopra.track('interaction', {
+ category: 'CTA-dessin',
+ action: 'clic',
+ url: document.location.href,
+ title: document.title,})
+});
+
+$('.NAV').on('click', function() {
+ woopra.track('interaction', {
+ category: 'NAV',
+ action: 'clic',
+ url: document.location.href,
+ title: document.title,})
+});
+
+$('.CTA-SIGNEZ-STICKY').on('click', function() {
+ woopra.track('interaction', {
+ category: 'CTA-SIGNEZ-STICKY',
+ action: 'clic',
+ url: document.location.href,
+ title: document.title,})
+});
+
+$('.CTA-TEMOIGNEZ-STICKY').on('click', function() {
+ woopra.track('interaction', {
+ category: 'CTA-TEMOIGNEZ-STICKY',
+ action: 'clic',
+ url: document.location.href,
+ title: document.title,})
+});
+
+$('.CTA-DON-STICKY').on('click', function() {
+ woopra.track('interaction', {
+ category: 'CTA-DON-STICKY',
+ action: 'clic',
+ url: document.location.href,
+ title: document.title,})
+});
+
+$('.CTA-DON-STICKY').on('click', function() {
+ woopra.track('interaction', {
+ category: 'CTA-DON-STICKY',
+ action: 'clic',
+ url: document.location.href,
+ title: document.title,})
+});
+
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-26879531-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+<!-- JAVA TESTIMONY -->
+<!--
+<script type="text/javascript">
+
+$( document ).ready(function() {
+
+alert(window.innerHeight);
+
+});
+
+</script>-->
+
+
+</body>
+</html>
