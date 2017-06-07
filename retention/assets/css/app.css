@@ -1,0 +1,235 @@
+@font-face {
+	font-family: 'Arial MT Std Black';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Arial MT Std Black'), url('../fonts/arial-mt-std-black-586c347abdbc8.woff') format('woff');
+}
+@font-face {
+	font-family: 'Arial MT Std Cond';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Arial MT Std Cond'), url('../fonts/arial-mt-std-cond-586c3568cef79.woff') format('woff');
+}
+@font-face {
+	font-family: 'Arial MT Std Light';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Arial MT Std Light'), url('../fonts/arial-mt-std-light-586c341645fe0.woff') format('woff');
+}
+@font-face {
+	font-family: 'Arial MT Std Light Cond';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Arial MT Std Light Cond'), url('../fonts/arial-mt-std-light-cond-586c34fca466a.woff') format('woff');
+}
+@font-face {
+	font-family: 'Arial MT Std Medium';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Arial MT Std Medium'), url('../fonts/arial-mt-std-medium-586c3458cbe17.woff') format('woff');
+}
+@font-face {
+	font-family: 'Arial Narrow MT Std';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Arial Narrow MT Std'), url('../fonts/arial-narrow-mt-std-586c349ae6be1.woff') format('woff');
+}
+@font-face {
+	font-family: 'Arial MT Std Extra Bold';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Arial MT Std Extra Bold'), url('../fonts/arial-mt-std-extra-bold-586c3439e8b1b.woff') format('woff');
+}
+@font-face {
+	font-family: 'Arial MT Std Extra Bold Cond';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Arial MT Std Extra Bold Cond'), url('../fonts/arial-mt-std-extra-bold-cond-586c351f4de8a.woff') format('woff');
+}
+.fixed {
+	position: fixed;
+}
+.max-width {
+	max-width: 75rem !important;
+}
+.header {
+	padding: 40px;
+	min-height: 100vh;
+	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/Cimade-Petition-2017/bg-header.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+#logo {
+	display: block;
+	float: left;
+}
+.header h1 {
+	color: #ff3500;
+	font-size: 34px;
+	margin-top: 64%;
+	margin-bottom: 40px;
+	line-height: 1.1;
+	text-align: center;
+}
+.header p {
+	font-family: 'Arial MT Std Light';
+	color: #f5eae8;
+	font-size: 16px;
+	line-height: 1.2;
+	text-align: center;
+}
+.header p.big {
+	font-family: 'Arial MT Std Medium';
+	font-size: 18px;
+}
+.header .form {
+	text-align: center;
+}
+.header .form p {
+	font-family: 'Arial MT Std Light';
+	color: #a09d9d;
+	font-size: 16px;
+	line-height: 1.6;
+	text-align: center;
+}
+.header .form .arrow-down {
+	margin-top: 20px;
+}
+#form {
+	z-index: 9999;
+	position: fixed;
+	border-top:  4px solid #ff3500;
+	padding: 20px;
+	background-color: white;
+	width: 360px;
+	max-width: 100%;
+	margin: auto auto;
+	margin-top: 30px;
+}
+#form p {
+	font-family: 'Lato';
+	font-weight: 700;
+	text-align: left;
+	margin-bottom: 5px;
+	color: black;
+}
+#form #f_summit {
+	width: 100%;
+	margin-top: 30px;
+	background-color: #ff3500;
+	font-family: 'Arial';
+	font-weight: bold;
+	font-size: 24px;
+	padding: 10px;
+}
+#form .intl-tel-input {
+	width: 100%;
+}
+.histoire {
+	padding: 40px;
+	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/Cimade-Petition-2017/bg-histoire.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.portrait:nth-child(2)
+{
+	margin-top: 50px;
+}
+.portrait {
+	text-align: center;
+}
+.portrait img {
+	margin-bottom: 20px;
+}
+.portrait h2 {
+	text-align: left;
+	font-family: 'Arial MT Std Medium';
+	color: #484747;
+	font-size: 27px;
+	line-height: 1.2;
+}
+.portrait h2 span {
+	color: #a09d9d;
+}
+.portrait p {
+	text-align: left;
+	font-family: 'Arial MT Std Medium';
+	font-size: 16px;
+	line-height: 1.4;
+	color: #484747;
+}
+.infos {
+	padding: 50px;
+	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/Cimade-Petition-2017/bg-slide-3.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.infos h2 {
+	text-align: center;
+	font-size: 36px;
+	line-height: 1.4;
+	color: white;
+}
+.infos h2 span {
+	color: #fe0000;
+}
+.infos ul {
+	margin-top: 40px;
+}
+.infos ul li {
+	color: #fe0000;
+}
+.infos ul li span,
+.infos p {
+	font-size: 17px;
+	font-family: 'Arial';
+	color: white;
+}
+.infos button {
+	display: block;
+	margin: auto auto;
+	margin-top: 30px;
+	margin-bottom: 40px;
+	background-color: #ff3500;
+	font-family: 'Arial';
+	font-weight: bold;
+	font-size: 20px;
+	padding: 15px;
+	color: white;
+	text-transform: uppercase;
+}
+.infos .resf {
+	text-align: center;
+}
+.infos .resf * {
+	display: inline-block;
+}
+.infos .resf img {
+	margin-left: 20px;
+	margin-bottom: 35px;
+}
+.infos .resf p {
+	color: #aba8a4;
+	font-size: 16px;
+	margin-left: 65px;
+}
+@media screen and (max-width: 640px) {
+	.header {
+		padding: 20px;
+		background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/Cimade-Petition-2017/bg-header-small.jpg');
+	}
+	.header h1 {
+		margin-top: 40%;
+	}
+	.infos {
+		padding: 20px;
+		background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/Cimade-Petition-2017/bg-slide-3-small.jpg');
+	}
+	.infos .resf p {
+		margin-left: 0px;
+	}
+	#form {
+		position: static;
+	}
+}
