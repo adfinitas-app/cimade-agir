@@ -10,7 +10,6 @@
     <meta property="og:description"        content="Pa" />
     <meta property="og:image"              content="https://s3.amazonaws.com/heroku-adfinitas-campaign/Cimade-Petition-2017/bg-header.jpg" />
     <title>La Cimade Pétition 2017</title>
-    <link rel="icon" type="image/png" href="../siteicon.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css" />
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300,800' rel='stylesheet' type='text/css' />
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
@@ -19,18 +18,34 @@
 </head>
 <body>
     <section>
+        <div class="expanded row notification">
+            <div class="row max-width">
+                <p>Votre signature a bien été enregistré, merci beaucoup.</p>
+            </div>
+        </div>
+    </section>
+    <section>
         <div class="expanded row header">
             <div class="row max-width">
                 <div class="small-12 medium-10 large-5 columns">
-                    <img id="logo" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/Cimade-Petition-2017/logo.png" alt="La Cimade">
+                    <a target="_blank" href="http://www.lacimade.org/?utm_source=petition&utm_medium=site&utm_campaign=petition2017  "><img id="logo" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/Cimade-Petition-2017/logo.png" alt="La Cimade"></a>
                     <h1>Plus jamais d’enfants<br />placés en rétention&nbsp;!</h1>
                     <p>Ce sont de jeunes enfants – parfois des nourrissons - ou des adolescents. Ils sont privés de liberté, surveillés par des policiers, enfermés derrière un grillage… Dans des prisons qui ne disent pas leur nom : les centres de rétention administrative. Leur crime ? Avoir des parents étrangers dont les papiers ne sont pas à jour. En 2016, 182 enfants ont vécu cette injustice, soit 4 fois plus qu’en 2014 !</p>
-                    <p class="big">Avec La Cimade et ses partenaires XXXXX, exigez la fin de l’enferment des mineurs dans des centres de rétention</p>
+                    <p class="big">Avec La Cimade et ses partenaires Réseau Education sans frontières (RESF), Observatoire de l'enfermement des étrangers (OEE), France terre d’asile et ASSFAM, exigez la fin de l’enferment des mineurs dans des centres de rétention</p>
                 </div>
                 <div class="small-12 medium-10 large-offset-1 large-5 columns form">
                     <p>Signez notre pétition. Plus nous serons nombreux, plus nous aurons de poids pour pousser le président Emmanuel Macron à mettre un terme à cette pratique indigne dont aucun enfant ne peut sortir indemne</p>
                     <img class="arrow-down" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/Cimade-Petition-2017/arrow-red-down.png" alt="Signez la pétition">
                     <form id="form">
+                        <div class="error error_np">
+                            <p>Veuillez remplir les champs Prénom/Nom</p>
+                        </div>
+                        <div class="error error_mail_none">
+                            <p>Veuillez renseigner votre adresse mail</p>
+                        </div>
+                        <div class="error error_mail">
+                            <p>Le format de l'email est incorrect</p>
+                        </div>
                         <p>Prénom*:</p>
                         <input type="text" id="f_prenom" placeholder="Votre prénom" name="firstname">
                         <p>Nom*:</p>
@@ -39,7 +54,9 @@
                         <input type="text" id="f_email" placeholder="Votre addresse e-mail" name="email">
                         <p>Téléphone:</p>
                         <input type="tel" id="f_tel" placeholder="Votre téléphone" name="phone">
-                        <button id="f_summit" type="button" class="button">SIGNEZ</button>
+                        <input type="hidden" name="language" value="FR_fr">
+                        
+                        <button id="f_summit" type="button" class="button" onclick="validateForm()">SIGNEZ</button>
                     </form>
                 </div>
             </div>
@@ -84,12 +101,14 @@
                 </ul>
                 <p>La Cimade est la principale organisation de solidarité active avec les réfugiés et les migrants. En la soutenant, vous défendez efficacement les droits des enfants placés dans des centres de rétention.</p>
                 <button>Signez la pétition</button>
-                <div class="resf">
-                    <p>La Cimade agit en faveur des mineurs placés en rétention<br/> 
-                        avec le Réseau Éducation Sans Frontières (RESF)<br/>
-                        et l’Observatoire de l’enfermement des étrangers (OEE).
+                <div class="partenaires">
+                    <p>La Cimade agit en faveur des mineurs placés en rétention avec le Réseau Education sans frontières (RESF), l’Observatoire de l'enfermement des étrangers (OEE), France terre d’asile et l’ASSFAM.
                     </p>
                     <img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/Cimade-Petition-2017/logo-resf.jpg" alt="RESF">
+                    <img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/Cimade-Petition-2017/Logo+OEE_VDEF.JPG" alt="RESF">
+                    <img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/Cimade-Petition-2017/ftda-av-site-2c.jpg" alt="RESF">
+                    <img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/Cimade-Petition-2017/Logo+ASSFAM.JPG" alt="RESF">
+
                 </div>
             </div>
         </div>
