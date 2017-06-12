@@ -4,48 +4,21 @@
 	font-weight: normal;
 	src: local('Arial MT Std Black'), url('../fonts/arial-mt-std-black-586c347abdbc8.woff') format('woff');
 }
-@font-face {
-	font-family: 'Arial MT Std Cond';
-	font-style: normal;
-	font-weight: normal;
-	src: local('Arial MT Std Cond'), url('../fonts/arial-mt-std-cond-586c3568cef79.woff') format('woff');
-}
+
 @font-face {
 	font-family: 'Arial MT Std Light';
 	font-style: normal;
 	font-weight: normal;
 	src: local('Arial MT Std Light'), url('../fonts/arial-mt-std-light-586c341645fe0.woff') format('woff');
 }
-@font-face {
-	font-family: 'Arial MT Std Light Cond';
-	font-style: normal;
-	font-weight: normal;
-	src: local('Arial MT Std Light Cond'), url('../fonts/arial-mt-std-light-cond-586c34fca466a.woff') format('woff');
-}
+
 @font-face {
 	font-family: 'Arial MT Std Medium';
 	font-style: normal;
 	font-weight: normal;
 	src: local('Arial MT Std Medium'), url('../fonts/arial-mt-std-medium-586c3458cbe17.woff') format('woff');
 }
-@font-face {
-	font-family: 'Arial Narrow MT Std';
-	font-style: normal;
-	font-weight: normal;
-	src: local('Arial Narrow MT Std'), url('../fonts/arial-narrow-mt-std-586c349ae6be1.woff') format('woff');
-}
-@font-face {
-	font-family: 'Arial MT Std Extra Bold';
-	font-style: normal;
-	font-weight: normal;
-	src: local('Arial MT Std Extra Bold'), url('../fonts/arial-mt-std-extra-bold-586c3439e8b1b.woff') format('woff');
-}
-@font-face {
-	font-family: 'Arial MT Std Extra Bold Cond';
-	font-style: normal;
-	font-weight: normal;
-	src: local('Arial MT Std Extra Bold Cond'), url('../fonts/arial-mt-std-extra-bold-cond-586c351f4de8a.woff') format('woff');
-}
+
 .fixed {
 	position: fixed;
 }
@@ -54,7 +27,7 @@
 }
 .header {
 	padding: 40px;
-	min-height: 880px;
+	min-height: 100vh;
 	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/Cimade-Petition-2017/bg-header.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -89,7 +62,7 @@
 	text-align: center;
 }
 .header .form .arrow-down {
-	margin-top: 20px;
+	margin-top: 10px;
 }
 .error {
 	display: none;
@@ -104,7 +77,7 @@
 	margin-top: 20px;
 	margin-left: 39px;
 	margin-bottom: 0;
-	font-family: 'Arial MT Std Extra Bold'!important;
+	font-family: 'Arial MT Std Black';
 }
 #form {
 	z-index: 9999;
@@ -128,7 +101,7 @@
 #form #f_summit {
 	width: 100%;
 	margin-top: 30px;
-	background-color: #ff3500;
+	background-color: #ee3124;
 	font-family: 'Arial';
 	font-weight: bold;
 	font-size: 24px;
@@ -183,7 +156,8 @@
 	color: white;
 }
 .infos h2 span {
-	color: #fe0000;
+	color: #ee3124;
+	font-family: 'Arial MT Std Medium';
 }
 .infos ul {
 	margin-top: 40px;
@@ -209,6 +183,10 @@
 	padding: 15px;
 	color: white;
 	text-transform: uppercase;
+}
+.confidentialité {
+	color: #7b7a7a !important;
+	font-size: 10px !important;
 }
 .infos .partenaires {
 	text-align: center;

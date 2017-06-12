@@ -3,10 +3,11 @@ $.fn.followTo = function (pos) {
   $window = $(window);
 
   $window.scroll(function (e) {
+    console.log(pos);
     if ($window.scrollTop() > pos) {
       $this.css({
         position: 'absolute',
-        top: pos + (($this.height() / 2) - 6)
+        top: pos + ($('.row.histoire').offset().top - $('.row.histoire').height()) 
       });
     } else {
       $this.css({
@@ -35,7 +36,7 @@ $(window).scroll( function() {
   checkOffset();
 });
 
-$('#form').followTo(700);
+$('#form').followTo($('.row.histoire').offset().top - $('.row.histoire').height() / 2);
 
 function checkOffset() {
   /*var positionForm = $('#form').offset();
@@ -55,6 +56,9 @@ function checkOffset() {
 
 }
 
+$('#goUp').click( function() {
+  scrollTo('body');
+})
 function fillOutForm() {
   if ('lastname' in p)
     $('#f_name').val(p['lastname']);
@@ -64,6 +68,8 @@ function fillOutForm() {
     $('#f_email').val(p['email']);
   if ('phone' in p)
     $('#f_tel').val(p['phone']);
+   if ('reserved_code_media' in p)
+    $('#reserved_code_media').val(p['reserved_code_media']);
 }
 
 function    scrollTo(next){
@@ -76,19 +82,6 @@ function    scrollTo(next){
   }
 };
 
-$.get('http://www.mesopinions.com/index.php?f=petition&a=getcounter&petition=30770&token=20170625496').done(function (data) {
-    console.log(data);
-});
-
-
-var xhr = new XMLHttpRequest();
-xhr.open("GET", "http://www.mesopinions.com/index.php?f=petition&a=getcounter&petition=30770&token=20170625496", true);
-xhr.onload = function () {
-    console.log(xhr.responseText);
-};
-xhr.send();
-
-
 
 $.ajax({
   url: 'http://www.mesopinions.com/index.php?f=petition&a=getcounter&petition=30770&token=20170625496',
@@ -98,30 +91,13 @@ $.ajax({
     $('#nbVote').text(data);
   },
   error: function(data) { 
-    console.log('FAILED');
+
   },
   beforeSend: function(xhr) {
    xhr.setRequestHeader("Authorization", "Bearer 6QXNMEMFHNY4FJ5ELNFMP5KRW52WFXN5")
  },
 });
 
-
-$.ajax({
-    url: 'http://www.mesopinions.com/index.php?f=petition&a=getcounter&petition=30770&token=20170625496',
-    beforeSend: function(xhr) { 
-      xhr.setRequestHeader("Authorization",  "Bearer 6QXNMEMFHNY4FJ5ELNFMP5KRW52WFXN5"); 
-    },
-    type: 'GET',
-    dataType: 'json',
-    contentType: 'application/json',
-    processData: false,
-    success: function (data) {
-      console.log(JSON.stringify(data));
-    },
-    error: function(){
-      console.log("Cannot get data");
-    }
-});
 
 
 function showNotif() {
@@ -210,7 +186,7 @@ function createCORSRequest(method, url) {
 }
 
 function makeCorsRequest(data) {		 
- var url = 'http://adfinitas-io.herokuapp.com/api/v1/organization/3a15acaa-ae68-49cf-9244-616cb46067ff/webhook/97ea9471-84a7-4e59-8b06-533b8a483f77'; 
+ var url = 'https://adfinitas-io.herokuapp.com/api/v1/organization/adc529c9-3414-4e80-8004-b2002885ee65/webhook/3a66a987-839b-4275-8149-109503eb09e1'; 
 
  var body = JSON.stringify(data);
  var xhr = createCORSRequest('POST', url);
@@ -245,7 +221,7 @@ function submitForm() {
 
   var data = {
     "db": {
-      "schema": "TODO",
+      "schema": "cimade_petition_retention2017",
       "db": {
         "email": pureField($("input[name='email']").val()),
         "phone": pureField($("input[name='phone']").val()),
