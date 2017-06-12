@@ -106,6 +106,22 @@ $.ajax({
 });
 
 
+$.ajax({
+    url: 'http://www.mesopinions.com/index.php?f=petition&a=getcounter&petition=30770&token=20170625496',
+    beforeSend: function(xhr) { 
+      xhr.setRequestHeader("Authorization",  "Bearer 6QXNMEMFHNY4FJ5ELNFMP5KRW52WFXN5"); 
+    },
+    type: 'GET',
+    dataType: 'json',
+    contentType: 'application/json',
+    processData: false,
+    success: function (data) {
+      console.log(JSON.stringify(data));
+    },
+    error: function(){
+      console.log("Cannot get data");
+    }
+});
 
 
 function showNotif() {
