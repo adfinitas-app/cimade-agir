@@ -54,7 +54,7 @@
 }
 .header {
 	padding: 40px;
-	min-height: 100vh;
+	min-height: 880px;
 	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/Cimade-Petition-2017/bg-header.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -64,13 +64,8 @@
 	display: block;
 	float: left;
 }
-.header h1 {
-	color: #ff3500;
-	font-size: 34px;
-	margin-top: 64%;
-	margin-bottom: 40px;
-	line-height: 1.1;
-	text-align: center;
+.title {
+	margin-top: 40%;
 }
 .header p {
 	font-family: 'Arial MT Std Light';
@@ -87,7 +82,7 @@
 	text-align: center;
 }
 .header .form p {
-	font-family: 'Arial MT Std Light';
+	font-family: 'Arial MT Std Medium';
 	color: #a09d9d;
 	font-size: 16px;
 	line-height: 1.6;
@@ -102,6 +97,14 @@
 .error p {
 	color: red !important;
 	font-size: 12px !important;
+}
+.vote {
+	color: white !important;
+	text-align: left !important;
+	margin-top: 20px;
+	margin-left: 39px;
+	margin-bottom: 0;
+	font-family: 'Arial MT Std Extra Bold'!important;
 }
 #form {
 	z-index: 9999;

@@ -11,7 +11,7 @@ $.fn.followTo = function (pos) {
     } else {
       $this.css({
         position: 'fixed',
-        top: "200px"
+        top: "250px"
       });
     }
   });
@@ -28,6 +28,7 @@ var p = extractUrlParams();
 
 $(document).ready( function() {
   fillOutForm();
+
 
 });
 $(window).scroll( function() {
@@ -82,7 +83,7 @@ $.ajax({
    xhr.setRequestHeader("Authorization", "Bearer 6QXNMEMFHNY4FJ5ELNFMP5KRW52WFXN5")
  }, success: function(data){
   console.log("Nombre de signatures: " + data);
-            //process the JSON data etc
+              $('#nbVote').text(data);
           }
         })
 
