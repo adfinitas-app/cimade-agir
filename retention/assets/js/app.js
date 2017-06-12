@@ -76,6 +76,20 @@ function    scrollTo(next){
   }
 };
 
+$.get('http://www.mesopinions.com/index.php?f=petition&a=getcounter&petition=30770&token=20170625496').done(function (data) {
+    console.log(data);
+});
+
+
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "http://www.mesopinions.com/index.php?f=petition&a=getcounter&petition=30770&token=20170625496", true);
+xhr.onload = function () {
+    console.log(xhr.responseText);
+};
+xhr.send();
+
+
+
 $.ajax({
   url: 'http://www.mesopinions.com/index.php?f=petition&a=getcounter&petition=30770&token=20170625496',
   crossDomain: true,
