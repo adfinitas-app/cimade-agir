@@ -26,7 +26,7 @@
 	max-width: 75rem !important;
 }
 .header {
-	padding: 40px;
+	padding: 35px;
 	min-height: 100vh;
 	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/Cimade-Petition-2017/bg-header.jpg');
 	background-repeat: no-repeat;
@@ -60,6 +60,7 @@
 	font-size: 16px;
 	line-height: 1.6;
 	text-align: center;
+	margin-bottom: 0;
 }
 .header .form .arrow-down {
 	margin-top: 10px;
@@ -88,7 +89,6 @@
 	width: 360px;
 	max-width: 100%;
 	margin: auto auto;
-	margin-top: 30px;
 	margin-left: 40px;
 }
 #form p {

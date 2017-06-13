@@ -29,32 +29,23 @@ var p = extractUrlParams();
 
 $(document).ready( function() {
   fillOutForm();
-
+  verticalAlign();
+  
 
 });
+
+function verticalAlign() {
+  var height = $('.vertical-center').height();
+  var parentHeight = $('.vertical-center').parent().height();
+  $('.vertical-center').css("margin-top", (parentHeight / 2) - (height / 2));
+};
+
 $(window).scroll( function() {
   checkOffset();
 });
 
 $('#form').followTo($('.row.histoire').offset().top - $('.row.histoire').height() / 2);
 
-function checkOffset() {
-  /*var positionForm = $('#form').offset();
-  var positionSlide = $('.infos').offset();
-  //console.log("Form == " + positionForm.top + $('#form').height());
-  //console.log("Slide == " + positionSlide.top);
-  if ($('#form').offset().top + $('#form').height() >= $('.infos').offset().top - 70)
-  {
-    $('#form').css('position', 'absolute');
-    if ((positionForm.top + $('#form').height) < positionSlide.top)
-      $('#form').css('top', positionForm.top);
-  }
-  if ($(document).scrollTop() + window.innerHeight < $('.infos').offset().top)
-  {
-    $('#form').css('position', 'fixed');
-  }*/
-
-}
 
 $('#goUp').click( function() {
   scrollTo('body');
@@ -68,7 +59,7 @@ function fillOutForm() {
     $('#f_email').val(p['email']);
   if ('phone' in p)
     $('#f_tel').val(p['phone']);
-   if ('reserved_code_media' in p)
+  if ('reserved_code_media' in p)
     $('#reserved_code_media').val(p['reserved_code_media']);
 }
 
