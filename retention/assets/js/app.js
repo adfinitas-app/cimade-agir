@@ -85,8 +85,6 @@ function    scrollTo(next){
 
 $.ajax({
   url: 'http://www.mesopinions.com/index.php?f=petition&a=getcounter&petition=30770&token=20170625496',
-  crossDomain: true,
-  dataType: 'jsonp',
   success: function(data) { 
     $('#nbVote').text(data);
   },
