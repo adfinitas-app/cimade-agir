@@ -76,6 +76,9 @@ function    scrollTo(next){
 
 $.ajax({
   url: 'http://www.mesopinions.com/index.php?f=petition&a=getcounter&petition=30770&token=20170625496',
+  headers : {
+        'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8'
+    },
   success: function(data) { 
     $('#nbVote').text(data);
   },
