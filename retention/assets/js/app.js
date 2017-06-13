@@ -49,7 +49,6 @@ function verticalAlign() {
 $(window).resize( function() {
 });
 $(window).scroll( function() {
-  checkOffset();
 });
 
 
