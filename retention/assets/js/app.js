@@ -17,6 +17,7 @@ $.fn.followTo = function (pos) {
     }
   });
 };
+$('#form').followTo($('.row.histoire').offset().top - $('.row.histoire').height() / 2);
 
 $(function(){
   $("#f_tel").intlTelInput({initialCountry: "fr", onlyCountries: ["al", "ad", "at", "by", "be", "ba", "bg", "hr", "cz", "dk", 
@@ -36,15 +37,21 @@ $(document).ready( function() {
 
 function verticalAlign() {
   var height = $('.vertical-center').height();
-  var parentHeight = $('.vertical-center').parent().height();
-  $('.vertical-center').css("margin-top", (parentHeight / 2) - (height / 2));
+  var parentHeight = $('.parent').height();
+  var margin = (parentHeight - (height / 4 ));
+
+  if ($(window).width() > 640)
+    $('.vertical-center').css("margin-top", margin);
+  else
+    $('.vertical-center').css("margin-top", "100");
 };
 
+$(window).resize( function() {
+});
 $(window).scroll( function() {
   checkOffset();
 });
 
-$('#form').followTo($('.row.histoire').offset().top - $('.row.histoire').height() / 2);
 
 
 $('#goUp').click( function() {
@@ -76,9 +83,6 @@ function    scrollTo(next){
 
 $.ajax({
   url: 'http://www.mesopinions.com/index.php?f=petition&a=getcounter&petition=30770&token=20170625496',
-  headers : {
-        'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8'
-    },
   success: function(data) { 
     $('#nbVote').text(data);
   },

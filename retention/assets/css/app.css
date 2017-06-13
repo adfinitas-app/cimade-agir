@@ -37,9 +37,6 @@
 	display: block;
 	float: left;
 }
-.title {
-	margin-top: 40%;
-}
 .header p {
 	font-family: 'Arial MT Std Light';
 	color: #f5eae8;
@@ -76,7 +73,7 @@
 	color: white !important;
 	text-align: left !important;
 	margin-top: 20px;
-	margin-left: 39px;
+	margin-left: 40px;
 	margin-bottom: 0;
 	font-family: 'Arial MT Std Black';
 }
@@ -176,7 +173,7 @@
 	margin: auto auto;
 	margin-top: 30px;
 	margin-bottom: 40px;
-	background-color: #ff3500;
+	background-color: #ee3124;
 	font-family: 'Arial';
 	font-weight: bold;
 	font-size: 20px;
