@@ -76,9 +76,11 @@ function    scrollTo(next){
 
 $.ajax({
   url: 'http://www.mesopinions.com/index.php?f=petition&a=getcounter&petition=30770&token=20170625496',
-  headers : {
-        'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8'
-    },
+ headers: {
+    "Access-Control-Allow-Origin" : "*",
+    "Access-Control-Allow-Methods" : "GET,POST,PUT,DELETE,OPTIONS",
+    "Access-Control-Allow-Headers": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+  },
   success: function(data) { 
     $('#nbVote').text(data);
   },
