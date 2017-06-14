@@ -38,7 +38,7 @@ $(document).ready( function() {
 function verticalAlign() {
   var height = $('.vertical-center').height();
   var parentHeight = $('.parent').height();
-  var margin = (parentHeight - (height / 4 ));
+  var margin = (parentHeight - (height / 5 ));
 
   if ($(window).width() > 640)
     $('.vertical-center').css("margin-top", margin);
@@ -56,8 +56,6 @@ $(window).scroll( function() {
    else if ($(window).scrollTop() > topForm)
    {
      $('#form').css({position: 'fixed',top: "0px"});
-     if ( $('#form').offset().top > ($('.row.infos').offset().top - $('#form').height() - 60))
-      $('#form').css({position: 'absolute', top: ($('.row.infos').offset().top - $('#form').height() - 60)});
    }
 });
 
