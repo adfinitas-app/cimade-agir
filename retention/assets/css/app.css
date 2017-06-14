@@ -241,7 +241,7 @@
 		margin-left: 0px;
 	}
 	#form {
-		position: static;
+		position: static !important;
 		margin-left: 0;
 	}
 }
