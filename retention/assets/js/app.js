@@ -3,7 +3,6 @@ $.fn.followTo = function (pos) {
   $window = $(window);
 
   $window.scroll(function (e) {
-    console.log(pos);
     if ($window.scrollTop() > pos) {
       $this.css({
         position: 'absolute',
@@ -58,7 +57,6 @@ $(window).scroll( function() {
  {
    $('#form').css({position: 'fixed',top: "0px"});
  }
-
 });
 
 
