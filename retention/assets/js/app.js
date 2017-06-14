@@ -31,8 +31,7 @@ var p = extractUrlParams();
 $(document).ready( function() {
   fillOutForm();
   verticalAlign();
-  
-
+ 
 });
 
 function verticalAlign() {
