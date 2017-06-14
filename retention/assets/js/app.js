@@ -31,7 +31,7 @@ var p = extractUrlParams();
 $(document).ready( function() {
   fillOutForm();
   verticalAlign();
- 
+
 });
 
 function verticalAlign() {
@@ -48,14 +48,16 @@ function verticalAlign() {
 $(window).resize( function() {
 });
 $(window).scroll( function() {
-    if ($(window).scrollTop() < topForm)
-    {
-     $('#form').css({position: 'static'});
-   }
-   else if ($(window).scrollTop() > topForm)
-   {
-     $('#form').css({position: 'fixed',top: "0px"});
-   }
+  if ($(window).scrollTop() < topForm)
+  {
+   $('#form').css({position: 'static'});
+ }
+ else if ($(window).scrollTop() > topForm)
+ {
+  $('#form').css({position: 'fixed',top: "0px"});
+     if ( $('#form').offset().top > ($('.row.infos').offset().top - $('#form').height() - 100))
+      $('#form').css({position: 'absolute', top: ($('.row.infos').offset().top - $('#form').height() - 100)});
+}
 });
 
 
@@ -261,7 +263,6 @@ function submitForm() {
     },
     //"grecaptcha_response": grecaptcha.getResponse()
   }
-  console.log("READY TO SEND");
-  //makeCorsRequest(data);
+  makeCorsRequest(data);
   showNotif();
 }
