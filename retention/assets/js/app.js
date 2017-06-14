@@ -38,7 +38,7 @@ $(document).ready( function() {
 function verticalAlign() {
   var height = $('.vertical-center').height();
   var parentHeight = $('.parent').height();
-  var margin = (parentHeight - (height / 3 ));
+  var margin = (parentHeight - (height * 2));
 
   if ($(window).width() > 640)
     $('.vertical-center').css("margin-top", margin);
