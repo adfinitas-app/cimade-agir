@@ -42,10 +42,8 @@ function verticalAlign() {
 
   if ($(window).width() > 640 && $(window).height() > 850)
     $('.vertical-center').css("margin-top", margin);
-    else if ($(window).height() > 700 && $(window).height() < 850)
-    $('.vertical-center').css("margin-top", "250");
   else
-    $('.vertical-center').css("margin-top", "100");
+    $('.vertical-center').css("margin-top", "250");
 };
 
 $(window).resize( function() {
