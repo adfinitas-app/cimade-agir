@@ -49,8 +49,6 @@ function verticalAlign() {
 $(window).resize( function() {
 });
 $(window).scroll( function() {
-  if ($(window).width > 640)
-  {
     if ($(window).scrollTop() < topForm)
     {
      $('#form').css({position: 'static'});
@@ -59,7 +57,6 @@ $(window).scroll( function() {
    {
      $('#form').css({position: 'fixed',top: "0px"});
    }
- }
 });
 
 
