@@ -17,7 +17,8 @@ $.fn.followTo = function (pos) {
     }
   });
 };
-$('#form').followTo($('.row.histoire').offset().top - $('.row.histoire').height() / 2);
+//$('#form').followTo($('.row.histoire').offset().top - $('.row.histoire').height() / 2);
+var topForm =  $('#form').offset().top;
 
 $(function(){
   $("#f_tel").intlTelInput({initialCountry: "fr", onlyCountries: ["al", "ad", "at", "by", "be", "ba", "bg", "hr", "cz", "dk", 
@@ -49,7 +50,15 @@ function verticalAlign() {
 $(window).resize( function() {
 });
 $(window).scroll( function() {
-  checkOffset();
+  if ($(window).scrollTop() < topForm)
+  {
+   $('#form').css({position: 'static'});
+ }
+ else if ($(window).scrollTop() > topForm)
+ {
+   $('#form').css({position: 'fixed',top: "0px"});
+ }
+
 });
 
 

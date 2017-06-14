@@ -79,7 +79,6 @@
 }
 #form {
 	z-index: 9999;
-	position: fixed;
 	border-top:  4px solid #ff3500;
 	padding: 20px;
 	background-color: white;
