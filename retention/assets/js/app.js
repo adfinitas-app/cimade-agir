@@ -56,6 +56,8 @@ $(window).scroll( function() {
    else if ($(window).scrollTop() > topForm)
    {
      $('#form').css({position: 'fixed',top: "0px"});
+     if ( $('#form').offset().top > ($('.row.infos').offset().top - $('#form').height() - 60))
+      $('#form').css({position: 'absolute', top: ($('.row.infos').offset().top - $('#form').height() - 60)});
    }
 });
 
