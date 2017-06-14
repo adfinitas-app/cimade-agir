@@ -258,7 +258,7 @@ function submitForm() {
         "name": pureField($("input[name='firstname']").val()) + ' ' + pureField($("input[name='lastname']").val()),
         "language": $("input[name='language']").val()
       },
-      "addLists": [],
+      "addLists": ['retention2017'],
       "delLists": []
     },
     //"grecaptcha_response": grecaptcha.getResponse()
