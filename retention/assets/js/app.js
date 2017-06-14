@@ -51,7 +51,7 @@ $(window).resize( function() {
 $(window).scroll( function() {
   if ($(window).width > 640)
   {
-    
+    console.log("HERE");
     if ($(window).scrollTop() < topForm)
     {
      $('#form').css({position: 'static'});
