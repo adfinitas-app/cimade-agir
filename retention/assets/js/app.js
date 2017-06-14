@@ -49,13 +49,17 @@ function verticalAlign() {
 $(window).resize( function() {
 });
 $(window).scroll( function() {
-  if ($(window).scrollTop() < topForm)
+  if ($(window).width > 640)
   {
-   $('#form').css({position: 'static'});
- }
- else if ($(window).scrollTop() > topForm)
- {
-   $('#form').css({position: 'fixed',top: "0px"});
+    
+    if ($(window).scrollTop() < topForm)
+    {
+     $('#form').css({position: 'static'});
+   }
+   else if ($(window).scrollTop() > topForm)
+   {
+     $('#form').css({position: 'fixed',top: "0px"});
+   }
  }
 });
 
