@@ -289,6 +289,7 @@ function submitForm() {
     },
     //"grecaptcha_response": grecaptcha.getResponse()
   }
+  console.log(data);
   makeCorsRequest(data);
   showNotif();
 }
