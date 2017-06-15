@@ -110,7 +110,7 @@
     text-align: left;
 	font-family: 'Arial MT Std Medium';
 	color: black;
-	font-size: 12px;
+	font-size: 10px !important;
 	line-height: 1.2;
 }
 .histoire {
