@@ -238,7 +238,7 @@ function submitForm() {
     "woopra" : {
       "host": "lacimade.org",
       "cookie": getCookie("wooTracker"),
-      "event": "TODO",
+      "event": "petition_retention2017",
       "cv_email": pureField($("input[name='email']").val()),
       "cv_phone": pureField($("input[name='phone']").val()),
       "cv_firstname": pureField($("input[name='firstname']").val()),
