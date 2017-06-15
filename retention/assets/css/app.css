@@ -106,6 +106,13 @@
 #form .intl-tel-input {
 	width: 100%;
 }
+#form .small {
+    text-align: left;
+	font-family: 'Arial MT Std Medium';
+	color: black;
+	font-size: 12px;
+	line-height: 1.2;
+}
 .histoire {
 	padding: 40px;
 	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/Cimade-Petition-2017/bg-histoire.jpg');
