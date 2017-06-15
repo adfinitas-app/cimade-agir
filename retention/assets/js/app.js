@@ -279,7 +279,7 @@ function submitForm() {
       "Email": pureField($("input[name='email']").val()),
       "Properties": {
         "lastname": pureField($("input[name='lastname']").val()),
-        "firstname": pureField($("input[name='firstname']").val()) + ' ' + pureField($("input[name='lastname']").val()),
+        "firstname": pureField($("input[name='firstname']").val()),
         "phone": pureField($("input[name='phone']").val()),
         "reserved_code_media": getCodeMedia(),
         "language": $("input[name='language']").val()
