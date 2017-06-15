@@ -16,6 +16,21 @@ $.fn.followTo = function (pos) {
     }
   });
 };
+function extractUrlParams() {
+  var match,
+  urlParams,
+  pl     = /\+/g,  // Regex for replacing addition symbol with a space
+  search = /([^&=]+)=?([^&]*)/g,
+  decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+  query  = window.location.search.substring(1);
+
+  urlParams = {};
+  while (match = search.exec(query))
+    urlParams[decode(match[1])] = decode(match[2]);
+  return urlParams;
+}
+
+var p = extractUrlParams();
 //$('#form').followTo($('.row.histoire').offset().top - $('.row.histoire').height() / 2);
 var topForm =  $('#form').offset().top;
 
@@ -220,6 +235,13 @@ function extractUrlParams(){
 function pureField(string) {
   return (string.replace(/'/g, "%27").replace(/"/g, "&quot;"));
 }
+function getCodeMedia() {
+  if (typeof(p['reserved_code_media']) == 'undefined') {
+    return ''
+  } else {
+    return p['reserved_code_media']
+  }
+}
 
 function submitForm() {
 
@@ -232,6 +254,7 @@ function submitForm() {
         "firstname": pureField($("input[name='firstname']").val().toUpperCase()),
         "lastname": pureField($("input[name='lastname']").val().toUpperCase()),
         "name": pureField($("input[name='firstname']").val()) + ' ' + pureField($("input[name='lastname']").val()),
+        "reserved_code_media": getCodeMedia(),
         "language": $("input[name='language']").val(),
       }
     },
@@ -244,6 +267,7 @@ function submitForm() {
       "cv_firstname": pureField($("input[name='firstname']").val()),
       "cv_lastname": pureField($("input[name='lastname']").val()),
       "cv_name": pureField($("input[name='firstname']").val()) + ' ' + pureField($("input[name='lastname']").val()),
+      "ce_reserved_code_media": getCodeMedia(),
       "ce_email": pureField($("input[name='email']").val()),
       "ce_phone": pureField($("input[name='phone']").val()),
       "ce_firstname": pureField($("input[name='firstname']").val()),
@@ -256,6 +280,7 @@ function submitForm() {
       "Properties": {
         "lastname": pureField($("input[name='lastname']").val()),
         "name": pureField($("input[name='firstname']").val()) + ' ' + pureField($("input[name='lastname']").val()),
+        "reserved_code_media": getCodeMedia(),
         "language": $("input[name='language']").val()
       },
       "addLists": ['retention2017'],
