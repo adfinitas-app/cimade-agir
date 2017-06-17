@@ -15,6 +15,39 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <link rel='stylesheet' href='assets/css/intlTelInput.css' type='text/css'/>
     <link rel='stylesheet' href='assets/css/app.css' type='text/css'/>
+    <script type="text/javascript">
+	!function(){var a,b,c,d=window,e=document,f=arguments,g="script",h=["config","track","trackForm","trackClick","identify","visit","push","call"],i=function(){var a,b=this,c=function(a){b[a]=function(){return b._e.push([a].concat(Array.prototype.slice.call(arguments,0))),b}};for(b._e=[],a=0;a<h.length;a++)c(h[a])};for(d.__woo=d.__woo||{},a=0;a<f.length;a++)d.__woo[f[a]]=d[f[a]]=d[f[a]]||new i;b=e.createElement(g),b.async=1,b.src="//static.woopra.com/js/w.js",c=e.getElementsByTagName(g)[0],c.parentNode.insertBefore(b,c)}("woopra");
+
+	function extractUrlParams(){
+		var t = document.location.search.substring(1).split('&'); var f = [];
+		for (var i=0; i<t.length; i++){
+			var x = t[ i ].split('=');
+			f[x[0]]=decodeURIComponent(x[1]);
+		}
+		return f;
+	};
+
+	var p = extractUrlParams();
+	if ('email' in p) {
+		if ('lastname' in p && 'firstname' in p) {
+			woopra.identify({
+				email: p['email'],
+				name: p['firstname'] + ' ' + p['lastname'],
+				lastname: p['lastname'],
+				firstname: p['firstname'],
+			});
+		} else {
+			woopra.identify({email: p['email']})
+		}
+	}
+
+	woopra.config({
+		domain: "lacimade.org",
+		cookie_domaine: ".lacimade.org"
+	});
+	woopra.track();
+    </script>
+
 </head>
 <body>
     <section>
