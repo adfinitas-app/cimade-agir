@@ -249,6 +249,12 @@
 	font-size: 20px;
 	margin-bottom: 0;
 }
+@media screen and (max-width: 1025px) {
+	#form {
+		position: static !important;
+		margin-left: 0;
+	}
+}
 @media screen and (max-width: 640px) {
 	.header {
 		padding: 20px;
