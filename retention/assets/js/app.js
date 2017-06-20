@@ -172,6 +172,18 @@ function validateForm() {
 
 
   submitForm();
+  $.ajax({
+  url: 'http://www.mesopinions.com/index.php?f=petition&a=getcounterplus&petition=30770&token=20170625496',
+  success: function(data) { 
+    $('#nbVote').text(data);
+  },
+  error: function(data) { 
+
+  },
+  beforeSend: function(xhr) {
+   xhr.setRequestHeader("Authorization", "Bearer 6QXNMEMFHNY4FJ5ELNFMP5KRW52WFXN5")
+ },
+});
   return true;
 };
 
