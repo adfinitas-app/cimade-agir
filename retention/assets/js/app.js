@@ -178,7 +178,6 @@ function validateForm() {
   submitForm();
   $.ajax({
   url: 'https://www.mesopinions.com/index.php?f=petition&a=getcounterplus&petition=30770&token=20170625496',
-  type: 'POST',
   dataType: "jsonp",
   success: function(data) { 
     $('#nbVote').text(data);
