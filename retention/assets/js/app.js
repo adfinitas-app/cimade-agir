@@ -106,7 +106,7 @@ function    scrollTo(next){
 
 $.ajax({
   url: 'https://www.mesopinions.com/index.php?f=petition&a=getcounter&petition=30770&token=20170625496',
-  type: 'POST',
+  type: 'GET',
   success: function(data) { 
     $('#nbVote').text(data);
   },
