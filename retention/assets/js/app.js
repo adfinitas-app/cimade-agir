@@ -133,6 +133,9 @@ function showNotif() {
   });
 
 }
+
+$('#f_summit').click(function(){ validateForm() });
+
 function validateForm() {
   var emailID = document.getElementById('f_email').value;
   atpos = emailID.indexOf("@");
