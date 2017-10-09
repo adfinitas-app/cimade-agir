@@ -1,0 +1,154 @@
+@font-face {
+	font-family: 'Arial MT Std Black';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Arial MT Std Black'), url('../fonts/arial-mt-std-black-586c347abdbc8.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Arial MT Std Light';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Arial MT Std Light'), url('../fonts/arial-mt-std-light-586c341645fe0.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Arial MT Std Medium';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Arial MT Std Medium'), url('../fonts/arial-mt-std-medium-586c3458cbe17.woff') format('woff');
+}
+
+.fixed {
+	position: fixed;
+}
+.max-width {
+	max-width: 75rem !important;
+}
+
+.header, .lettre {
+	background-color: #41332F;
+}
+
+.header {
+	padding: 35px;
+	min-height: 100vh;
+	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/CIMADE+-+petition+10+2017/main.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+#logo {
+	display: block;
+	float: left;
+}
+.header p {
+	font-family: 'Arial MT Std Light';
+	color: #f5eae8;
+	font-size: 16px;
+	line-height: 1.2;
+	text-align: center;
+}
+.header p.big {
+	font-family: 'Arial MT Std Medium';
+	font-size: 18px;
+}
+.header .form {
+	text-align: center;
+}
+.header .form p {
+	font-family: 'Arial MT Std Medium';
+	color: #a09d9d;
+	font-size: 16px;
+	line-height: 1.6;
+	text-align: center;
+	margin-bottom: 0;
+}
+.header .form .arrow-down {
+	margin-top: 10px;
+}
+.error {
+	display: none;
+}
+.error p {
+	color: red !important;
+	font-size: 12px !important;
+}
+.vote {
+	color: white !important;
+	text-align: left !important;
+	margin-top: 20px;
+	margin-left: 40px;
+	margin-bottom: 0;
+	font-family: 'Arial MT Std Black';
+}
+#form {
+	z-index: 9999;
+	border-top:  4px solid #ff3500;
+	padding: 20px;
+	background-color: white;
+	width: 360px;
+	max-width: 100%;
+	margin: auto auto;
+	margin-left: 40px;
+}
+#form p {
+	font-family: 'Lato';
+	font-weight: 700;
+	text-align: left;
+	margin-bottom: 5px;
+	color: black;
+}
+#form #f_summit {
+	width: 100%;
+	margin-top: 30px;
+	background-color: #ee3124;
+	font-family: 'Arial';
+	font-weight: bold;
+	font-size: 24px;
+	padding: 10px;
+}
+#form .intl-tel-input {
+	width: 100%;
+}
+#form .small {
+    text-align: left;
+	font-family: 'Arial MT Std Medium';
+	color: black;
+	font-size: 10px !important;
+	font-weight: 400 !important;
+	line-height: 1.2;
+}
+
+.notification {
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	background-color: #ff3500;
+	padding: 10px;
+	display: none;
+}
+.notification  p {
+	font-family: 'Arial';
+	color: white;
+	font-size: 20px;
+	margin-bottom: 0;
+}
+@media screen and (max-width: 1025px) {
+	#form {
+		position: static !important;
+		margin-top: 20px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+@media screen and (max-width: 640px) {
+	.header h1 {
+		margin-top: 40%;
+	}
+
+	#form {
+		position: static !important;
+		margin-left: 0;
+	}
+}
