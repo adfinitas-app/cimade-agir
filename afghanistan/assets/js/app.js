@@ -50,10 +50,28 @@ $(function() {
 
 var p = extractUrlParams();
 
+function showNbSignature() {
+	// requête à https://form-to-db.herokuapp.com/count?table=cimade_petition_afghanistan2017
+	$.ajax({
+		url: 'https://form-to-db.herokuapp.com/count?table=cimade_petition_afghanistan2017',
+		type: 'GET',
+		success: function(data) {
+			$('#nbVote').text(data);
+		},
+		error: function(data) {
+			console.log('error');
+		},
+		beforeSend: function(xhr) {
+			xhr.setRequestHeader("Authorization", "Bearer 9df5750183c2a03f9e8a239a7c6d4d499d3231b24995f41a");
+		},
+	});
+
+}
+
 $(document).ready(function() {
     fillOutForm();
     verticalAlign();
-	
+	showNbSignature();
 });
 
 function verticalAlign() {
