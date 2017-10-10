@@ -62,7 +62,7 @@ function showNbSignature() {
         return;
     }
     // xhr.setRequestHeader('Content-Type', 'application/json');
-	//xhr.setRequestHeader('Authorization', 'Bearer 9df5750183c2a03f9e8a239a7c6d4d499d3231b24995f41a');
+	//xhr.setRequestHeader('Authorization', 'Bearer ');
     // Error Handler
     xhr.onerror = function() {
         alert('Woops, there was an error making the request.');
