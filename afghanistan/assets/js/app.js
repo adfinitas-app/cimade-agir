@@ -54,14 +54,12 @@ function showNbSignature() {
 	// requête à https://form-to-db.herokuapp.com/count?table=cimade_petition_afghanistan2017
 
 	var url = 'https://form-to-db.herokuapp.com/count?table=cimade_petition_afghanistan2017';
-	var data = {test: 1};
-	var body = JSON.stringify(data);
     var xhr = createCORSRequest('GET', url);
     if (!xhr) {
         alert('CORS not supported');
         return;
     }
-    // xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.setRequestHeader('Content-Type', 'application/json');
 	//xhr.setRequestHeader('Authorization', 'Bearer ');
     // Error Handler
     xhr.onerror = function() {
@@ -73,7 +71,7 @@ function showNbSignature() {
 	// 		console.log('request sent');
     // 	}
 	// };
-    xhr.send(body);
+    xhr.send();
 
 	// $.ajax({
 	// 	url: 'https://form-to-db.herokuapp.com/count?table=cimade_petition_afghanistan2017',
