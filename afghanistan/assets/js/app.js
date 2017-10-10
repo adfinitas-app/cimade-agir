@@ -52,19 +52,43 @@ var p = extractUrlParams();
 
 function showNbSignature() {
 	// requête à https://form-to-db.herokuapp.com/count?table=cimade_petition_afghanistan2017
-	$.ajax({
-		url: 'https://form-to-db.herokuapp.com/count?table=cimade_petition_afghanistan2017',
-		type: 'GET',
-		success: function(data) {
-			$('#nbVote').text(data);
-		},
-		error: function(data) {
-			console.log('error');
-		},
-		beforeSend: function(xhr) {
-			xhr.setRequestHeader("Authorization", "Bearer 00994eff-19a9-4b0d-b6e4-46b23e1abe8f");
-		},
-	});
+
+	var url = 'https://form-to-db.herokuapp.com/count?table=cimade_petition_afghanistan2017';
+	var data = {test: 1};
+	var body = JSON.stringify(data);
+    var xhr = createCORSRequest('GET', url);
+    if (!xhr) {
+        alert('CORS not supported');
+        return;
+    }
+    // xhr.setRequestHeader('Content-Type', 'application/json');
+	//xhr.setRequestHeader('Authorization', 'Bearer 9df5750183c2a03f9e8a239a7c6d4d499d3231b24995f41a');
+    // Error Handler
+    xhr.onerror = function() {
+        alert('Woops, there was an error making the request.');
+    };
+	// xhr.onreadystatechange = function() {//Call a function when the state changes.
+    // 	if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
+    //     	// Request finished. Do processing here.
+	// 		console.log('request sent');
+    // 	}
+	// };
+    xhr.send(body);
+
+	// $.ajax({
+	// 	url: 'https://form-to-db.herokuapp.com/count?table=cimade_petition_afghanistan2017',
+	// 	type: 'GET',
+	// 	crossDomain: true,
+	// 	success: function(data) {
+	// 		$('#nbVote').text(data);
+	// 	},
+	// 	error: function(data) {
+	// 		console.log('error');
+	// 	},
+	// 	beforeSend: function(xhr) {
+	// 		xhr.setRequestHeader("Authorization", "Bearer 9df5750183c2a03f9e8a239a7c6d4d499d3231b24995f41a");
+	// 	},
+	// });
 
 }
 
