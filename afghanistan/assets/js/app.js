@@ -62,7 +62,7 @@ function showNbSignature() {
 			console.log('error');
 		},
 		beforeSend: function(xhr) {
-			xhr.setRequestHeader("Authorization", "Bearer 9df5750183c2a03f9e8a239a7c6d4d499d3231b24995f41a");
+			xhr.setRequestHeader("Authorization", "Bearer 00994eff-19a9-4b0d-b6e4-46b23e1abe8f");
 		},
 	});
 
