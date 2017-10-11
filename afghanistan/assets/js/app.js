@@ -276,7 +276,9 @@ function getCodeMedia() {
 }
 
 function submitForm() {
-
+	var utmSource;
+	if (p['utm_source'])
+		utmSource = p['utm_source'];
     var data = {
         "db": {
             "schema": "cimade_petition_afghanistan2017",
@@ -286,7 +288,6 @@ function submitForm() {
                 "firstname": pureField($("input[name='firstname']").val().toUpperCase()),
                 "lastname": pureField($("input[name='lastname']").val().toUpperCase()),
                 "name": pureField($("input[name='firstname']").val()) + ' ' + pureField($("input[name='lastname']").val()),
-                "reserved_code_media": getCodeMedia(),
                 "partenaires_optin": true,
                 "language": $("input[name='language']").val(),
             }
@@ -300,21 +301,20 @@ function submitForm() {
             "cv_firstname": pureField($("input[name='firstname']").val()),
             "cv_lastname": pureField($("input[name='lastname']").val()),
             "cv_name": pureField($("input[name='firstname']").val()) + ' ' + pureField($("input[name='lastname']").val()),
-            "ce_reserved_code_media": getCodeMedia(),
             "ce_email": pureField($("input[name='email']").val()),
             "ce_phone": pureField($("input[name='phone']").val()),
             "ce_firstname": pureField($("input[name='firstname']").val()),
             "ce_lastname": pureField($("input[name='lastname']").val()),
             "ce_name": pureField($("input[name='firstname']").val()) + ' ' + pureField($("input[name='lastname']").val()),
             "ce_language": $("input[name='language']").val(),
-            "ce_partenaires_optin": 'oui'
+            "ce_partenaires_optin": 'oui',
+			"ce_utm_source": utmSource
         },
         "mailjet": {
             "Email": pureField($("input[name='email']").val()),
             "Properties": {
                 "lastname": pureField($("input[name='lastname']").val()),
                 "firstname": pureField($("input[name='firstname']").val()),
-                "reserved_code_media": getCodeMedia(),
                 "language": $("input[name='language']").val()
       		},
             "addLists": ['petition_afghanistan2017'],
