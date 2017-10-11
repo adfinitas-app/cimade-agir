@@ -83,7 +83,7 @@
 	font-family: 'Arial MT Std Black';
 }
 #form {
-	z-index: 9999;
+	z-index: 998;
 	border-top:  4px solid #ff3500;
 	padding: 20px;
 	background-color: white;
@@ -127,6 +127,7 @@
 	background-color: #ff3500;
 	padding: 10px;
 	display: none;
+	z-index: 999;
 }
 .notification  p {
 	font-family: 'Arial';
