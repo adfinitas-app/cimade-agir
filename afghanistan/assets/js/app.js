@@ -98,7 +98,7 @@ function showNbSignature() {
 		return;
 	}
 	xhr.setRequestHeader('Content-Type', 'application/json');
-	xhr.setRequestHeader('Authorization', 'Basic d2ViQGFkZmluaXRhcy5mcjpBZGZpbml0YXMxMA==');
+	xhr.setRequestHeader('Authorization', 'Basic d2ViQGFkZmluaXRhcy5mcjphQiF6VzU7N1dxNH4=');
 	console.log('sent');
 	xhr.send();
 }
