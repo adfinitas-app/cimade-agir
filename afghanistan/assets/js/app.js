@@ -62,12 +62,7 @@ function showNbSignature() {
 		xhr.onreadystatechange = function() {//Call a function when the state changes.
 			if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
 				// Request finished. Do processing here.
-				console.log('on remplace');
 				$('#nbVote').text(xhr.responseText);
-			} else if (xhr.status === 0) {
-				console.log('on remplace: ' + xhr.responseText);
-				$('#nbVote').text(xhr.responseText);
-			}
 			console.log('xhr status: ' + xhr.status);
 		};
 		xhr.onerror = function() {
@@ -80,10 +75,8 @@ function showNbSignature() {
 		xhr.onreadystatechange = function() {//Call a function when the state changes.
 			if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
 				// Request finished. Do processing here.
-				console.log('on remplace');
 				$('#nbVote').text(xhr.responseText);
 			}
-			console.log('xhr status: ' + xhr.status);
 		};
 		xhr.onerror = function() {
 			$('#nbVote').text('X');
