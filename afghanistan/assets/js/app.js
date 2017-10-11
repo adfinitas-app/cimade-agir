@@ -63,7 +63,7 @@ function showNbSignature() {
 			if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
 				// Request finished. Do processing here.
 				$('#nbVote').text(xhr.responseText);
-			console.log('xhr status: ' + xhr.status);
+			}
 		};
 		xhr.onerror = function() {
 			$('#nbVote').text('X');
