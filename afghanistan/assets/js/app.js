@@ -52,42 +52,55 @@ var p = extractUrlParams();
 
 function showNbSignature() {
 	// requête à https://form-to-db.herokuapp.com/count?table=cimade_petition_afghanistan2017
+	var url = 'http://localhost:3000/count?table=firsttable';
+	url = 'https://form-to-db.herokuapp.com/count?table=cimade_petition_afghanistan2017';
+	var method = 'GET';
+	var xhr = new XMLHttpRequest();
 
-	var url = 'https://form-to-db.herokuapp.com/count?table=cimade_petition_afghanistan2017';
-    var xhr = createCORSRequest('GET', url);
-    if (!xhr) {
-        alert('CORS not supported');
-        return;
-    }
-    xhr.setRequestHeader('Content-Type', 'application/json');
-	//xhr.setRequestHeader('Authorization', 'Bearer ');
-    // Error Handler
-    xhr.onerror = function() {
-        alert('Woops, there was an error making the request.');
-    };
-	// xhr.onreadystatechange = function() {//Call a function when the state changes.
-    // 	if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
-    //     	// Request finished. Do processing here.
-	// 		console.log('request sent');
-    // 	}
-	// };
-    xhr.send();
-
-	// $.ajax({
-	// 	url: 'https://form-to-db.herokuapp.com/count?table=cimade_petition_afghanistan2017',
-	// 	type: 'GET',
-	// 	crossDomain: true,
-	// 	success: function(data) {
-	// 		$('#nbVote').text(data);
-	// 	},
-	// 	error: function(data) {
-	// 		console.log('error');
-	// 	},
-	// 	beforeSend: function(xhr) {
-	// 		xhr.setRequestHeader("Authorization", "Bearer 9df5750183c2a03f9e8a239a7c6d4d499d3231b24995f41a");
-	// 	},
-	// });
-
+	if ("withCredentials" in xhr) {
+		// XHR for Chrome/Firefox/Opera/Safari.
+		xhr.onreadystatechange = function() {//Call a function when the state changes.
+			if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
+				// Request finished. Do processing here.
+				console.log('on remplace');
+				$('#nbVote').text(xhr.responseText);
+			} else if (xhr.status === 0) {
+				console.log('on remplace: ' + xhr.responseText);
+				$('#nbVote').text(xhr.responseText);
+			}
+			console.log('xhr status: ' + xhr.status);
+		};
+		xhr.onerror = function() {
+			$('#nbVote').text('X');
+		};
+		xhr.open(method, url, true);
+	} else if (typeof XDomainRequest != "undefined") {
+		// XDomainRequest for IE.
+		xhr = new XDomainRequest();
+		xhr.onreadystatechange = function() {//Call a function when the state changes.
+			if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
+				// Request finished. Do processing here.
+				console.log('on remplace');
+				$('#nbVote').text(xhr.responseText);
+			}
+			console.log('xhr status: ' + xhr.status);
+		};
+		xhr.onerror = function() {
+			$('#nbVote').text('X');
+		};
+		xhr.open(method, url);
+	} else {
+		// CORS not supported
+		xhr = null;
+	}
+	if (!xhr) {
+		alert('CORS not supported');
+		return;
+	}
+	xhr.setRequestHeader('Content-Type', 'application/json');
+	xhr.setRequestHeader('Authorization', 'Basic d2ViQGFkZmluaXRhcy5mcjpBZGZpbml0YXMxMA==');
+	console.log('sent');
+	xhr.send();
 }
 
 $(document).ready(function() {
@@ -315,6 +328,7 @@ function submitForm() {
             "Properties": {
                 "lastname": pureField($("input[name='lastname']").val()),
                 "firstname": pureField($("input[name='firstname']").val()),
+				"name": pureField($("input[name='firstname']").val()) + ' ' + pureField($("input[name='lastname']").val()),
                 "language": $("input[name='language']").val()
       		},
             "addLists": ['petition_afghanistan2017'],
