@@ -1,0 +1,174 @@
+body {
+	background: url("../img/background.png");
+	background-size: cover;
+}
+
+/* Table settings */
+.table
+{
+	display: table;
+	width: 100%;
+}
+
+.table-row
+{
+	display: table-row;
+}
+
+.table-cell
+{
+	display: table-cell;
+}
+
+.table-cell.top
+{
+	vertical-align: top;
+}
+
+.table-cell.bottom
+{
+	vertical-align: bottom;
+}
+
+.table-cell.middle
+{
+	vertical-align: middle;
+}
+/* End of Table settings */
+
+/* Navigation */
+#logo
+{
+	position: absolute;
+	left: 20px;
+	top: 30px;
+}
+
+nav
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+@media screen and (min-width: 891px)
+{
+	nav#mobile
+	{
+		display: none;
+	}
+	nav#desktop .menu-item
+	{
+		 border-top: 1px solid white;
+		 border-bottom: 1px solid white;
+		 transition: background-color 0.3s;
+	}
+
+	nav#desktop .menu-item:hover
+	{
+		background-color: #fb3704;
+		border-top: 1px solid #fb3704;
+		border-bottom: 1px solid #fb3704;
+		cursor: pointer;
+	}
+
+	nav p
+	{
+		color: white;
+		margin-bottom: 0;
+		font-family: 'Helvetica';
+		font-weight: 200;
+		line-height: 1.1;
+		font-size: 18px;
+		border-right: 1px solid white;
+	}
+}
+
+@media screen and (max-width: 890px)
+{
+	nav#desktop
+	{
+		display: none;
+	}
+
+	#logo
+	{
+		display: none;
+	}
+
+	nav#mobile
+	{
+		text-align: center;
+	}
+
+	nav#mobile .menu-item
+	{
+		background-color: white;
+		border-bottom: 1px solid black;
+		transition: background-color 0.3s;
+	}
+
+	nav#mobile p
+	{
+		margin-bottom: 0;
+		font-family: 'Helvetica';
+		font-weight: 200;
+		line-height: 1.1;
+		font-size: 18px;
+		padding: 10px 0;
+		color: black;
+	}
+
+	nav#mobile .menu-item:hover
+	{
+		background-color: #fb3704;
+		cursor: pointer;
+	}
+
+	nav#mobile .deplier
+	{
+		/*display: none;*/
+	}
+}
+/* End of Navigation */
+
+.video_share {
+	margin-top: 150px;
+}
+
+.share {
+	padding-top: 20px;
+}
+
+.share_fleche {
+	padding-left: 100px;
+}
+
+#bt_don {
+	padding-top: 40px;
+}
+
+.soutiens {
+	padding-top: 50px;
+	color: white;
+	font-size: 17px;
+}
+
+.to_bold {
+	font-weight: bold;
+}
+
+#question {
+	padding-top: 20px;
+	font-size: 22px;
+}
+
+#bt_soutien {
+	max-height: 50px;
+}
+
+#chiffre {
+	background: url("../img/bg_chiffre.png") no-repeat;
+	background-size: cover;
+}
