@@ -55,11 +55,11 @@ nav#mobile
 
 nav#desktop .menudesk
 {
-	position: fixed;
+	/*position: fixed;
 	top: 50px;
 	right: 20px;
 	width: 500px;
-	z-index: 9;
+	z-index: 9;*/
 }
 
 @media screen and (min-width: 891px)
@@ -88,7 +88,7 @@ nav#desktop .menudesk
 		color: white;
 		margin-bottom: 0;
 		font-family: 'Helvetica';
-		font-weight: 200;
+		font-weight: 600;
 		line-height: 1.1;
 		font-size: 18px;
 		border-right: 1px solid white;
@@ -127,7 +127,7 @@ nav#desktop .menudesk
 	{
 		margin-bottom: 0;
 		font-family: 'Helvetica';
-		font-weight: 200;
+		font-weight: 600;
 		line-height: 1.1;
 		font-size: 18px;
 		padding: 10px 0;
