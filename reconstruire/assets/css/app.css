@@ -246,7 +246,7 @@ section#eq .priceCard .text
 {
 	color: white;
 	font-size: 18px;
-	height: 125px;
+	min-height: 125px;
 	line-height: 1.4;
 }
 
