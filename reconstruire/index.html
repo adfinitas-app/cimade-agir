@@ -1,31 +1,36 @@
 <!doctype html>
 <html class="no-js" lang="fr" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title></title>
+	<meta property="og:url" content="http://agir.lacimade.org/reconstruire" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="" />
+	<meta property="og:description" content="" />
+	<meta property="og:image" content="" />
+	<title>La Cimade - Reconstruire</title>
 	<link rel="stylesheet" href="assets/css/foundation.min.css">
 	<link rel="stylesheet" href="assets/css/app.css">
 </head>
 <body>
 	<div class="global_container">
-		<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/Cimade-Petition-2017/logo.png" id="logo"/>
+		<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade-no%C3%ABl-2017/logo-black.png" id="logo"/>
 		<nav id="desktop">
 			<div class="text-right">
 				<div class="display-inline-block text-center" style="min-width: 480px;margin-right: 20px;">
 					<div class="table" style="height: 150px">
-						<div class="table-cell middle">
+						<div class="table-cell middle menudesk">
 							<div class="table" style="height: 50px">
-								<div class="table-cell middle border-vertical menu-item">
+								<div class="table-cell middle border-vertical menu-item campagne">
 									<p>LA CAMPAGNE</p>
 								</div>
-								<div class="table-cell middle border-vertical menu-item">
+								<div class="table-cell middle border-vertical menu-item actions">
 									<p>NOS ACTIONS</p>
 								</div>
-								<div class="table-cell middle border-vertical menu-item">
+								<a href="#" target="_blank" class="table-cell middle border-vertical menu-item faireUnDon">
 									<p style="font-weight: 700;border-right: 0;">FAIRE UN DON</p>
-								</div>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -33,102 +38,274 @@
 			</div>
 		</nav>
 		<nav id="mobile">
-			<div class="table" style="background-color: #fb3704;height: 40px;">
+			<div class="table" style="background-color: white;height: 40px;">
 				<div class="table-row">
 					<div class="table-cell middle text-left">
-						<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/VLM-virades/LP/menu-burger-icon.png" style="width: 40px;margin-left: 5px;"/>
+						<img id="burger" class="folded" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/VLM-virades/LP/menu-burger-icon.png" style="width: 40px;max-height: 40px;margin-left: 5px;cursor: pointer;"/>
 					</div>
 					<div class="table-cell middle text-center">
-						<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/Cimade-Petition-2017/logo.png" style="max-height: 35px;"/>
+						<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade-no%C3%ABl-2017/logo-black.png" style="max-height: 35px;"/>
 					</div>
-					<div class="table-cell middle text-right" style="background-color: white;">
-						<h6 style="font-weight: 700;margin-right: 5px;margin-bottom: 0;color: red;">FAIRE UN DON</h6>
+					<div class="table-cell middle text-right" style="background-color: #fb3704;">
+						<h6 style="font-weight: 700;margin-bottom: 0;color: white;text-align: center;">FAIRE UN DON</h6>
 					</div>
 				</div>
 			</div>
-			<div class="table deplier" style="height: 50px">
-				<div class="table-row">
-					<div class="table-cell middle border-vertical menu-item">
-						<p>LA CAMPAGNE</p>
+			<div class="deplier">
+				<div class="table">
+					<div class="table-row">
+						<div class="table-cell middle border-vertical menu-item campagne">
+							<p>LA CAMPAGNE</p>
+						</div>
 					</div>
-				</div>
-				<div class="table-row">
-					<div class="table-cell middle border-vertical menu-item">
-						<p>NOS ACTIONS</p>
+					<div class="table-row">
+						<div class="table-cell middle border-vertical menu-item actions">
+							<p>NOS ACTIONS</p>
+						</div>
 					</div>
-				</div>
-				<div class="table-row">
-					<div class="table-cell middle border-vertical menu-item">
-						<p style="font-weight: 700;">FAIRE UN DON</p>
+					<div class="table-row">
+						<a href="#" target="_blank" class="table-cell middle border-vertical menu-item faireUnDon">
+							<p style="font-weight: 700;">FAIRE UN DON</p>
+						</a>
 					</div>
 				</div>
 			</div>
 		</nav>
 		<header>
-			<div class="row video_share expanded">
-      	
-      	<div class="small-12 medium-2 large-2 columns text-center medium-text-left">
-			<div>
-				<img class="share" src="assets/img/Je partage.png">
-			</div>
-			<div>
-				<img class="share_fleche" src="assets/img/Flèche.png">
-			</div>
-			<div>
-				<img class="share" src="assets/img/Share_Facebook.png">
-			</div>
-			<div>
-				<img class="share" src="assets/img/horizontale.png">
-			</div>
-			<div>
-				<img class="share" src="assets/img/Share_Twitter.png">
-			</div>
-      	</div>
-      	<div class=" small-12 medium-12 large-12 columns text-center end">
-      		<a href=""><img id="bt_don" src="assets/img/BT don.png"></a>
-      	</div>
-      </div>
-    </header>
-    <section>
-    	<div class="row max-width soutiens">
-    		<div class="small-10 medium-10 large-10 small-offset-1 medium-offset-1 large-offset-1 columns">
- 				<p>Pour échapper à la guerre, à la misère, aux répressions… <span class="to_bold">les personnes migrantes ou réfugiées laissent tout derrière elle pour trouver un pays d’accueil.</span> Marquées par ce qu’elles ont subi dans leur pays, et par un voyage éreintant pour échapper à la guerre, à la misère, aux répressions… les personnes migrantes ou réfugiées laissent tout derrière elle pour trouver un pays d’accueil. Marquées par ce qu’elles ont subi dans leur pays, et par un voyage éreintant et dangereux, c’est bien souvent brisées qu’elles arrivent à destination.</p>
-				<p>Pourtant, elles doivent encore faire face aux obstacles administratifs, à l’exclusion, à la précarité.</p>
-    		</div>
-    		<div class="small-10 medium-10 large-10 small-offset-1 medium-offset-1 large-offset-1 columns text-center">
-    			<p id="question">Comment se reconstruire dans ces conditions ?</p>
-    		</div>
-    		<div class="small-12 medium-12 large-12 columns end text-center">
-    			<a href=""><img id="bt_soutien" src="assets/img/BT soutien.png"></a>
-    		</div>
-    	</div>
-    </section>
-    <section id="chiffre">
-    	<div class="row max-width">
-    		<div style="padding-top: 150px;" class="columns small-12 medium-5 large-5 columns">
-    			<div class="text-center">
-    			<img style="display: inline-block;" src="assets/img/maison.png">
-    			<h4 class="to_bold" style="display: inline-block; color: #fb3704; padding-left: 10px;">UN TOIT</h4>
-    			</div>
-    			<p style="padding-top: 25px;"><span class="to_bold">- 50 personnes</span> (bientôt 90) accueillies au centre d'accueil pour demandeurs d'asile (CADA) de La Cimade à Béziers.</p>
-    			<li>Elles y sont accompagnées par nos équipes dans la procédure de reconnaissance de leur statut de réfugié.</li>
-    			<p><span class="to_bold">- 80 réfugiés statutaires</span> vivent au Centre International CIMADE de Massy et 40 autres dans des appartements</p>
-    			<li>ils y sont accompagnés dans leur insertion.</li>
-    			<li>Depuis le début des années 60, ce centre a accueilli plus de 5000 personnes venant de plus de 100 pays.</li>
-    		</div>
-    		<div class="columns small-12 medium-6 large-6 columns">
+			<div class="row expanded">
+				<div class="medium-12 large-10 columns video">
+					<div id="player">
 
-    		</div>
-    		<div class="columns small-12 medium-6 large-6 columns end">
+					</div>
+				</div>
+				<div class="medium-12 large-2 columns text-center large-text-left end">
+					<div>
+						<img class="share" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade-no%C3%ABl-2017/Je partage.png">
+					</div>
+					<div>
+						<img class="share_fleche" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade-no%C3%ABl-2017/Fle%CC%80che.png">
+					</div>
+					<div>
+						<a href="#" target="_blank"><img class="share" id="shareFb" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade-no%C3%ABl-2017/facebook.png"></a>
+					</div>
+					<div>
+						<a href="#" target="_blank"><img class="share" id="shareTw" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade-no%C3%ABl-2017/twitter.png"></a>
+					</div>
+				</div>
+			</div>
+			<div class="text-center padding-vertical-3">
+				<a href="#" target="_blank"><img id="bt_don" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade-no%C3%ABl-2017/BT don.png"></a>
+			</div>
+		</header>
+		<section id="partie-centrale">
+			<div class="row expanded">
+				<div class="column small-10 small-centered">
+					<p class="text">Pour échapper à la guerre, à la misère, aux répressions… les personnes migrantes ou réfugiées laissent tout derrière elle pour trouver un pays d’accueil. Marquées par ce qu’elles ont subi dans leur pays, et par un voyage éreintant pour échapper à la guerre, à la misère, aux répressions… les personnes migrantes ou réfugiées laissent tout derrière elle pour trouver un pays d’accueil. Marquées par ce qu’elles ont subi dans leur pays, et par un voyage éreintant et dangereux, c’est bien souvent brisées qu’elles arrivent à destination.</p>
+					<p class="text">Pourtant, elles doivent encore faire face aux obstacles administratifs, à l’exclusion, à la précarité.</p>
+				</div>
+				<p id="question">Comment se reconstruire dans ces conditions ?</p>
+			</div>
+			<div class="text-center padding-top-2">
+				<a href="#" target="_blank"><img id="bt_soutien" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade-no%C3%ABl-2017/BT soutien.png"></a>
+			</div>
+		</section>
+		<section id="papier">
+			<div id="part1">
 
-    		</div>
-    	</div>
-    </section>
-  </div>
-  <script src="js/vendor/jquery.js"></script>
-  <script src="js/vendor/what-input.js"></script>
-  <script src="js/vendor/foundation.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/main.js"></script>
-  </body>
-</html>
+			</div>
+			<div id="part2">
+				<div class="row expanded">
+					<div class="column small-12 large-4">
+						<div class="text-center container-title">
+							<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade-no%C3%ABl-2017/maison.png" />
+							<span class="titre">UN TOIT</span>
+						</div>
+						<div class="container-text">
+							<p><b>Des dizaines de milliers de personnes exilées</b> sont aujourd’hui privées de l’accès à un toit, à un hébergement digne et stable en France. La Cimade dénonce avec d’autres cette situation inacceptable et demande un engagement plus important de l’Etat.
+								<br /><br />En parallèle, <b>La Cimade accueille chaque année plus de 150 personnes</b> dans ses centres de Massy et Béziers pour rendre possible un accueil digne. Personnes isolées et familles y trouvent un lieu de vie où elles sont soutenues et orientées. Ce nouveau foyer pour un nouveau départ repose avant tout sur un accompagnement humain et la reconstruction d’un lien social, et ne laisse personne de côté, même les personnes déboutées du droit d’asile.
+							</p>
+						</div>
+					</div>
+					<div class="column small-12 large-4">
+						<div class="text-center container-title">
+							<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade-no%C3%ABl-2017/Balance.png" />
+							<span class="titre">DES DROITS</span>
+						</div>
+						<div class="container-text">
+							<p>Obtenir l’asile ou un titre de séjour en France est un parcours du combattant. Grâce à plus de <b>112 permanences juridiques et sociales</b> animées par des équipes formées en droit des étrangers, La Cimade oriente et accompagne <b>plus de 100 000 personnes</b> exilées chaque année.
+								<br /><br />La mobilisation de 2 200 bénévoles est essentielle pour accomplir cette solidarité active auprès des personnes fragilisées : à toutes les étapes – écoute attentive des situations personnelles, explication des procédures, constitution des dossiers et défense de l’accès effectif aux droits auprès des administrations.
+							</p>
+						</div>
+					</div>
+					<div class="column small-12 large-4">
+						<div class="text-center container-title">
+							<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade-no%C3%ABl-2017/educ.png" />
+							<span class="titre">UNE VOIX</span>
+						</div>
+						<div class="container-text">
+							<p>Maîtriser la langue de son pays d’accueil est une étape essentielle pour se reconstruire. Grâce à des cours de français, mais aussi à des ateliers d’écriture et des activités culturelles, <b>plus de 1 800 personnes exilées sont accompagnées</b> par des équipes de La Cimade.
+								<br /><br />Pas moins de <b>22 groupes locaux sont mobilisées</b> pour favoriser l’apprentissage du français, et ainsi garantir que chacune et chacun, sans distinction de situation administrative, puisse mieux communiquer, s’informer et trouver une place dans la société.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="part3">
+
+			</div>
+		</section>
+		<section id="eq">
+			<p class="text-center" style="color: white;font-size: 26px;margin-bottom: 0;line-height: 1.2">La Cimade compte sur vous.</p>
+			<p class="text-center" style="color: white;font-size: 26px;font-weight: bold;line-height: 1.2;">Votre don reconstruit des vies brisées.</p>
+			<div class="row text-center padding-top-3 expanded margin-bottom-3">
+				<div class="column small-10 medium-6 small-offset-1 medium-offset-0 large-4 text-center">
+					<a id="don_1" target="_blank" href="#">
+						<div class="priceCard">
+							<p class="amount">90 €</p>
+							<p class="text">2 enfants de familles migrantes participent chaque mercredi à des ateliers au centre de Massy</p>
+							<div class="btn-card width-100 margin-bottom-1">
+								JE FAIS UN DON
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="column small-10 medium-6 small-offset-1 medium-offset-0 large-4 text-center">
+					<a id="don_2" target="_blank" href="#">
+						<div class="priceCard">
+							<p class="amount">180 €</p>
+							<p class="text">2 personnes exilées bénéficient d'un apprentissage du français par La Cimade</p>
+							<div class="btn-card width-100 margin-bottom-1">
+								JE FAIS UN DON
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="column small-10 medium-6 small-offset-1 medium-offset-3 large-offset-0 large-4 end text-center">
+					<a id="don_3" target="_blank" href="https://soutenir.la-spa.fr/b?cid=178&amp;amount=11000">
+						<div class="priceCard">
+							<p class="amount">300 €</p>
+							<p class="text">9 personnes étrangères accompagnées dans une permanence juridique et sociale de La Cimade</p>
+							<div class="btn-card width-100 margin-bottom-1">
+								JE FAIS UN DON
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
+		<section id="accordeon">
+			<div class="row">
+				<div class="columns small-12 medium-12 large-5">
+					<div class="deroulant sommes-nous">
+						<a href="#">
+							<p class="text_accordeon">
+								Qui sommes-nous ?
+								<span style="left: 50px;" class="text_accordeon plus">+</span>
+							</p>
+						</a>
+					</div>
+					<div class="derouler sommes-nous-hide">
+						<p style="margin-bottom: 5px;">
+							Créée en 1939 pour venir en aide aux populations déplacées par la guerre et aux « étrangers indésirables » persécutés, La Cimade a sans cesse adapté ses engagements et son action aux enjeux de l’époque pour faire vivre sur le terrain une solidarité active avec les personnes étrangères. Reconnue d’intérêt général en 1975, elle s’implique autant dans le travail de terrain en France et dans les pays pauvres que sur le terrain politique en réaction aux lois réduisant les droits des immigrés à la fin des années 1970. La Cimade défend l’égalité des droits pour les personnes étrangères, et les principes de solidarité, d’hospitalité, plus que jamais nécessaires.
+						</p>
+					</div>
+					<div class="deroulant mission">
+						<a href="#">
+							<p class="text_accordeon">
+								Notre mission
+								<span style="left: 97px;" class="text_accordeon plus">+</span>
+							</p>
+						</a>
+					</div>
+					<div class="derouler mission-hide">
+						<p style="margin-bottom: 5px;">
+							Alors que la crise de l’accueil des personnes réfugiées et migrantes se prolonge en Europe,  La Cimade héberge, oriente, accompagne les personnes migrantes et réfugiées dans ses lieux d’accueil et permanences. Elle est aussi présente dans 8 centres de rétention administrative et 80 établissements pénitentiaires pour accompagner et aider les personnes enfermées, dans l’exercice de leurs droits. Elle travaille avec des associations partenaires dans les pays du Sud autour de projets liés à la défense des droits des personnes migrantes dans les pays d’origine, de transit et d’accueil. Elle mène également des campagnes de sensibilisation du grand public sur les réalités migratoires, intervient auprès des décideurs par des actions de plaidoyer et construit des propositions pour changer les politiques migratoires.
+						</p>
+					</div>
+					<div class="deroulant efficacite">
+						<a href="#">
+							<p class="text_accordeon">
+								Notre efficacité
+								<span style="left: 88px;" class="text_accordeon plus">+</span>
+							</p>
+						</a>
+					</div>
+					<div class="derouler efficacite-hide">
+						<p style="margin-bottom: 5px;">
+							<b style="font-size: 18px;">Chiffres 2017 :</b>
+							<li>plus de <b>100 000</b> personnes conseillées, accompagnées, hébergées .</li>
+							<li><b>98</b> lieux d’accueil .</li>
+							<li><b>112</b> permanences .</li>
+							<li><b>2 200</b> bénévoles organisés dans <b>12</b> régions, <b>92</b> groupes locaux .</li>
+							<li><b>14</b> associations partenaires dans <b>8</b> pays (Algérie, Côte d’Ivoire, Mali, Maroc, Mauritanie, Niger, Sénégal, Tunisie).</li>
+						</p>
+					</div>
+				</div>
+				<div class="columns small-12 medium-12 large-7 text-center">
+					<img id="photo" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade-no%C3%ABl-2017/photo.jpg">
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="row">
+				<div class="columns small-10 small-offset-1 medium-4 medium-offset-1 large-4 large-offset-1 text-center">
+					<a href="#" target="_blank"><img class="socialFooter" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade-no%C3%ABl-2017/logo-facebook.png"></a>
+					<a href="#" target="_blank"><img class="socialFooter" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade-no%C3%ABl-2017/logo-twitter.png"></a>
+				</div>
+				<div class="columns small-10 small-offset-1 medium-7 medium-offset-0 large-7 large-offset-0 end text-center">
+					<div class="text-center"><a href="#" target="_blank"><img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade-no%C3%ABl-2017/Logo Footer.png"></div></a>
+					<p id="credits"><a href="#" target="_blank">Crédits</a></p><p><a href="#" target="_blank">Mentions légales</a></p><p><a href="#" target="_blank">www.lacimade.org</a></p>
+				</div>
+			</footer>
+		</div>
+		<script>
+		var tag = document.createElement('script');
+
+		tag.src = "https://www.youtube.com/iframe_api";
+		var firstScriptTag = document.getElementsByTagName('script')[0];
+		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+		var player;
+		function onYouTubePlayerAPIReady() {
+			player = new YT.Player('player', {
+				videoId: 'bhoJZxNw7-M',
+				events: {
+					onStateChange: onPlayerStateChange
+				},
+				playerVars: {rel: 0},
+				width: '100%',
+				height: '500px'
+			});
+		}
+
+		function onPlayerStateChange(event) {
+			if (event.data === YT.PlayerState.PLAYING && check == true) // BEGIN
+			{
+				check = false;
+				woopra.track("interaction", {
+					action : "video-start",
+					category : "lhiverarrive",
+					url : document.location.href,
+					title : document.title
+				});
+			}
+			if(event.data === YT.PlayerState.ENDED) { // FINISHED
+				woopra.track("interaction", {
+					action : "video-end",
+					category : "lhiverarrive",
+					url : document.location.href,
+					title : document.title
+				});
+			}
+		}
+
+		function stopVideo() {
+			if (player) {
+				player.pauseVideo();
+			}
+		}
+		</script>
+		<script src="assets/js/libs.min.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+	</html>
