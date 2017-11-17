@@ -290,6 +290,15 @@
 		woopra.track();
 		</script>
 		<!-- End of Woopra Code -->
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-26879531-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-26879531-1');
+		</script>
 		<script>
 		var check = true;
 		var tag = document.createElement('script');
@@ -315,20 +324,10 @@
 			if (event.data === YT.PlayerState.PLAYING && check == true) // BEGIN
 			{
 				check = false;
-				woopra.track("interaction", {
-					action : "video-start",
-					category : "lhiverarrive",
-					url : document.location.href,
-					title : document.title
-				});
+				ga('send', 'event', 'video', 'video-start', 'reconstruire');
 			}
 			if(event.data === YT.PlayerState.ENDED) { // FINISHED
-				woopra.track("interaction", {
-					action : "video-end",
-					category : "lhiverarrive",
-					url : document.location.href,
-					title : document.title
-				});
+				ga('send', 'event', 'video', 'video-end', 'reconstruire');
 			}
 		}
 
@@ -337,15 +336,6 @@
 				player.pauseVideo();
 			}
 		}
-		</script>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-26879531-1"></script>
-		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'UA-26879531-1');
 		</script>
 		<script src="assets/js/libs.min.js"></script>
 		<script src="assets/js/main.js"></script>
