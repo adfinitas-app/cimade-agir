@@ -73,12 +73,12 @@
 		</nav>
 		<header>
 			<div class="row expanded">
-				<div class="medium-12 large-10 columns video">
+				<div class="medium-12 large-10 columns text-center video">
 					<div id="player">
 
 					</div>
 				</div>
-				<div class="medium-12 large-2 columns text-center large-text-left end">
+				<div class="show-for-large large-2 columns text-center large-text-left end">
 					<div>
 						<img class="share" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade-no%C3%ABl-2017/Je partage.png">
 					</div>
@@ -93,8 +93,26 @@
 					</div>
 				</div>
 			</div>
-			<div class="text-center padding-vertical-3">
-				<a href="#" target="_blank"><img id="bt_don" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade-no%C3%ABl-2017/BT don.png"></a>
+			<div class="row expanded">
+				<div class="text-center small-12 medium-6 large-12 columns padding-vertical-3">
+					<div class="table" style="height: 200px;">
+						<div class="table-cell middle">
+							<a href="#" target="_blank"><img id="bt_don" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade-no%C3%ABl-2017/BT don.png"></a>
+						</div>
+					</div>
+				</div>
+				<div class="small-12 medium-6 hide-for-large columns text-center large-text-left end">
+					<div>
+						<img class="share" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade-no%C3%ABl-2017/Je partage.png">
+					</div>
+					<div>
+						<img class="share_fleche" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade-no%C3%ABl-2017/Fle%CC%80che.png">
+					</div>
+					<div style="margin-bottom: 40px;">
+						<a href="#" target="_blank"><img class="share" id="shareFbSmall" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade-no%C3%ABl-2017/facebook.png"></a>
+						<a href="#" target="_blank"><img class="share" id="shareTwSmall" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade-no%C3%ABl-2017/twitter.png"></a>
+					</div>
+				</div>
 			</div>
 		</header>
 		<section id="partie-centrale">
@@ -259,68 +277,68 @@
 			</footer>
 		</div>
 		<script>
-		function extractUrlParams(){
-			var t = document.location.search.substring(1).split('&'); var f = [];
-			for (var i=0; i<t.length; i++){
-				var x = t[ i ].split('=');
-				f[x[0]]=decodeURIComponent(x[1]);
+			function extractUrlParams(){
+				var t = document.location.search.substring(1).split('&'); var f = [];
+				for (var i=0; i<t.length; i++){
+					var x = t[ i ].split('=');
+					f[x[0]]=decodeURIComponent(x[1]);
+				}
+				return f;
+			};
+
+			(function(){
+				var t,i,e,n=window,o=document,a=arguments,s="script",r=["config","track","identify","visit","push","call","trackForm","trackClick"],c=function(){var t,i=this;for(i._e=[],t=0;r.length>t;t++)(function(t){i[t]=function(){return i._e.push([t].concat(Array.prototype.slice.call(arguments,0))),i}})(r[t])};for(n._w=n._w||{},t=0;a.length>t;t++)n._w[a[t]]=n[a[t]]=n[a[t]]||new c;i=o.createElement(s),i.async=1,i.src="//static.woopra.com/js/w.js",e=o.getElementsByTagName(s)[0],e.parentNode.insertBefore(i,e)
+			})("woopra");
+
+			woopra.config({
+				domain: 'lacimade.org'
+			});
+
+			var p = extractUrlParams();
+
+			if ('email' in p) {
+				if ('lastname' in p && 'firstname' in p) {
+					woopra.identify({
+						email: p['email'],
+						name: p['firstname'] + ' ' + p['lastname']
+					});
+				} else {woopra.identify({email: p['email']})}
 			}
-			return f;
-		};
 
-		(function(){
-			var t,i,e,n=window,o=document,a=arguments,s="script",r=["config","track","identify","visit","push","call","trackForm","trackClick"],c=function(){var t,i=this;for(i._e=[],t=0;r.length>t;t++)(function(t){i[t]=function(){return i._e.push([t].concat(Array.prototype.slice.call(arguments,0))),i}})(r[t])};for(n._w=n._w||{},t=0;a.length>t;t++)n._w[a[t]]=n[a[t]]=n[a[t]]||new c;i=o.createElement(s),i.async=1,i.src="//static.woopra.com/js/w.js",e=o.getElementsByTagName(s)[0],e.parentNode.insertBefore(i,e)
-		})("woopra");
-
-		woopra.config({
-			domain: 'lacimade.org'
-		});
-
-		var p = extractUrlParams();
-
-		if ('email' in p) {
-			if ('lastname' in p && 'firstname' in p) {
-				woopra.identify({
-					email: p['email'],
-					name: p['firstname'] + ' ' + p['lastname']
-				});
-			} else {woopra.identify({email: p['email']})}
-		}
-
-		woopra.track();
+			woopra.track();
 		</script>
 		<!-- End of Woopra Code -->
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-26879531-1"></script>
 		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
 
-		gtag('config', 'UA-26879531-1');
+			gtag('config', 'UA-26879531-1');
 		</script>
 		<script>
-		var check = true;
-		var tag = document.createElement('script');
+			var check = true;
+			var tag = document.createElement('script');
 
-		tag.src = "https://www.youtube.com/iframe_api";
-		var firstScriptTag = document.getElementsByTagName('script')[0];
-		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+			tag.src = "https://www.youtube.com/iframe_api";
+			var firstScriptTag = document.getElementsByTagName('script')[0];
+			firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-		var player;
-		function onYouTubePlayerAPIReady() {
-			player = new YT.Player('player', {
-				videoId: 'bhoJZxNw7-M',
-				events: {
-					onStateChange: onPlayerStateChange
-				},
-				playerVars: {rel: 0},
-				width: '100%',
-				height: '500px'
-			});
-		}
+			var player;
+			function onYouTubePlayerAPIReady() {
+				player = new YT.Player('player', {
+					videoId: 'bhoJZxNw7-M',
+					events: {
+						onStateChange: onPlayerStateChange
+					},
+					playerVars: {rel: 0},
+					width: '100%',
+					height: '500px'
+				});
+			}
 
-		function onPlayerStateChange(event) {
+			function onPlayerStateChange(event) {
 			if (event.data === YT.PlayerState.PLAYING && check == true) // BEGIN
 			{
 				check = false;
@@ -336,8 +354,8 @@
 				player.pauseVideo();
 			}
 		}
-		</script>
-		<script src="assets/js/libs.min.js"></script>
-		<script src="assets/js/main.js"></script>
-	</body>
-	</html>
+	</script>
+	<script src="assets/js/libs.min.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
