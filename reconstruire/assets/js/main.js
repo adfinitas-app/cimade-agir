@@ -85,6 +85,18 @@ $(document).ready(function() {
 	}, function () {
 		$(this).attr('src', 'https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade-no%C3%ABl-2017/twitter.png');
 	});
+	$('#shareFbSmall').hover(function() {
+		$(this).attr('src', 'https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade-no%C3%ABl-2017/facebook-hover.png');
+	}, function () {
+		$(this).attr('src', 'https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade-no%C3%ABl-2017/facebook.png');
+	});
+
+	$('#shareTwSmall').hover(function() {
+		$(this).attr('src', 'https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade-no%C3%ABl-2017/twitter-hover.png');
+	}, function () {
+		$(this).attr('src', 'https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade-no%C3%ABl-2017/twitter.png');
+	});
+
 
 	$('.menu-item').click(function() {
 		var offset;
