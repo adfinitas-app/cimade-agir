@@ -361,8 +361,16 @@ footer p a:hover {
 	height: 422px;
 }
 
+@media screen and (max-width: 40em)
+{
+	#photo {
+		height: 100%;
+	}
+}
+
 .derouler {
-	min-height: 300px;
+	margin-bottom: 5px;
+	height: 300px;
 	background-color: #D1CDCA;
 }
 
