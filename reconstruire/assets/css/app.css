@@ -165,7 +165,7 @@ section#partie-centrale
 
 section#partie-centrale .text
 {
-	font-size: 20px;
+	font-size: 22px;
 	font-family: Arial;
 	line-height: 1.5;
 }
@@ -173,7 +173,7 @@ section#partie-centrale .text
 section#partie-centrale #question
 {
 	text-align: center;
-	font-size: 26px;
+	font-size: 28px;
 	margin-bottom: 0;
 	color: red;
 }
@@ -344,7 +344,6 @@ footer p a:hover {
 	font-weight: 400;
 	font-size: 20px;
 	padding-left: 10px;
-	padding-top: 0px;
 	background-color: #A59982;
 	height: 35px;
 	font-weight: bold;
