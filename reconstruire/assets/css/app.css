@@ -167,7 +167,7 @@ section#partie-centrale .text
 {
 	font-size: 20px;
 	font-family: Arial;
-	line-height: 1.2;
+	line-height: 1.5;
 }
 
 section#partie-centrale #question
@@ -342,9 +342,9 @@ footer p a:hover {
 .text_accordeon {
 	font-family: Arial, serif;
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 20px;
 	padding-left: 10px;
-	padding-top: 5px;
+	padding-top: 0px;
 	background-color: #A59982;
 	height: 35px;
 	font-weight: bold;
@@ -358,19 +358,12 @@ footer p a:hover {
 
 #photo {
 	width: 100%;
-	height: 422px;
-}
-
-@media screen and (max-width: 40em)
-{
-	#photo {
-		height: 100%;
-	}
+	height: 442px;
 }
 
 .derouler {
 	margin-bottom: 5px;
-	height: 300px;
+	height: 320px;
 	background-color: #D1CDCA;
 }
 
@@ -380,6 +373,17 @@ footer p a:hover {
 	font-size: 16px;
 	padding: 10px;
 	line-height: 18px;
+}
+
+@media screen and (max-width: 40em)
+{
+	#photo {
+		height: 100%;
+	}
+
+	.derouler {
+		height: 380px;
+	}
 }
 
 .somme-nous-hide, .mission-hide, .efficacite-hide {
