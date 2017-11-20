@@ -382,3 +382,8 @@ li {
 	line-height: 16px;
 	display: none;
 }
+
+#player {
+	max-width: 883px;
+	display: inline-block;
+}
