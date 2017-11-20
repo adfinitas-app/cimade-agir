@@ -34,9 +34,6 @@ $(document).ready(function() {
 
 	$('.sommes-nous a').click(function (e) {
 		e.preventDefault();
-		$('.sommes-nous .text_accordeon').css('background-color', '#423733');
-		$('.sommes-nous .text_accordeon').css('color', 'white');
-		$('.sommes-nous-hide').slideDown();
 		$('.mission .text_accordeon').css('background-color', '#A59982');
 		$('.mission .text_accordeon').css('color', 'black');
 		$('.mission-hide').slideUp();
@@ -44,13 +41,13 @@ $(document).ready(function() {
 		$('.efficacite .text_accordeon').css('color', 'black');
 		$('.efficacite-hide').slideUp();
 		$('.derouler li').slideUp();
+		$('.sommes-nous .text_accordeon').css('background-color', '#423733');
+		$('.sommes-nous .text_accordeon').css('color', 'white');
+		$('.sommes-nous-hide').slideDown();
 	});
 
 	$('.mission a').click(function (e) {
 		e.preventDefault();
-		$('.mission .text_accordeon').css('background-color', '#423733');
-		$('.mission .text_accordeon').css('color', 'white');
-		$('.mission-hide').slideDown();
 		$('.sommes-nous .text_accordeon').css('background-color', '#A59982');
 		$('.sommes-nous .text_accordeon').css('color', 'black');
 		$('.sommes-nous-hide').slideUp();
@@ -58,19 +55,22 @@ $(document).ready(function() {
 		$('.efficacite .text_accordeon').css('color', 'black');
 		$('.efficacite-hide').slideUp();
 		$('.derouler li').slideUp();
+		$('.mission .text_accordeon').css('background-color', '#423733');
+		$('.mission .text_accordeon').css('color', 'white');
+		$('.mission-hide').slideDown();
 	});
 
 	$('.efficacite a').click(function (e) {
 		e.preventDefault();
-		$('.efficacite .text_accordeon').css('background-color', '#423733');
-		$('.efficacite .text_accordeon').css('color', 'white');
-		$('.efficacite-hide').slideDown();
 		$('.mission .text_accordeon').css('background-color', '#A59982');
 		$('.mission .text_accordeon').css('color', 'black');
 		$('.mission-hide').slideUp();
 		$('.sommes-nous .text_accordeon').css('background-color', '#A59982');
 		$('.sommes-nous .text_accordeon').css('color', 'black');
 		$('.sommes-nous-hide').slideUp();
+		$('.efficacite .text_accordeon').css('background-color', '#423733');
+		$('.efficacite .text_accordeon').css('color', 'white');
+		$('.efficacite-hide').slideDown();
 		$('.derouler li').slideDown();
 	});
 
