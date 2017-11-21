@@ -176,6 +176,7 @@ section#partie-centrale #question
 	font-size: 28px;
 	margin-bottom: 0;
 	color: red;
+	padding: 0 20px;
 }
 
 section#papier
@@ -351,7 +352,8 @@ footer p a:hover {
 }
 
 .plus {
-	position: relative;
+	position: absolute;
+	right: 10px;
 }
 
 #photo {
@@ -370,7 +372,7 @@ footer p a:hover {
 	color: black;
 	font-size: 16px;
 	padding: 10px;
-	line-height: 18px;
+	line-height: 1.2;
 }
 
 @media screen and (max-width: 40em)
@@ -393,11 +395,52 @@ li {
 	color: black;
 	font-size: 16px;
 	padding-left: 10px;
-	line-height: 18px;
+	line-height: 1.2;
 	display: none;
 }
 
 #player {
 	max-width: 883px;
 	display: inline-block;
+}
+
+@media screen and (max-width: 400px) {
+	section#eq .priceCard
+	{
+		padding: 0 30px 20px 30px;
+	}
+}
+
+#accord-1
+{
+	margin-bottom: 5px;font-size: 15px;line-height: 1.2;
+}
+
+#accord-2
+{
+	margin-bottom: 5px;line-height: 1.2;font-size: 14px;
+}
+
+@media screen and (min-width: 40em) and (max-width: 64em)
+{
+	#accord-1
+	{
+		font-size: 20px;
+	}
+
+	#accord-2
+	{
+		font-size: 19px;
+	}
+}
+
+@media screen and (min-width: 64em) {
+	#accord-1
+	{
+		font-size: 17px;
+	}
+	#accord-2
+	{
+		font-size: 15px;
+	}
 }
