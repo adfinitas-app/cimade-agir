@@ -229,7 +229,22 @@
 	margin-left: 15px;
 	max-width: 90px;
 }
-
+.infos .partenaires img:nth-child(10) {
+	margin-left: 15px;
+	max-width: 90px;
+}
+.infos .partenaires img:nth-child(11) {
+	margin-left: 15px;
+	max-width: 90px;
+}
+.infos .partenaires img:nth-child(12) {
+	margin-left: 15px;
+	max-width: 90px;
+}
+.infos .partenaires img:nth-child(13) {
+	margin-left: 15px;
+	max-width: 90px;
+}
 .infos .partenaires p {
 	color: #aba8a4;
 	font-size: 16px;
