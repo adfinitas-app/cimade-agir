@@ -1,0 +1,447 @@
+@font-face {
+	font-family: 'GravurCondensed';
+	src: url('../fonts/GravurCondensed-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/GravurCondensed-Regular.otf')  format('opentype'),
+	url('../fonts/GravurCondensed-Regular.woff') format('woff'), url('../fonts/GravurCondensed-Regular.ttf')  format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'GravurCondensed-Bold';
+	src: url('../fonts/GravurCondensed-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/GravurCondensed-Bold.otf')  format('opentype'),
+	url('../fonts/GravurCondensed-Bold.woff') format('woff'), url('../fonts/GravurCondensed-Bold.ttf')  format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+p, h1, h2, h3, h4, h5, h6, a, button, ul, li {
+	font-family: "Open Sans", sans-serif;
+}
+.fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+}
+.non-bold {
+	font-weight: normal !important;
+}
+.relative {
+	position: relative;
+}
+.no-margin {
+	margin: 0;
+}
+.no-padding {
+	padding: 0;
+}
+.max-width {
+	max-width: 75rem !important;
+}
+.min-width {
+	min-width: 75rem !important;
+}
+.bold {
+	font-weight: 700;
+}
+.red {
+	color: #eb212e;
+}
+.visible {
+	visibility: visible !important;
+}
+.container-inline div {
+	display: inline-block;
+	vertical-align: middle;
+}
+.flex {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.inline-block {
+	display: inline-block;
+}
+.iti-flag {background-image: url("../img/flags.png");}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2 / 1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+	.iti-flag {background-image: url("../img/flags@2x.png");}
+}
+.intl-tel-input {
+	width: 100%;
+}
+#f_phone {
+	padding-left: 50px !important;
+}
+
+.header {
+	padding: 10px 10px;
+	background-color: #eb212e;
+}
+.logo {
+	max-width: 230px;
+}
+.nav-right {
+	padding-top: 12px;
+	text-align: right;
+}
+.nav-right img {
+	margin: 0 15px;
+	vertical-align: middle;
+}
+.nav-right .btn-header {
+	color: white;
+	background-color: black;
+	padding: 10px 30px;
+	margin-left: 15px;
+}
+
+#body,
+#merci {
+	position: relative;
+}
+.body {
+	min-height: 90vh;
+}
+footer {
+	position: absolute;
+	bottom: 10px;
+	right: 40px;
+}
+footer p,
+footer a{
+	font-size: 14px;
+	color: white;
+	margin-bottom: 0;
+}
+.body .right {
+	padding: 10px 10px 45px;
+	height: 100%;
+	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade-agir/petition/bg-right.png');
+	background-size: cover;
+}
+.body .left {
+	padding: 10px;
+	background-color: white;
+	height: 100%;
+}
+.body .left .section.video {
+	display: none;
+}
+.body .left .section.text-begin {
+	display: block;
+}
+.body .left .section.petition {
+	display: none;
+}
+.body .left .section.text-begin h1,
+.body .left .section.petition h1 {
+	font-family: 'GravurCondensed-Bold', serif;
+	font-size: 36px;
+	color: #eb212e;
+	line-height: 1.2;
+	margin-bottom: 30px;
+}
+.body .left .section.video h1{
+	font-family: 'GravurCondensed-Bold', serif;
+	font-size: 36px;
+	color: white;
+	line-height: 1.2;
+	margin-bottom: 30px;
+}
+.body .left .section.text-begin p.text,
+.body .left .section.petition p.text{
+	font-size: 16px;
+	color: black;
+	line-height: 1.1;
+	font-family: "Roboto", serif;
+	font-weight: 400;
+	margin-bottom: 30px;
+}
+.body .left .section.text-begin .btn-video {
+	background-color: #eb212e;
+	color: white;
+	padding: 20px 10px 20px 20px;
+	font-family: 'GravurCondensed-Bold', serif;
+}
+.video-container {
+	position: relative;
+	padding-bottom: 49.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.body .left .section.video .btn-left p {
+	font-family: 'GravurCondensed', serif;
+	color: white;
+}
+.btn-left {
+	display: block;
+	text-align: center;
+	max-width: 200px;
+	margin: 10% auto 0 auto;
+}
+.btn-left p {
+	font-family: 'GravurCondensed', serif;
+	color: black;
+	text-transform: uppercase;
+	margin-bottom: 8px;
+}
+.open-petition img {
+	transform: rotate(180deg);
+}
+.petition p {
+	font-family: "Roboto", serif;
+	font-size: 14px;
+}
+.container-form {
+	background-color: #eb212e;
+	padding: 20px;
+	width: 350px;
+	max-width: 100%;
+}
+
+
+.container-form .title {
+	margin-bottom: 30px;
+
+}
+.container-form .title img{
+	vertical-align: middle;
+	max-width: 80px;
+}
+.container-form .title p{
+	font-family: 'GravurCondensed-Bold', serif;
+	display: inline-block;
+	vertical-align: bottom;
+	margin-bottom: 0;
+	font-size: 25px;
+	line-height: 1.2;
+	font-weight: 800;
+	color: white;
+	margin-left: 5px;
+}
+form .error {
+	display: none;
+	margin-bottom: 0;
+	color: black;
+	font-size: 12px;
+}
+form .hidden {
+	display: none;
+}
+form input,
+form select {
+	font-family: 'Open Sans', serif;
+	margin-bottom: 5px !important;
+	font-size: 20px !important;
+	padding: 10px !important;
+	height: 45px !important;
+}
+select {
+	background: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/FAF-petition/v.png') no-repeat right #ddd;
+	-webkit-appearance: none;
+	background-position-x: 244px;
+	background-color: white;
+}
+form input[type=submit] {
+	font-family: 'GravurCondensed-Bold', serif;
+	width: 100%;
+	height: 62px;
+	margin-top: 15px;
+	background-color: #000000;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	border: none;
+	text-transform: uppercase;
+}
+.red-border {
+	border:2px solid black;
+}
+form label {
+	color: white;
+	font-weight: bold;
+	font-size: 14px;
+	font-family: 'GravurCondensed', serif;
+}
+.container-form p.obligatoire {
+	font-family: "Roboto", serif;
+	font-size: 12px !important;
+	line-height: 1.1 !important;
+	width: auto !important;
+	height: auto !important;
+	margin-top: 5px;
+	color: white !important;
+}
+
+.civilite-container {
+	text-align: left;
+	margin-bottom: 9px;
+	margin-top: 15px;
+}
+.civilite-container * {
+	display: inline-block;
+	font-size: 16px;
+	line-height: 1.2;
+}
+
+.round {
+	position: relative;
+	width: 100px;
+	padding-left: 22px;
+}
+.round.margin {
+	margin-right: 5px;
+}
+.checkbox-separator {
+	width: 40px;
+}
+
+.round .box {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	cursor: pointer;
+	left: 0;
+	position: absolute;
+	top: 0;
+	height: 17px;
+	width: 17px;
+	margin-right: 0;
+	margin-left: 0;
+}
+.round input[type="checkbox"] {
+	display: none;
+}
+
+.round input[type="checkbox"]:checked + .box {
+	background-color: black;
+	border-color: black;
+}
+.round label:hover,
+.round label:focus{
+	cursor: pointer;
+}
+.round input[type="checkbox"]:checked + .box:after {
+	opacity: 1;
+}
+
+.checkbox-round:checked {
+	background-color: red;
+}
+
+#merci{
+	display: none;
+}
+#merci .right  h1 {
+	font-family: 'GravurCondensed-Bold', serif;
+	font-size: 130px;
+	color: #eb212e;
+	line-height: 1.2;
+	margin-bottom: 30px;
+}
+#merci .right  p {
+	font-family: 'GravurCondensed', serif;
+	font-size: 22px;
+	color: white;
+	line-height: 1.2;
+	margin-bottom: 30px;
+}
+#merci .right  img {
+	margin: 10px;
+}
+#merci .right {
+	background-image: url("https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade-agir/petition/bg-merci.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#merci .left  p {
+	font-family: 'GravurCondensed', serif;
+	font-size: 18px;
+	color: black;
+	line-height: 1.2;
+	margin-bottom: 30px;
+}
+#merci .left  h2 {
+	font-family: 'GravurCondensed-Bold', serif;
+	font-size: 28px;
+	color: #eb212e;
+	line-height: 1;
+	margin-bottom: 30px;
+}
+#merci .left  .box img {
+	margin-bottom: 20px;
+}
+#merci .left  .box a {
+	font-size: 16px;
+	color: white;
+	background-color: #eb212e;
+	padding: 10px 30px;
+	font-family: 'GravurCondensed', serif;
+}
+#merci .left  .box p {
+	font-size: 13px;
+	color: black;
+	margin-top: 30px;
+	font-family: "Roboto", serif;
+}
+#merci footer p ,
+#merci footer a{
+	color: black;
+}
+@media screen and (max-width: 640px) {
+	.section {
+		padding: 10px;
+	}
+	.nav-right {
+		text-align: center;
+	}
+	.nav-right .btn-header {
+		display: block;
+		margin-top: 20px;
+	}
+	.body .left .section.text-begin h1,
+	.body .left .section.petition h1 {
+		font-size: 28px;
+		line-height: 1.1;
+	}
+	.body .left .section.text-begin .btn-video {
+		padding: 20px 5px 20px 10px;
+		font-size: 12px;
+	}
+	.body .left .section.video h1 {
+		font-size: 22px;
+	}
+	.body {
+		min-height: none;
+	}
+	footer {
+		width: 90%;
+		left: 10px;
+	}
+	#merci .right  h1 {
+		font-size: 90px;
+	}
+}

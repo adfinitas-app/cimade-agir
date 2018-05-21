@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'GravurCondensed-Bold';
+  src: url('GravurCondensed-Bold.eot?#iefix') format('embedded-opentype'),  url('GravurCondensed-Bold.otf')  format('opentype'),
+	     url('GravurCondensed-Bold.woff') format('woff'), url('GravurCondensed-Bold.ttf')  format('truetype'), url('GravurCondensed-Bold.svg#GravurCondensed-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
