@@ -132,7 +132,7 @@ footer a{
 	background-size: cover;
 }
 .body .left {
-	padding: 10px;
+	padding: 30px 10px 10px;
 	background-color: white;
 	height: 100%;
 }
@@ -148,26 +148,27 @@ footer a{
 .body .left .section.text-begin h1,
 .body .left .section.petition h1 {
 	font-family: 'GravurCondensed-Bold', serif;
-	font-size: 36px;
+	font-size: 30px;
 	color: #eb212e;
-	line-height: 1.2;
-	margin-bottom: 30px;
+	line-height: 1;
+	margin-bottom: 20px;
 }
 .body .left .section.video h1{
 	font-family: 'GravurCondensed-Bold', serif;
-	font-size: 36px;
+	font-size: 30px;
 	color: white;
-	line-height: 1.2;
-	margin-bottom: 30px;
+	line-height: 1;
+	margin-bottom: 20px;
 }
 .body .left .section.text-begin p.text,
 .body .left .section.petition p.text{
-	font-size: 16px;
+	font-size: 13px;
 	color: black;
+	text-align: justify;
 	line-height: 1.1;
 	font-family: "Roboto", serif;
 	font-weight: 400;
-	margin-bottom: 30px;
+	margin-bottom: 15px;
 }
 .body .left .section.text-begin .btn-video {
 	background-color: #eb212e;
@@ -200,7 +201,7 @@ footer a{
 	display: block;
 	text-align: center;
 	max-width: 200px;
-	margin: 10% auto 0 auto;
+	margin: 4% auto 0 auto;
 }
 .btn-left p {
 	font-family: 'GravurCondensed', serif;
@@ -212,8 +213,10 @@ footer a{
 	transform: rotate(180deg);
 }
 .petition p {
-	font-family: "Roboto", serif;
-	font-size: 14px;
+	font-family: 'GravurCondensed', serif;
+	font-size: 16px;
+	text-align: center;
+	margin-bottom: 5px;
 }
 .container-form {
 	background-color: #eb212e;
@@ -258,12 +261,6 @@ form select {
 	font-size: 20px !important;
 	padding: 10px !important;
 	height: 45px !important;
-}
-select {
-	background: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/FAF-petition/v.png') no-repeat right #ddd;
-	-webkit-appearance: none;
-	background-position-x: 244px;
-	background-color: white;
 }
 form input[type=submit] {
 	font-family: 'GravurCondensed-Bold', serif;
@@ -395,11 +392,17 @@ form label {
 	margin-bottom: 20px;
 }
 #merci .left  .box a {
-	font-size: 16px;
-	color: white;
+	display: block;
+}
+#merci .left  .box p.link {
+	padding: 10px 4px;
 	background-color: #eb212e;
-	padding: 10px 30px;
+	width: 100%;
+	font-size: 14px;
+	color: white;
 	font-family: 'GravurCondensed', serif;
+	margin-bottom: 0;
+	margin-top: 0;
 }
 #merci .left  .box p {
 	font-size: 13px;
