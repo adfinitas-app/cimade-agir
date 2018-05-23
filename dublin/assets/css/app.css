@@ -283,7 +283,9 @@ form label {
 	font-size: 14px;
 	font-family: 'GravurCondensed', serif;
 }
-.container-form p.obligatoire {
+.container-form p.obligatoire,
+.container-form p.juridique,
+.container-form p.juridique a{
 	font-family: "Roboto", serif;
 	font-size: 12px !important;
 	line-height: 1.1 !important;
@@ -413,6 +415,22 @@ form label {
 #merci footer p ,
 #merci footer a{
 	color: black;
+}
+
+#pop-up {
+    text-align: left;
+}
+#pop-up p {
+    font-size: 13px;
+    color: black;
+    margin-top: 30px;
+    font-family: "Roboto", serif;
+}
+#pop-up .title {
+    color: #eb212e;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'GravurCondensed-bold', serif;
 }
 @media screen and (max-width: 640px) {
 	.section {
