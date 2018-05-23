@@ -94,7 +94,7 @@
 						<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade-agir/petition/icon-form.png" alt="Signez la pétition !">
 					</div>
 					<div>
-						<p>Rejoignez les<br /><span id="nb-sign">XXX</span> signataires !</p>
+						<p>Rejoignez les<br /><span id="nb-signatures">&nbsp;&nbsp;&nbsp;&nbsp;</span> signataires !</p>
 					</div>
 				</div>
 				<form id="form" novalidate>
@@ -187,6 +187,19 @@
 <script src="https://code.jquery.com/jquery.min.js" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.js" type="text/javascript"></script>
 <script src="assets/js/intlTelInput.min.js" type="text/javascript"></script>
+<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyCQEmNxcWpIrrsYObpR5kjN3mNXPuY37LM",
+        authDomain: "faf-scoring-2018-315c2.firebaseapp.com",
+        databaseURL: "https://faf-scoring-2018-315c2.firebaseio.com",
+        projectId: "faf-scoring-2018-315c2",
+        storageBucket: "faf-scoring-2018-315c2.appspot.com",
+        messagingSenderId: "170905182107"
+    };
+    firebase.initializeApp(config);
+</script>
 <script src="assets/js/app.js" type="text/javascript"></script>
 <script src="assets/js/data.js" type="text/javascript"></script>
 

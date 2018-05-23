@@ -6,6 +6,14 @@ $(document).ready( function () {
         initialCountry:"fr"
     });
 
+    var database = firebase.database();
+
+    var CountRef = firebase.database().ref('count');
+
+    CountRef.once('value', function(snapshot) {
+        $('#nb-signatures').html(snapshot.val());
+    });
+
 
     fillFieldsFromUrl();
     if ($(window).width() > 640) {
@@ -43,6 +51,16 @@ $(document).ready( function () {
     });
 
 });
+
+function addVote() {
+    var CountRef = firebase.database().ref('count');
+
+    CountRef.once('value', function(snapshot) {
+        $('#nb-signatures').html(snapshot.val() + 1);
+        firebase.database().ref('count').set(snapshot.val() + 1);
+    });
+
+}
 
 $('form').submit( function (e) {
     e.preventDefault();
