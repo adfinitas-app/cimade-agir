@@ -11,11 +11,10 @@ function sendData() {
                 "name":  pureField($('#f_firstname').val()) + " " + pureField($('#f_lastname').val()),
                 "partenaires_optin": getOptin(),
                 "language": "fr_FR",
-                "reserved_code_media": "",
             }
         },
         "woopra": {
-            "host": "",			// Nom du projet dans Woopra.
+            "host": "lacimade.org",			// Nom du projet dans Woopra.
 
             /* Variables de configuration de la fiche utilisateur, préfixe : "cv_" */
 
@@ -26,14 +25,13 @@ function sendData() {
 
             /* Variables de l'événement, : préfixe : "ce_" */
 
-            "event": "",				// Nom de l'événement à tracker si applicable. Non préfixé.
+            "event": "petition_dublin2018",				// Nom de l'événement à tracker si applicable. Non préfixé.
             "ce_email": pureField($('#f_email').val()),
             "ce_firstname": pureField($('#f_firstname').val().toUpperCase()),
             "ce_lastname": pureField($('#f_lastname').val().toUpperCase()),
             "ce_name":  pureField($('#f_firstname').val()) + " " + pureField($('#f_lastname').val()),
             "ce_partenaires_optin": getOptin(),
             "ce_language": "fr_FR",
-            "ce_reserved_code_media": "",
         },
         "mailjet": {
             "Email": pureField($('#f_email').val()),
@@ -43,7 +41,6 @@ function sendData() {
                 "name": pureField($('#f_firstname').val()) + " " + pureField($('#f_lastname').val()),
                 "partenaires_optin": getOptin(),
                 "language": "fr_FR",
-                "reserved_code_media": "",
             },
             "addLists": getList(), // Noms de transmission des listes dans lesquelles ajouter le contact. Ne pas mettre les listes "Toute la base" et "Prospects" ici, le contact y est inséré par défaut (excepté dans "Prospect" si donateur).
             "delLists": []  // Noms de transmission des listes dans lesquelles supprimer le contact.
@@ -53,8 +50,8 @@ function sendData() {
         data.woopra["cv_phone"] = pureField(getPhone());
         data.woopra["ce_phone"] = pureField(getPhone());
     }
-    console.log(data);
-    //makeCorsRequest(data);
+    //console.log(data);
+    makeCorsRequest(data);
 }
 
 /*
