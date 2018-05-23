@@ -72,6 +72,7 @@ $('form').submit( function (e) {
                     $(document).scrollTop( $("header").offset().top + 1);
                 });
             });
+            addVote();
             sendData();
         }
     }
