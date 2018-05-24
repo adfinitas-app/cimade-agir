@@ -4,13 +4,14 @@ function sendData() {
         "db": {
             "schema": "cimade_petition_dublin2018",
             "db": {
+                "civility": getCivility(),
                 "email": pureField($('#f_email').val()),
                 "phone": pureField(getPhone()),
                 "firstname": pureField($('#f_firstname').val().toUpperCase()),
                 "lastname": pureField($('#f_lastname').val().toUpperCase()),
                 "name":  pureField($('#f_firstname').val()) + " " + pureField($('#f_lastname').val()),
-                "partenaires_optin": getOptin(),
                 "language": "fr_FR",
+                "utm_source": getUTM(),
             }
         },
         "woopra": {
@@ -22,6 +23,7 @@ function sendData() {
             "cv_firstname": pureField($('#f_firstname').val().toUpperCase()),
             "cv_lastname": pureField($('#f_lastname').val().toUpperCase()),
             "cv_name":  pureField($('#f_firstname').val()) + " " + pureField($('#f_lastname').val()),
+            "cv_civility": getCivility(),
 
             /* Variables de l'événement, : préfixe : "ce_" */
 
@@ -30,7 +32,7 @@ function sendData() {
             "ce_firstname": pureField($('#f_firstname').val().toUpperCase()),
             "ce_lastname": pureField($('#f_lastname').val().toUpperCase()),
             "ce_name":  pureField($('#f_firstname').val()) + " " + pureField($('#f_lastname').val()),
-            "ce_partenaires_optin": getOptin(),
+            "ce_utm_source": getUTM(),
             "ce_language": "fr_FR",
         },
         "mailjet": {
@@ -39,7 +41,7 @@ function sendData() {
                 "firstname": pureField($('#f_firstname').val().toUpperCase()),
                 "lastname": pureField($('#f_lastname').val().toUpperCase()),
                 "name": pureField($('#f_firstname').val()) + " " + pureField($('#f_lastname').val()),
-                "partenaires_optin": getOptin(),
+                "civility": getCivility(),
                 "language": "fr_FR",
             },
             "addLists": getList(), // Noms de transmission des listes dans lesquelles ajouter le contact. Ne pas mettre les listes "Toute la base" et "Prospects" ici, le contact y est inséré par défaut (excepté dans "Prospect" si donateur).
@@ -98,6 +100,14 @@ function makeCorsRequest(data) {
 /*
  * Fin de la lib
  */
+function getUTM() {
+    var p = extractUrlParams();
+
+    if (p['utm_source'] && p['utm_source'] !== "undefined")
+        return p['utm_source'];
+    else
+        return "";
+}
 
 function getPhone() {
     return $('#f_phone').intlTelInput("getNumber");
