@@ -162,6 +162,14 @@ function fillFieldsFromUrl() {
         $("#f_lastname").val(p['lastname']);
     if (p['phone'] && p['phone'] !== "undefined")
         $("#f_phone").val(p['phone']);
+    if (p['wv_email'] && p['wv_email'] !== "undefined")
+        $("#f_email").val(p['wv_email']);
+    if (p['wv_firstname'] && p['wv_firstname'] !== "undefined")
+        $("#f_firstname").val(p['wv_firstname']);
+    if (p['wv_lastname'] && p['wv_lastname'] !== "undefined")
+        $("#f_lastname").val(p['wv_lastname']);
+    if (p['wv_phone'] && p['wv_phone'] !== "undefined")
+        $("#f_phone").val(p['wv_phone']);
 }
 
 function extractUrlParams(){
