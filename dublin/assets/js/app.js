@@ -6,8 +6,6 @@ $(document).ready( function () {
         initialCountry:"fr"
     });
 
-    var database = firebase.database();
-
     var CountRef = firebase.database().ref('count');
 
     CountRef.once('value', function(snapshot) {
