@@ -1,5 +1,3 @@
-
-
 $(document).ready( function () {
     $("#f_phone").intlTelInput({
         utilsScript:"https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.13/js/utils.js",

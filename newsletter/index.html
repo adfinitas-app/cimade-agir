@@ -1,0 +1,183 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Cimade - Newsletter</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/intlTelInput.css">
+</head>
+
+<body>
+    <script src="js/vendor/jquery.js"></script>
+
+    <div data-sticky-container>
+        <div class="sticky redBackground" data-sticky data-margin-top="0">
+            <div class="grid-container">
+            <div class="grid-x grid-padding-x align-middle" id="topBar">
+                <div class="cell small-12 large-auto text-center large-text-left">
+                    <a href="#"><img src="src/logoLaCimade.png" alt="logo La Cimade" class="height50" /></a>
+                </div>
+                <div class="cell small-4 large-shrink text-center">
+                    <a href="#"><img src="src/logoFacebook.png" alt="logo Facebook" class="height40" /></a>
+                </div>
+                <div class="cell small-4 large-shrink text-center">
+                    <a href="#"><img src="src/logoTwitter.png" alt="logo Twitter" class="height40" /></a>
+                </div>
+                <div class="cell small-4 large-shrink text-center" id="supportButton">
+                    <a href="#" class="button blackBackground blackBackgroundHover">
+                        <p class="h5 noMargin text-center">
+                            Soutenir la Cimade
+                        </p>
+                    </a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="page">
+        <div class="grid-container">
+            <div class="grid-x grid-margin-x">
+                <div class="cell small-12 large-5" id="leftCol">
+                    <div class="grid-y grid-frame">
+                        <div class="cell shrink">
+                            <div id="linearGreyBg">
+                                <div class="form-container">
+                                    <h1 class="redColor text-center h2">Je m'inscris à la newsletter</h1>
+                                    <p class="text-center">Les champs marqués d'un * sont obligatoires</p>
+
+                                    <p class="error error-civility">Le choix de civilité est obligatoire</p>
+                                    <p class="error error-lastname">Le champ Nom est obligatoire</p>
+                                    <p class="error error-firstname">Le champ Prénom est obligatoire</p>
+                                    <p class="error error-mail">Le champ e-mail est obligatoire</p>
+                                    <p class="error error-mail-wrong">Le format de l'email est incorrect</p>
+                                    <p class="error error-phone-wrong">Le format du téléphone est incorrect</p>
+
+                                    <form action="" method="" enctype="application/x-www-form-urlencoded" id="form">
+                                        <div class="grid-x grid-margin-x align-center">
+                                            <div class="cell shrink text-right">
+                                                <input type="radio" name="civility" value="Madame" id="civilityWoman"><label class="h6" for="civilityWoman">Madame</label>
+                                            </div>
+                                            <div class="cell shrink">
+                                                <input type="radio" name="civility" value="Monsieur" id="civilityMan"><label class="h6" for="civilityMan">Monsieur</label>
+                                            </div>
+                                        </div>
+                                        <div class="grid-x grid-margin-x">
+                                            <div class="cell">
+                                                <label class="h6" for="lastName">Nom*</label>
+                                                <input type="text" name="lastName" id="lastName" />
+                                            </div>
+                                        </div>
+                                        <div class="grid-x grid-margin-x">
+                                            <div class="cell">
+                                                <label class="h6" for="firstName">Prénom*</label>
+                                                <input type="text" name="firstName" id="firstName" />
+                                            </div>
+                                        </div>
+                                        <div class="grid-x grid-margin-x">
+                                            <div class="cell">
+                                                <label class="h6" for="email">Email*</label>
+                                                <input type="text" name="email" id="email" />
+                                            </div>
+                                        </div>
+                                        <div class="grid-x grid-margin-x">
+                                            <div class="cell">
+                                                <label class="h6" for="telephone">Téléphone</label>
+                                                <input type="tel" name="tel" id="telephone" placeholder="mon téléphone" />
+                                            </div>
+                                        </div>
+                                        <div class="grid-x align-center" id="submit">
+                                            <div class="cell small-8">
+                                                <input type="submit" class="button expanded redBackground" value="Valider">
+                                            </div>
+                                        </div>
+                                        <div class="grid-x">
+                                            <div class="cell">
+                                                <p class="lineHeight1">En cliquant, vous acceptez de recevoir les informations de La Cimade. Pour plus d’informations concernant vos données personnelles, <a href="#" class="blackColor">cliquez ici</a>.</p>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cell auto show-for-large" id="megaphone"></div>
+                    </div>
+                </div>
+                <div class="cell small-12 large-7" id="rightCol">
+                    <div class="grid-x">
+                        <div class="cell small-12 hide-for-large">
+                            <img src="src/logoNewsletter.png" alt="Newsletter" class="float-center logoNewsletter" />
+                        </div>
+                        <div class="cell large-shrink show-for-large">
+                            <img src="src/logoNewsletter.png" alt="Newsletter" class="logoNewsletter" style="width: auto; height: 90px" />
+                        </div>
+                    </div>
+                    <div class="grid-x text-center large-text-left">
+                        <div class="cell" id="discover">
+                            <p class="h5 text-center large-text-left">Découvrez les avantages à vous inscrire à notre newsletter.</p>
+                        </div>
+                    </div>
+
+                    <div id="info">
+                        <div class="grid-x grid-margin-x">
+                            <div class="cell small-12 large-shrink">
+                                <img src="src/pictoWhy.png" alt="Picto Pourquoi" class="float-center marginBtm-10" />
+                            </div>
+                            <div class="cell small-12 large-auto">
+                                <h2 class="h3 text-center large-text-left"><span class="redColor">Pourquoi m'inscrire</span> à la newsletter La Cimade&nbsp;?</h2>
+                                <p class="h5 text-justify">Vous serez informés de l’actualité de notre association et de nos actions en faveur des personnes réfugiées et migrantes.</p>
+                            </div>
+                        </div>
+
+                        <div class="grid-x grid-margin-x">
+                            <div class="cell small-12 large-shrink">
+                                <img src="src/pictoFrequency.png" alt="Picto Fréquence" class="float-center marginBtm-10" />
+                            </div>
+                            <div class="cell small-12 large-auto">
+                                <h2 class="h3 text-center large-text-left"><span class="redColor">À quelle fréquence</span> vais-je recevoir la newsletter&nbsp;?</h2>
+                                <p class="h5 text-justify">Ne vous inquiétez pas, nous serons attentifs à ne pas vous envahir avec des messages sans intérêt. Nous pensons qu’une newsletter doit être sollicitée et attendue par ses lecteurs, raison pour laquelle nous limitons nos communications à une newsletter par mois et quelques autres messages par an.</p>
+                            </div>
+                        </div>
+
+                        <div class="grid-x grid-margin-x">
+                            <div class="cell small-12 large-shrink">
+                                <img src="src/pictoType.png" alt="Picto Type" class="float-center marginBtm-10" />
+                            </div>
+                            <div class="cell small-12 large-auto">
+                                <h2 class="h3 text-center large-text-left"><span class="redColor">Quel type de message</span> allez-vous m'envoyer&nbsp;?</h2>
+                                <p class="h5 text-justify">Vous recevrez principalement les actualités concernant les actions et les combats que nous menons quotidiennement pour défendre la dignité et les droits des personnes réfugiées et migrantes. Vous serez également sollicités à prendre part au combat lors d’événements majeurs ayant lieu à différents moments de l’année.</p>
+                            </div>
+                        </div>
+
+                        <div class="grid-x grid-margin-x">
+                            <div class="cell small-12 large-shrink">
+                                <img src="src/pictoStop.png" alt="Picto Stop" class="float-center marginBtm-10" />
+                            </div>
+                            <div class="cell small-12 large-auto">
+                                <h2 class="h3 text-center large-text-left">Est-ce que je peux me <span class="redColor">désinscrire facilement</span>&nbsp;?</h2>
+                                <p class="h5 text-justify">Oui, vous pouvez vous désinscrire à tout moment si vous ne souhaitez plus recevoir nos informations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/intlTelInput.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/data.js"></script>
+    <script>
+        $('#telephone').intlTelInput({
+            utilsScript: 'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.12/js/utils.js'
+        });
+    </script>
+</body>
+
+</html>
