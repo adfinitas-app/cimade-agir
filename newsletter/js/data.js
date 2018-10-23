@@ -1,6 +1,6 @@
 
 function sendData() {
-    var data = {
+    let data = {
         "db": {
             "schema": "newsletter",
             "db": {
@@ -9,9 +9,10 @@ function sendData() {
                 "firstname": pureField($('#firstName').val().toUpperCase()),
                 "lastname": pureField($('#lastName').val().toUpperCase()),
                 "civility": getCivility(),
+                "civility_dear": getCivilityDear(),
+                "civility_long": getCivilityLong(),
                 "sexe": getSexe(),
                 "name":  pureField($('#firstName').val()) + " " + pureField($('#lastName').val()),
-                "language": "fr_FR",
             }
         },
         "woopra": {
@@ -30,6 +31,7 @@ function sendData() {
             /* Variables de l'événement, : préfixe : "ce_" */
 
             "event": "newsletter",				// Nom de l'événement à tracker si applicable. Non préfixé.
+            "ce_email": pureField($('#email').val())
         },
         "mailjet": {
             "Email": pureField($('#email').val()),
@@ -40,11 +42,7 @@ function sendData() {
                 "civility": getCivility(),
                 "civility_dear": getCivilityDear(),
                 "civility_long": getCivilityLong(),
-                "personnalisation": getPersonnalisation(),
-                "personnalisation_courte": getPersonnalisationCourte(),
-                "name": pureField($('#firstName').val()) + " " + pureField($('#lastName').val()),
-                "partenaires_optin": getOptin(),
-                "language": "fr_FR",
+                "name": pureField($('#firstName').val()) + " " + pureField($('#lastName').val())
             },
             "addLists": getList(), // Noms de transmission des listes dans lesquelles ajouter le contact. Ne pas mettre les listes "Toute la base" et "Prospects" ici, le contact y est inséré par défaut (excepté dans "Prospect" si donateur).
             "delLists": []  // Noms de transmission des listes dans lesquelles supprimer le contact.
@@ -54,8 +52,10 @@ function sendData() {
         data.woopra["cv_phone"] = pureField(getPhone());
         data.woopra["ce_phone"] = pureField(getPhone());
     }
-    console.log(data);
-    //makeCorsRequest(data);
+    //console.log(data);
+    makeCorsRequest(data);
+
+    showNotif();
 }
 
 

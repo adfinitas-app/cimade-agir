@@ -43,7 +43,27 @@ p, label {
     margin-bottom: 3px;
     line-height: 1;
 }
+.header {
+    position: relative;
+}
+.notification {
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    top: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #e09ba3;
+    display: none;
 
+}
+.notification p {
+    margin-bottom: 0;
+    font-family: 'Open Sans', serif;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
 /* Colors */
 
 .redBackground, .redBackground:hover {

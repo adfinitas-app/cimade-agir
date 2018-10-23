@@ -101,6 +101,14 @@ function extractUrlParams(){
     return f;
 }
 
+function showNotif() {
+    $('.notification').slideDown( "slow", function() {
+        setTimeout(function(){
+            $('.notification').slideUp("slow");
+        }, 5000);
+    });
+}
+
 function handlePhoneNumber () {
     let form = document.getElementById("form");
     let dialCode = "00" + document.getElementsByClassName("selected-flag")[0].getAttribute("title").split("+")[1];
