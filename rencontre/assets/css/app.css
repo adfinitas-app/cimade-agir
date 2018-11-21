@@ -1,0 +1,570 @@
+@font-face {
+	font-family: 'GravurCondensed';
+	src: url('../fonts/GravurCondensed-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/GravurCondensed-Regular.otf')  format('opentype'),
+	url('../fonts/GravurCondensed-Regular.woff') format('woff'), url('../fonts/GravurCondensed-Regular.ttf')  format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'GravurCondensed-Bold';
+	src: url('../fonts/GravurCondensed-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/GravurCondensed-Bold.otf')  format('opentype'),
+	url('../fonts/GravurCondensed-Bold.woff') format('woff'), url('../fonts/GravurCondensed-Bold.ttf')  format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Poppins Bold';
+	src: url('../fonts/poppins-bold-webfont.woff2') format('woff2'),
+	url('../fonts/poppins-bold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Poppins Medium';
+	src: url('../fonts/poppins-medium-webfont.woff2') format('woff2'),
+	url('../fonts/poppins-medium-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Poppins';
+	src: url('../fonts/poppins-regular-webfont.woff2') format('woff2'),
+	url('../fonts/poppins-regular-webfont.woff') format(	'woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+p, h1, h2, h3, h4, h5, h6, a, button, ul, li {
+	font-family: "Open Sans", sans-serif;
+}
+.fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+}
+.non-bold {
+	font-weight: normal !important;
+}
+.relative {
+	position: relative;
+}
+.no-margin {
+	margin: 0;
+}
+.no-padding {
+	padding: 0;
+}
+.max-width {
+	max-width: 75rem !important;
+}
+.min-width {
+	min-width: 75rem !important;
+}
+.bold {
+	font-weight: 700;
+}
+.red {
+	color: #eb212e;
+}
+.visible {
+	visibility: visible !important;
+}
+.container-inline div {
+	display: inline-block;
+	vertical-align: middle;
+}
+.flex {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.inline-block {
+	display: inline-block;
+}
+
+.btn-bg {
+	background-color: black;
+	font-family: "Poppins Bold", serif;
+	color: white;
+	font-size: 16px;
+	padding: 5px 30px;
+	text-transform: uppercase;
+	display: inline-block;
+
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+}
+.btn-bg:hover, .btn-bg:focus {
+	color: white;
+
+	transform: scale(1.03);
+}
+
+
+
+
+
+.header {
+	background-color: #eb212e;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.header a  {
+	font-family: "Poppins Bold", serif;
+	color: white;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.header .container-inline div {
+	margin-top: 6px;
+	margin-right: 40px;
+}
+.header .rs img:nth-child(1) {
+	max-width: 9px;
+}
+.header .rs img {
+	max-width: 20px;
+	margin-right: 5px;
+}
+
+.first .accroche {
+	text-align: center;
+	margin-top: 50px;
+}
+.first .accroche h2 {
+	font-family: "Poppins Bold", serif;
+	color: black;
+	font-size: 26px;
+}
+.first .accroche h1 {
+	margin-top: 10px;
+	font-family: "Poppins Bold", serif;
+	font-weight: bold;
+	color: #eb212e;
+	font-size: 42px;
+	line-height: 1.2;
+}
+.first .accroche p {
+	margin-top: 40px;
+	font-family: 'GravurCondensed', serif;
+	color: black;
+	font-size: 14px;
+	margin-bottom: 30px;
+}
+.first .btn-bg {
+	font-size: 20px;
+}
+.first .video-container,
+#modal .video-container {
+	position: relative;
+	padding-bottom: 37.25%;
+	padding-top: 30px;
+	height: 0;
+	max-width: 100%;
+	width: 700px;
+	margin: 30px auto 0;
+}
+#modal .video-container {
+	padding-bottom: 57.25% !important;
+}
+.first .video-container iframe,
+#modal .video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.first .video .share {
+	right: -150px;
+	top: -66px;
+	z-index: -1;
+	position: absolute;
+	width: 300px;
+	height: 136px;
+	background-image: url("https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade-agir/rencontre/bg-share.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 26px;
+}
+.first .video .share p {
+	display: inline-block;
+	vertical-align: middle;
+	font-family: "Poppins Bold", serif;
+	color: #eb212e;
+	font-size: 18px;
+	text-transform: uppercase;
+	margin-bottom: 0;
+	margin-right: 10px;
+}
+.first .video .share img {
+	vertical-align: middle;
+	max-width: 25px;
+}
+.first .aider {
+	margin-top: 80px;
+	margin-bottom: 80px;
+	text-align: center;
+}
+.first .aider p {
+	font-family: "Poppins Bold", serif;
+	font-weight: bold;
+	color: #eb212e;
+	font-size: 36px;
+	line-height: 1.2;
+}
+.accompagner {
+	background-color: #1c1c1c;
+	position: relative;
+	padding-top: 40px;
+	padding-bottom: 60px;
+	text-align: center;
+}
+.accompagner .up {
+	position: absolute;
+	top: -32px;
+	left: 0;
+	z-index: -1;
+}
+.accompagner .left {
+	position: absolute;
+	bottom: 100px;
+	left: 0;
+	max-width: 400px;
+	z-index: 1;
+}
+.accompagner .right {
+	position: absolute;
+	top: 100px;
+	right: 0;
+	max-width: 400px;
+	z-index: 1;
+}
+.accompagner .down {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	bottom: -26px;
+	max-width: 210px;
+}
+.accompagner .accroche p {
+	position: relative;
+	z-index: 1;
+	margin-top: 10px;
+	font-family: "Poppins Bold", serif;
+	font-weight: bold;
+	color: white;
+	font-size: 42px;
+	line-height: 1.2;
+}
+
+.accompagner .box {
+	position: relative;
+	text-align: center;
+	display: inline-block;
+	margin-top: 40px;
+	vertical-align: top;
+	width: 300px;
+	max-width: 100%;
+	margin-right: 20px;
+	margin-left: 20px;
+	z-index: 2;
+
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+}
+
+.accompagner .box:hover,
+.accompagner .box:focus {
+	transform: scale(1.05);
+}
+
+#modal {
+	background-color: #000000;
+	max-width: 1210px;
+	width: 100%;
+	text-align: left;
+	padding: 65px;
+}
+#modal .close {
+	color: #eb212e;
+	font-family: "Poppins Bold", serif;
+	font-size: 32px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+#modal .img {
+	padding-top: 15px;
+}
+#modal h6 {
+	font-size: 24px;
+	color: white;
+	font-family: "Poppins Bold", serif;
+	text-transform: uppercase;
+	line-height: 1.2;
+	margin-bottom: 10px;
+}
+#modal p {
+	font-size: 15px;
+	color: white;
+	font-family: 'GravurCondensed', serif;
+	line-height: 1.2;
+}
+
+
+.accompagner .box img {
+	max-width: 220px;
+	margin-bottom: 30px;
+}
+.accompagner .box:nth-child(4) img {
+	margin-bottom: 50px;
+}
+.accompagner .box p {
+	font-family: "Poppins Bold", serif;
+	font-weight: bold;
+	color: white;
+	font-size: 17px;
+	text-transform: uppercase;
+	line-height: 1.2;
+}
+.accompagner .box button{
+	background-color: white;
+	color: #eb212e;
+}
+.accompagner .btn-end {
+	position: relative;
+	z-index: 1;
+	margin-top: 60px;
+}
+.accompagner .btn-end a {
+	background-color: #eb212e;
+}
+
+.don {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.don .accroche p  {
+	margin-top: 10px;
+	font-family: "Poppins Bold", serif;
+	font-weight: bold;
+	color: #eb212e;
+	font-size: 42px;
+	line-height: 1.2;
+}
+
+.don .box {
+	position: relative;
+	text-align: center;
+	display: inline-block;
+	margin-top: 40px;
+	width: 300px;
+	max-width: 100%;
+	margin-right: 20px;
+	margin-left: 20px;
+	z-index: 2;
+}
+.don .box .up {
+	padding: 20px 10px;
+	border: 5px solid #eb212e;
+}
+.don .box:hover .up {
+	background-color: #eb212e;
+}
+.don .box:hover .btn-bg {
+	transform: scale(1.03);
+}
+.don .box:hover .euro,
+.don .box:hover .description,
+.don .box:hover .deduction{
+	color: white;
+}
+.don .box .euro {
+	color: #eb212e;
+	font-family: "Poppins Bold", serif;
+	font-weight: bold;
+	font-size: 52px;
+	line-height: 1;
+	margin-bottom: 0;
+}
+.don .box .deduction {
+	color: #eb212e;
+	font-family: "Poppins Bold", serif;
+	font-size: 15px;
+}
+.don .box .description {
+	color: black;
+	font-family: "Poppins", serif;
+	font-size: 13px;
+	line-height: 1;
+}
+.don .box .btn-bg {
+	margin-top: 20px;
+	background-color: #eb212e;
+}
+
+.infos {
+	background-color: #1c1c1c;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	position: relative;
+}
+.infos .link h4 {
+	color: white;
+	font-family: "Poppins Bold", serif;
+	font-weight: bold;
+	font-size: 62px;
+	line-height: 1;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.infos .link a {
+	display: inline-block;
+	padding: 4px 6px;
+	color: white;
+	font-family: "Poppins Bold", serif;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 1;
+	margin-bottom: 10px;
+	border: 1px solid #eb212e;
+	text-transform: uppercase;
+}
+.infos .link a:hover,
+.infos .link a:focus{
+	color: white;
+	background-color: #eb212e;
+}
+
+.infos .text p {
+	margin-top: 34px;
+	color: white;
+	font-family: "GravurCondensed", serif;
+	font-size: 16px;
+	line-height: 1;
+}
+
+.infos .photo {
+	position: absolute;
+	right: 0;
+	top: 10px;
+	max-width: 385px;
+}
+
+
+.footer {
+	padding: 5px 0;
+	background-color: white;
+}
+.footer .link p,
+.footer .link a{
+	margin-top: 5px;
+	font-family: "GravurCondensed", serif;
+	color: black;
+	margin-bottom: 0;
+	font-weight: bold;
+}
+
+.footer .rs img {
+	max-width: 30px;
+	margin-right: 5px;
+}
+.footer .rs img:nth-child(1) {
+	max-width: 13px;
+}
+
+@media screen and (max-width: 1010px) {
+	.first .video .share {
+		right: 0;
+	}
+	.logo {
+		max-width: 300px;
+		margin-bottom: 10px;
+	}
+	.first .accroche h1 {
+		font-size: 36px;
+	}
+	.first .accroche p {
+		font-size: 13px;
+		margin-top: 20px;
+	}
+	.video-container {
+		margin: 80px auto 0;
+	}
+	.infos .photo {
+		position: static;
+	}
+	.infos .text p {
+		margin-top: 60px;
+	}
+}
+@media screen and (max-width: 640px) {
+	.accompagner .left,
+	.accompagner .right{
+		max-width: 100%;
+		width: 200px;
+	}
+	.accompagner .up {
+		content: url("https://s3.amazonaws.com/heroku-adfinitas-campaign/cimade-agir/rencontre/up-valeur-small.png");
+	}
+	.infos .photo {
+		max-width: 100%;
+		width: 100%;
+	}
+	.accompagner .accroche p {
+		font-size: 28px;
+	}
+	.accompagner .box {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.logo {
+		max-width: 200px;
+	}
+	.don .box {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.first .accroche h1 {
+		font-size: 26px;
+	}
+	.first .accroche h2 {
+		font-size: 22px;
+	}
+	.video-container {
+		padding-bottom: 57%;
+	}
+	.first .aider {
+		margin-top: 40px;
+	}
+	.don .accroche p {
+		font-size: 28px;
+	}
+	#modal {
+		padding: 10px;
+	}
+	#modal img {
+		max-width: 200px;
+	}
+	#modal h6 {
+		font-size: 22px;
+	}
+	#modal p {
+		font-size: 13px;
+	}
+}

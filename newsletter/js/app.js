@@ -78,6 +78,8 @@ function fillFieldsFromUrl() {
     }
     if (p['wv_email'] && p['wv_email'] !== "undefined")
         $("#email").val(p['wv_email']);
+    if (p['n_email'] && p['n_email'] !== "undefined")
+        $("#email").val(p['n_email']);
     if (p['wv_firstname'] && p['wv_firstname'] !== "undefined")
         $("#firstName").val(p['wv_firstname']);
     if (p['wv_lastname'] && p['wv_lastname'] !== "undefined")
