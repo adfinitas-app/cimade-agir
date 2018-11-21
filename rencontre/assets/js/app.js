@@ -16,6 +16,18 @@ $('.accompagner .box').click( function () {
     }
 });
 
+$('.infos .link a').click( function (e) {
+    e.preventDefault();
+    let index = $(this).index();
+
+    $('.infos .link a').each( function () {
+        $(this).removeClass('active');
+        if ($(this).index() !== index)
+            $(this).next().slideUp();
+    });
+    $(this).next().slideDown();
+});
+
 $(document).on('closed', '.remodal', function () {
     if ($('#modal iframe').css('display') === "block")
         $('#modal iframe').attr('src', '');

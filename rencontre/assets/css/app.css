@@ -310,8 +310,8 @@ p, h1, h2, h3, h4, h5, h6, a, button, ul, li {
 	top: 10px;
 	right: 10px;
 }
-#modal .img {
-	padding-top: 15px;
+#modal .img img {
+	max-width: 250px;
 }
 #modal h6 {
 	font-size: 24px;
@@ -333,7 +333,7 @@ p, h1, h2, h3, h4, h5, h6, a, button, ul, li {
 	max-width: 220px;
 	margin-bottom: 30px;
 }
-.accompagner .box:nth-child(4) img {
+.accompagner .box:nth-child(2) img {
 	margin-bottom: 50px;
 }
 .accompagner .box p {
@@ -435,9 +435,28 @@ p, h1, h2, h3, h4, h5, h6, a, button, ul, li {
 	text-transform: uppercase;
 	margin-bottom: 10px;
 }
+.infos .link a + div {
+	display: none;
+}
+.infos .link a.active + div {
+	display: block;
+}
+.infos .link a + div p,
+.infos .link a + div ul,
+.infos .link a + div ul li {
+	font-family: 'GravurCondensed', serif;
+	color: white;
+	font-size: 14px;
+	line-height: 1.1;
+}
+.infos .link a + div span.big {
+	font-size: 18px;
+	font-weight: bold;
+}
 .infos .link a {
-	display: inline-block;
-	padding: 4px 6px;
+	display: block;
+	position: relative;
+	padding: 4px 20px 4px 6px;
 	color: white;
 	font-family: "Poppins Bold", serif;
 	font-weight: bold;
@@ -446,6 +465,10 @@ p, h1, h2, h3, h4, h5, h6, a, button, ul, li {
 	margin-bottom: 10px;
 	border: 1px solid #eb212e;
 	text-transform: uppercase;
+}
+.infos .link a span {
+	position: absolute;
+	right: 4px;
 }
 .infos .link a:hover,
 .infos .link a:focus{
