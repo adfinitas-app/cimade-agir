@@ -439,6 +439,10 @@ p, h1, h2, h3, h4, h5, h6, a, button, ul, li {
 .infos .link a + div {
 	display: none;
 }
+.infos .link a.active {
+	color: white;
+	background-color: #eb212e;
+}
 .infos .link a.active + div {
 	display: block;
 }

@@ -25,6 +25,7 @@ $('.infos .link a').click( function (e) {
         if ($(this).index() !== index)
             $(this).next().slideUp();
     });
+    $(this).addClass('active');
     $(this).next().slideDown();
 });
 
