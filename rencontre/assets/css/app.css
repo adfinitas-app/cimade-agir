@@ -509,7 +509,7 @@ p, h1, h2, h3, h4, h5, h6, a, button, ul, li {
 	max-width: 30px;
 	margin-right: 5px;
 }
-.footer .rs img:nth-child(1) {
+.footer .rs a:nth-child(1) img {
 	max-width: 13px;
 }
 
