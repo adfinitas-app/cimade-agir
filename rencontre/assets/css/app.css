@@ -540,6 +540,9 @@ p, h1, h2, h3, h4, h5, h6, a, button, ul, li {
 	}
 }
 @media screen and (max-width: 640px) {
+	.row.video {
+		margin-top: 70px;
+	}
 	.accompagner .left,
 	.accompagner .right{
 		max-width: 100%;
