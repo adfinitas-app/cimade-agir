@@ -164,6 +164,8 @@ p, h1, h2, h3, h4, h5, h6, a, button, ul, li {
 .first .btn-bg {
 	font-size: 20px;
 }
+.first .video {
+	margin-top: 30px;}
 .first .video-container,
 #modal .video-container {
 	position: relative;
@@ -172,13 +174,14 @@ p, h1, h2, h3, h4, h5, h6, a, button, ul, li {
 	height: 0;
 	max-width: 100%;
 	width: 700px;
-	margin: 30px auto 0;
+	margin: 0 auto 0;
 }
 #modal .video-container {
 	padding-bottom: 57.25% !important;
 }
 .first .video-container iframe,
 #modal .video-container iframe {
+	z-index: 1;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -191,7 +194,7 @@ p, h1, h2, h3, h4, h5, h6, a, button, ul, li {
 .first .video .share {
 	right: -150px;
 	top: -66px;
-	z-index: -1;
+	z-index: 0;
 	position: absolute;
 	width: 300px;
 	height: 136px;
@@ -311,7 +314,7 @@ p, h1, h2, h3, h4, h5, h6, a, button, ul, li {
 	right: 10px;
 }
 #modal .img img {
-	max-width: 250px;
+	max-width: 265px;
 }
 #modal h6 {
 	font-size: 24px;
@@ -425,7 +428,7 @@ p, h1, h2, h3, h4, h5, h6, a, button, ul, li {
 	padding-top: 40px;
 	padding-bottom: 40px;
 	position: relative;
-	min-height: 480px;
+	min-height: 390px;
 }
 .infos .link h4 {
 	color: white;
@@ -436,25 +439,27 @@ p, h1, h2, h3, h4, h5, h6, a, button, ul, li {
 	text-transform: uppercase;
 	margin-bottom: 10px;
 }
-.infos .link a + div {
-	display: none;
-}
 .infos .link a.active {
 	color: white;
 	background-color: #eb212e;
 }
-.infos .link a.active + div {
+.infos .accordeon-elem {
+	display: none;
+	margin-top: 50px;
+	color: white;
+	font-family: "GravurCondensed", serif;
+	font-size: 16px;
+	line-height: 1;
+}
+.infos .accordeon-elem li {
+	font-family: "GravurCondensed", serif;
+	font-size: 16px;
+}
+.infos .accordeon-elem.active {
 	display: block;
 }
-.infos .link a + div p,
-.infos .link a + div ul,
-.infos .link a + div ul li {
-	font-family: 'GravurCondensed', serif;
-	color: white;
-	font-size: 14px;
-	line-height: 1.1;
-}
-.infos .link a + div span.big {
+.infos .accordeon-elem p.big {
+	font-family: "GravurCondensed", serif;
 	font-size: 18px;
 	font-weight: bold;
 }
@@ -479,14 +484,6 @@ p, h1, h2, h3, h4, h5, h6, a, button, ul, li {
 .infos .link a:focus{
 	color: white;
 	background-color: #eb212e;
-}
-
-.infos .text p {
-	margin-top: 34px;
-	color: white;
-	font-family: "GravurCondensed", serif;
-	font-size: 16px;
-	line-height: 1;
 }
 
 .infos .photo {

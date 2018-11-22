@@ -5,9 +5,9 @@ let text = [
 ];
 
 let title = [
-    "Enfermement, rétention,<br />expulsion",
-    "asile et<br />droits au séjour",
-    "Apprentissage<br />du français et intégration"
+    "Enfermement, rétention, expulsion",
+    "asile et droits au séjour",
+    "Apprentissage du français et intégration"
 ];
 
 let choice = [
