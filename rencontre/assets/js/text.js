@@ -11,8 +11,8 @@ let title = [
 ];
 
 let choice = [
-    false,
     true,
+    false,
     false
 ];
 
@@ -24,6 +24,6 @@ let img = [
 
 let video = [
     "https://www.youtube.com/embed/xhfYsAYhAjg?rel=0",
-    "https://www.youtube.com/embed/xhfYsAYhAjg?rel=0",
+    "https://www.youtube.com/watch?v=YiMFyHPsexo",
     "https://www.youtube.com/embed/xhfYsAYhAjg?rel=0"
 ];
