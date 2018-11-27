@@ -23,7 +23,7 @@ let img = [
 ];
 
 let video = [
-    "https://www.youtube.com/embed/xhfYsAYhAjg?rel=0",
-    "https://www.youtube.com/watch?v=YiMFyHPsexo",
-    "https://www.youtube.com/embed/xhfYsAYhAjg?rel=0"
+    "https://www.youtube.com/embed/YiMFyHPsexo?rel=0",
+    "https://www.youtube.com/embed/YiMFyHPsexo?rel=0",
+    "https://www.youtube.com/embed/vUcATUWMVSw?rel=0"
 ];
