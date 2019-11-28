@@ -6,7 +6,7 @@
     left: 0;
     top: 0;
     overflow: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none;  /* IE 10+ */
     opacity: 0;
@@ -33,7 +33,7 @@
     position: relative;
     width: 284px;
     overflow: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
     height: 100%;
     padding-top: 20vh;
 }
