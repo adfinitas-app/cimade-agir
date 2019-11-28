@@ -1,0 +1,165 @@
+#DescriptionPopUp {
+    min-height: 100vh;
+    height: 100vh;
+    min-width: 100vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+    opacity: 0;
+    display: none;
+}
+
+.temoins {
+    position: relative;
+    width: 284px;
+    margin: auto;
+    transition: 0.2s all ease-in-out;
+    cursor: pointer;
+}
+
+.temoins:hover {
+    transform: scale(1.05);
+}
+
+.temoinsPopUp {
+    position: relative;
+    width: 284px;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 100%;
+    padding-top: 20vh;
+}
+
+#textPopUpDescription {
+    width: 284px;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 100%;
+    padding-top: 10vh;
+    padding-bottom: 20px;
+}
+
+#temoin1 {
+    right: 230px;
+}
+
+#temoin2 {
+    top: -280px;
+    left: 190px;
+}
+
+#temoin3 {
+    top: -330px;
+    right: 120px;
+}
+
+.redCircleDescription {
+    width: 50px;
+    height: 50px;
+    border-radius: 90px;
+    margin: auto;
+    cursor: pointer;
+    margin-bottom: 10px;
+    line-height: 124px;
+    padding-bottom: 23px;
+}
+
+.textTemoinsDiv {
+    position: relative;
+    bottom: 30px;
+}
+
+.arrowPopUpDescription {
+    position: absolute;
+    top: 45vh;
+    transform: rotate(180deg);
+    cursor: pointer;
+    width: 28px;
+    transition: all 0.2s ease-in-out;
+}
+
+#arrowLeftPopUpDescription {
+    left: 30px;
+}
+
+#arrowRightPopUpDescription {
+    transform: rotate(0deg);
+    right: 30px;
+}
+
+#arrowLeftPopUpDescription:hover {
+    transform: rotate(180deg) scale(1.15);
+}
+
+#arrowRightPopUpDescription:hover {
+    transform: rotate(0deg) scale(1.15);
+}
+
+.rotateCircleTemoinPopUp {
+    transition: 0.2s all ease-in-out;
+    transform: rotate(45deg);
+}
+
+#footerPopUp {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+    height: 15px;
+}
+
+#retourPopUpDescription {
+    position: fixed;
+    left: 15px;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    #temoin1 {
+        right: 0px;
+    }
+    
+    .arrowPopUpDescription {
+        top: 450px;
+        width: 20px;
+    }
+
+    .temoinsPopUp {
+        padding-top: 100px;
+    }
+
+    #textPopUpDescription {
+        padding-top: 0px;
+    }
+
+    #temoin2 {
+        top: 0px;
+        left: 0px;
+    }
+    
+    #temoin3 {
+        top: 0px;
+        right: 0px;
+    }
+
+    .horCenterMobile {
+        justify-content: center!important;
+        margin: auto;
+        padding: 0!important;
+    }
+    #temoin2PopUpDescription {
+        padding-top: 100px;
+    }
+    #temoin3PopUpDescription {
+        padding-top: 100px;
+    }
+}

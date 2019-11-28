@@ -1,0 +1,14 @@
+#play_button_video {
+    transition: all .2s ease-in-out;    
+}
+
+#play_button_video:hover {
+    transform: scale(1.1);  
+}
+
+@media screen and (max-width: 768px) {
+    #play_button_video {
+        height: 60px!important;
+        width: 60px!important; 
+    }
+}
