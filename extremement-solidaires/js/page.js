@@ -16,6 +16,14 @@ if (url.searchParams.get("utm_source")) {
     utmParams += "&utm_source=LP";
 }
 
+if (url.searchParams.get("utm_medium")) {
+    utmParams += "&utm_medium=" + url.searchParams.get("utm_medium");
+}
+
+if (url.searchParams.get("reserved_code_email")) {
+    utmParams += "&reserved_code_email=" + url.searchParams.get("reserved_code_email");
+}
+
 for (var x = 0; x < links.length; x++) {
     var newHref = "https://donner.lacimade.org/b?cid=76";
     var url_string = links[x].href;
