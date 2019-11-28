@@ -103,3 +103,12 @@
         bottom: 220px!important;
     }
 }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    #ieDon3 {
+        padding-left: 45px;
+    }
+    #ieDon3A {
+        margin-left: 12px;
+    }
+ }
