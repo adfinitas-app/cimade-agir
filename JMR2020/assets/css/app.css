@@ -285,15 +285,18 @@ p, a, li, h1, h2, h3, h4, h5, h6, span, input {
 #slide6 .equivalence .box {
 	display: inline-block;
 	vertical-align: top;
+
+	margin-right: 25px;
+	text-align: center;
+}
+#slide6 .equivalence .box .inner {
+	position: relative;
 	background-color: white;
 	width: 313px;
 	max-width: 100%;
+	padding: 45px;
 	height: 392px;
 	max-height: 100%;
-	margin-right: 25px;
-	text-align: center;
-	padding: 45px;
-	position: relative;
 }
 #slide6 .equivalence .box:last-child {
 	margin-right: 0;
@@ -303,7 +306,6 @@ p, a, li, h1, h2, h3, h4, h5, h6, span, input {
 	color: black;
 	display: inline-block;
 	vertical-align: top;
-	margin-bottom: 0;
 }
 #slide6 .equivalence .box .up p.number {
 	font-size: 80px;
@@ -315,14 +317,15 @@ p, a, li, h1, h2, h3, h4, h5, h6, span, input {
 	font-weight: 700;
 	line-height: 1;
 }
-#slide6 .equivalence .box .up p.equiv {
+#slide6 .equivalence p.equiv {
 	display: block;
-	color: black;
-	font-size: 13px;
-	font-weight: 500;
+	color: white;
+	font-size: 15px;
+	font-weight: 600;
 	line-height: 20px;
 	text-align: center;
-	margin: 0 0 7px;
+	margin: 6px 0 0;
+
 }
 #slide6 .equivalence .box .up p.soit {
 	color: #EE3124;
