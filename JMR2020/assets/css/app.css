@@ -89,6 +89,7 @@ p, a, li, h1, h2, h3, h4, h5, h6, span, input {
 	position: relative;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
 	background-position: center;
 	height: 100vh;
 	min-height: 600px;
@@ -203,11 +204,14 @@ p, a, li, h1, h2, h3, h4, h5, h6, span, input {
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 998;
+	z-index: 999;
 	width: 100%;
 	height: 65px;
 	background-color: transparent;
-	padding: 10px;
+	padding: 6px 10px 10px;
+}
+#nav.opaque {
+	background-color: rgba(0,0,0,0.7) !important;
 }
 #nav .logo {
 	text-align: center;
@@ -217,7 +221,7 @@ p, a, li, h1, h2, h3, h4, h5, h6, span, input {
 	max-width: 100%;
 }
 #nav .elements {
-	padding-top: 20px;
+	padding-top: 9px;
 }
 #nav .elements a {
 	display: inline-block;
@@ -240,30 +244,33 @@ p, a, li, h1, h2, h3, h4, h5, h6, span, input {
 	width: 185px;
 	height: 52px;
 	padding-top: 14px;
+	margin-top: 0 !important;
 }
 
 
 #slide1 {
-	background-image: url("https://adfinitas-statics-cdn.s3.eu-west-3.amazonaws.com/Cimade/lp-fa-20/bg-slide-1.jpg");
+	background-image: url("https://adfinitas-statics-cdn.s3.eu-west-3.amazonaws.com/Cimade/lp-fa-20/bg-slide-2.jpg");
 	background-position: 50% 0;
 }
 #slide2 {
-	background-image: url("https://adfinitas-statics-cdn.s3.eu-west-3.amazonaws.com/Cimade/lp-fa-20/bg-slide-1.jpg");
+	background-image: url("https://adfinitas-statics-cdn.s3.eu-west-3.amazonaws.com/Cimade/lp-fa-20/bg-slide-2.jpg");
 	background-position: 50% 0;
 }
 #slide3 {
-	background-image: url("https://adfinitas-statics-cdn.s3.eu-west-3.amazonaws.com/Cimade/lp-fa-20/bg-slide-2.jpg");
+	background-image: url("https://adfinitas-statics-cdn.s3.eu-west-3.amazonaws.com/Cimade/lp-fa-20/bg-slide-1.jpg");
 	background-position: 50% 0;
 }
 #slide4 {
 	background-image: url("https://adfinitas-statics-cdn.s3.eu-west-3.amazonaws.com/Cimade/lp-fa-20/bg-slide-3.jpg");
+	height: auto;
+	padding-bottom: 80px;
 }
 #slide5 {
 	background-image: url("https://adfinitas-statics-cdn.s3.eu-west-3.amazonaws.com/Cimade/lp-fa-20/bg-slide-3.jpg");
 }
 #slide6 {
-	background-image: url("https://adfinitas-statics-cdn.s3.eu-west-3.amazonaws.com/Cimade/lp-fa-20/bg-slide-3.jpg");
-	min-height: 860px;
+	margin-top: 200px;
+	height: auto;
 }
 #slide6 .equivalence {
 	margin-top: 60px;
@@ -358,6 +365,12 @@ p, a, li, h1, h2, h3, h4, h5, h6, span, input {
 	width: 247px;
 	max-width: 100%;
 }
+#footer .rs {
+	margin-right: 40px;
+}
+#footer .rs img {
+	width: 40px;
+}
 #footer .elements {
 	padding: 10px;
 }
@@ -374,6 +387,9 @@ p, a, li, h1, h2, h3, h4, h5, h6, span, input {
 	margin-right: 0 !important;
 }
 @media screen and (max-width: 1010px) {
+	#nav {
+		padding-top: 10px;
+	}
 	#nav .btn-container a {
 		height: 42px;
 		width: 155px;
@@ -419,6 +435,7 @@ p, a, li, h1, h2, h3, h4, h5, h6, span, input {
 
 
 	#slide6 {
+		margin-top: 0;
 		padding-top: 15%;
 	}
 	#slide6 .equivalence .box .bottom a.bt-custom {
@@ -432,7 +449,14 @@ p, a, li, h1, h2, h3, h4, h5, h6, span, input {
 	}
 
 	#footer .elements a {
+		margin-right: 20px;
 		font-size: 18px;
+	}
+	#footer .rs {
+		margin-right: 20px;
+	}
+	#footer .rs img {
+		width: 35px;
 	}
 
 }
@@ -499,6 +523,9 @@ p, a, li, h1, h2, h3, h4, h5, h6, span, input {
 	}
 	#footer .elements a {
 		display: block;
+	}
+	#footer .rs a {
+		display: inline-block;
 	}
 }
 

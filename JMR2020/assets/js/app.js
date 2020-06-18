@@ -5,8 +5,20 @@ preload(img)
 
 $(window).scroll(function (event) {
 
+    handleNav()
     handleMenuScroll()
 });
+
+function handleNav() {
+    var scroll = $(window).scrollTop();
+
+    if (scroll > 0) {
+        $('#nav').addClass('opaque')
+    }
+    else {
+        $('#nav').removeClass('opaque')
+    }
+}
 
 
 $(window).resize( function() {
@@ -15,6 +27,7 @@ $(window).resize( function() {
 $(document).ready( function() {
     handleMenuScroll()
     fillLink()
+    handleNav()
     $(document).foundation();
 
     $('#nav .elements a').click(function (e) {
@@ -25,7 +38,12 @@ $(document).ready( function() {
 
     $('.show-more').click(function (e) {
         e.preventDefault()
-        scrollTo($(this).parent().parent().parent().parent().parent().next())
+
+        if ($(this).hasClass('small')) {
+            scrollTo($(this).parent().parent().parent().parent().next().next())
+        }
+        else
+            scrollTo($(this).parent().parent().parent().parent().parent().next())
     })
 
     $('.plus').click(function (e) {
@@ -68,7 +86,6 @@ function handleMenuScroll() {
     var scrollSlide1 = $('#slide2').offset().top - 1;
     var scrollSlide2 = $('#slide3').offset().top - 1;
     var scrollSlide3 = $('#slide4').offset().top - 1;
-    var scrollSlide4 = $('#slide5').offset().top - 1;
 
     if (scroll >= scrollSlide1 && scroll <= scrollSlide2) {
         index = 1
@@ -78,12 +95,9 @@ function handleMenuScroll() {
         index = 2
         indexText = 2
     }
-    else if (scroll >= scrollSlide3 && scroll <= scrollSlide4) {
+    else if (scroll >= scrollSlide3) {
         index = 3
         indexText = 3
-    }
-    else if (scroll >= scrollSlide4) {
-        indexText = -1
     }
 
 
