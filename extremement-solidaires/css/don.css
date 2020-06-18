@@ -1,0 +1,120 @@
+.donBox {
+    border: 3px solid #EAEAEA;
+    border-radius: 90px;
+    height: 160px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    max-width: 900px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    color: black;
+}
+
+.donBox:hover {
+    transform: scale(1.05);    
+}
+
+.donButtonDon {
+    height: 40px;
+    text-align: center;
+    border-radius: 90px;
+    line-height: 40px;
+    width: 180px;
+    margin-right: 20px;
+}
+
+.donText {
+    text-align: left;
+}
+
+.donNumberDiv {
+    justify-content: left;
+    padding-left: 50px;
+}
+
+#donLinkDefisc {
+    color: black;
+    text-decoration: underline;
+}
+
+#donLinkDefisc:hover {
+    color: grey;
+    text-decoration: underline;
+}
+
+#donBottonLeft {
+    justify-content: right;
+}
+
+#donBottonRight {
+    justify-content: left;
+}
+
+.containerDon {
+    margin-top: 60px;
+}
+
+@media screen and (max-width: 768px) {
+    .donBox {
+        height: auto;
+        padding: 40px;
+        border-radius: 90px;
+    }
+    .donText {
+        margin-bottom: 20px;
+        margin-left: 0px!important;
+    }
+    .donNumberDiv {
+        justify-content: center;
+        padding-left: 0px;
+    }
+    .donButtonDon {
+        margin-right: 0px;
+    }
+    #donBottonLeft, #donBottonRight {
+        justify-content: center;
+    }
+    .hidePhone {
+        display: none;
+    }
+    .font-size-40-mobile {
+        font-size: 40px;
+        line-height: 30px;
+    }
+    .font-size-20-mobile {
+        font-size: 22.5px;
+        line-height: 25px!important;
+    }
+    #asteriskbottonDonMobile {
+        height: 150px;
+        position: relative;
+        bottom: 20px;
+        margin-top: 20px;
+    }
+    .containerDon {
+        margin-top: 350px;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    #logoConfianceDon {
+        left: 100px!important;
+        bottom: 220px!important;
+    }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    #ieDon3 {
+        padding-left: 42px;
+    }
+    #ieDon2 {
+        padding-left: 25px;
+    }
+    #ieDon2A {
+        margin-left: 12px!important;
+    }
+    #ieDon3A {
+        margin-left: 12px!important;
+    }
+ }
