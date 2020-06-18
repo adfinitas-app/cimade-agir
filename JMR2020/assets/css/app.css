@@ -98,7 +98,7 @@ p, a, li, h1, h2, h3, h4, h5, h6, span, input {
 	background-attachment: fixed;
 	background-position: center;
 	height: 100vh;
-	min-height: 600px;
+	min-height: 700px;
 }
 .slide .text {
 	margin-top: 20%;
