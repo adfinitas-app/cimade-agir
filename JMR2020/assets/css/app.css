@@ -21,6 +21,9 @@ p, a, li, h1, h2, h3, h4, h5, h6, span, input {
 .scale-hover:hover {
 	transform: scale(1.05);
 }
+.bold {
+	font-weight: bold;
+}
 .bt-custom {
 	font-family: 'Open Sans', serif;
 	display: block;
@@ -37,6 +40,9 @@ p, a, li, h1, h2, h3, h4, h5, h6, span, input {
 }
 .bt-custom:hover, .bt-custom:focus {
 	color: white;
+}
+.uppercase {
+	text-transform: uppercase;
 }
 
 #panel {
@@ -217,6 +223,7 @@ p, a, li, h1, h2, h3, h4, h5, h6, span, input {
 	text-align: center;
 }
 #nav .logo img {
+	margin-top: -4px;
 	width: 260px;
 	max-width: 100%;
 }
@@ -297,6 +304,7 @@ p, a, li, h1, h2, h3, h4, h5, h6, span, input {
 	color: black;
 	display: inline-block;
 	vertical-align: top;
+	margin-bottom: 0;
 }
 #slide6 .equivalence .box .up p.number {
 	font-size: 80px;
@@ -307,6 +315,15 @@ p, a, li, h1, h2, h3, h4, h5, h6, span, input {
 	font-size: 50px;
 	font-weight: 700;
 	line-height: 1;
+}
+#slide6 .equivalence .box .up p.equiv {
+	display: block;
+	color: black;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 20px;
+	text-align: center;
+	margin: 0 0 7px;
 }
 #slide6 .equivalence .box .up p.soit {
 	color: #EE3124;
@@ -395,6 +412,9 @@ p, a, li, h1, h2, h3, h4, h5, h6, span, input {
 		width: 155px;
 		padding-top: 11px;
 		margin-top: 0 !important;
+	}
+	#nav .logo img {
+		margin-top: 0;
 	}
 	#nav .logo {
 		padding-top: 8px;
