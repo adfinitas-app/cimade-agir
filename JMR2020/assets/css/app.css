@@ -408,6 +408,12 @@ p, a, li, h1, h2, h3, h4, h5, h6, span, input {
 #footer .elements a:last-child {
 	margin-right: 0 !important;
 }
+/* CSS specific to iOS devices */
+@supports (-webkit-touch-callout: none) {
+	.slide {
+		background-attachment: scroll !important;
+	}
+}
 @media screen and (max-width: 1010px) {
 	#nav {
 		padding-top: 10px;
@@ -499,8 +505,8 @@ p, a, li, h1, h2, h3, h4, h5, h6, span, input {
 		padding-top: 50px;
 	}
 	.slide .text h1, .slide .text h2 {
-		font-size: 58px;
-		line-height: 62px;
+		font-size: 50px;
+		line-height: 52px;
 	}
 	.slide .text h2 span {
 		font-size: 70px;
