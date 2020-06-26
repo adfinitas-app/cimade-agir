@@ -274,6 +274,7 @@ p, a, li, h1, h2, h3, h4, h5, h6, span, input {
 	background-image: url("https://adfinitas-statics-cdn.s3.eu-west-3.amazonaws.com/Cimade/lp-fa-20/bg-slide-3.jpg");
 	height: auto;
 	padding-bottom: 80px;
+	background-position: 50% 0;
 }
 #slide5 {
 	background-image: url("https://adfinitas-statics-cdn.s3.eu-west-3.amazonaws.com/Cimade/lp-fa-20/bg-slide-3.jpg");
