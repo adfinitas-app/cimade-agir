@@ -121,7 +121,7 @@ function getList() {
     let data = [];
 
     if (getOptin() === "true") {
-        data.push('mjlist_optin_partenaire');
+        // data.push('mjlist_optin_partenaire');
     }
 
     return data;
